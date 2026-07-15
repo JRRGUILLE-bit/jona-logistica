@@ -1,0 +1,861 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-15T17:55:32-03:00",
+  "timezone": "America/Montevideo",
+  "weekends": [
+    {
+      "id": "first",
+      "label": "Primer fin de semana",
+      "dates": "25–26 de julio",
+      "description": "Ciudad de la Costa · La Paz · Las Piedras"
+    },
+    {
+      "id": "second",
+      "label": "Segundo fin de semana",
+      "dates": "1–2 de agosto",
+      "description": "Casa de Susana · Parque del Plata"
+    }
+  ],
+  "days": [
+    {
+      "id": "day-1",
+      "number": 1,
+      "date": "2026-07-25",
+      "label": "Sábado 25 de julio",
+      "weekend": "first",
+      "locations": "Ciudad de la Costa · La Paz",
+      "lead_days": 10,
+      "general": {
+        "available": true,
+        "level": "good",
+        "confidence": "Baja",
+        "headline": "Sin señal fuerte por ahora",
+        "summary": "Por ahora los modelos no marcan lluvia significativa. Es una tendencia temprana y puede cambiar.",
+        "rain_probability_max": 18.0,
+        "precipitation_max": 0.2,
+        "temperature_min": 2.4,
+        "temperature_max": 13.4,
+        "wind_gusts_max": 36.0,
+        "cloud_cover_avg": 83.0,
+        "rain_previous_12h": 0.0,
+        "wet_model_votes": 0,
+        "model_count": 2,
+        "model_disagreement": false
+      },
+      "models": [
+        {
+          "available": true,
+          "level": "good",
+          "confidence": "Baja",
+          "headline": "Sin señal fuerte por ahora",
+          "summary": "Por ahora los modelos no marcan lluvia significativa. Es una tendencia temprana y puede cambiar.",
+          "rain_probability_max": 18.0,
+          "precipitation_max": 0.2,
+          "temperature_min": 2.4,
+          "temperature_max": 13.4,
+          "wind_gusts_max": 27.7,
+          "cloud_cover_avg": 79.0,
+          "rain_previous_12h": 0.0,
+          "wet_model_votes": 0,
+          "model_count": 2,
+          "model_disagreement": false,
+          "id": "ecmwf",
+          "name": "ECMWF IFS",
+          "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
+        },
+        {
+          "available": true,
+          "level": "good",
+          "confidence": "Baja",
+          "headline": "Sin señal fuerte por ahora",
+          "summary": "Por ahora los modelos no marcan lluvia significativa. Es una tendencia temprana y puede cambiar.",
+          "rain_probability_max": 10.0,
+          "precipitation_max": 0.0,
+          "temperature_min": 6.3,
+          "temperature_max": 13.3,
+          "wind_gusts_max": 36.0,
+          "cloud_cover_avg": 87.0,
+          "rain_previous_12h": 0.0,
+          "wet_model_votes": 0,
+          "model_count": 2,
+          "model_disagreement": false,
+          "id": "gfs",
+          "name": "NOAA GFS",
+          "url": "https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast"
+        }
+      ],
+      "blocks": [
+        {
+          "id": "day-1-workshop",
+          "time": "08:00–12:20",
+          "location_id": "ciudad_costa",
+          "location": "Taller · Ciudad de la Costa",
+          "type": "Exterior día",
+          "sensitivity": [
+            "lluvia",
+            "viento",
+            "continuidad de luz"
+          ],
+          "general": {
+            "available": true,
+            "level": "good",
+            "confidence": "Baja",
+            "headline": "Sin señal fuerte por ahora",
+            "summary": "Por ahora los modelos no marcan lluvia significativa. Es una tendencia temprana y puede cambiar.",
+            "rain_probability_max": 17.0,
+            "precipitation_max": 0.0,
+            "temperature_min": 3.7,
+            "temperature_max": 9.9,
+            "wind_gusts_max": 23.8,
+            "cloud_cover_avg": 96.0,
+            "rain_previous_12h": 0.0,
+            "wet_model_votes": 0,
+            "model_count": 2,
+            "model_disagreement": false
+          },
+          "models": [
+            {
+              "available": true,
+              "temperature_min": 3.7,
+              "temperature_max": 9.5,
+              "apparent_min": 0.5,
+              "rain_probability_max": 17.0,
+              "precipitation_sum": 0.0,
+              "cloud_cover_avg": 97.0,
+              "wind_speed_max": 10.7,
+              "wind_gusts_max": 23.8,
+              "rain_previous_12h": 0.0,
+              "id": "ecmwf",
+              "name": "ECMWF IFS",
+              "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
+            },
+            {
+              "available": true,
+              "temperature_min": 7.8,
+              "temperature_max": 9.9,
+              "apparent_min": 4.5,
+              "rain_probability_max": 7.0,
+              "precipitation_sum": 0.0,
+              "cloud_cover_avg": 95.0,
+              "wind_speed_max": 13.3,
+              "wind_gusts_max": 17.6,
+              "rain_previous_12h": 0.0,
+              "id": "gfs",
+              "name": "NOAA GFS",
+              "url": "https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast"
+            }
+          ]
+        },
+        {
+          "id": "day-1-la-paz",
+          "time": "19:00–20:00",
+          "location_id": "la_paz",
+          "location": "Casa Negro · La Paz",
+          "type": "Exterior tardecita / noche",
+          "sensitivity": [
+            "lluvia",
+            "viento",
+            "luz de atardecer"
+          ],
+          "general": {
+            "available": true,
+            "level": "good",
+            "confidence": "Baja",
+            "headline": "Sin señal fuerte por ahora",
+            "summary": "Por ahora los modelos no marcan lluvia significativa. Es una tendencia temprana y puede cambiar.",
+            "rain_probability_max": 14.0,
+            "precipitation_max": 0.0,
+            "temperature_min": 9.0,
+            "temperature_max": 10.3,
+            "wind_gusts_max": 27.7,
+            "cloud_cover_avg": 98.0,
+            "rain_previous_12h": 0.0,
+            "wet_model_votes": 0,
+            "model_count": 2,
+            "model_disagreement": false
+          },
+          "models": [
+            {
+              "available": true,
+              "temperature_min": 9.1,
+              "temperature_max": 10.3,
+              "apparent_min": 7.3,
+              "rain_probability_max": 14.0,
+              "precipitation_sum": 0.0,
+              "cloud_cover_avg": 98.0,
+              "wind_speed_max": 5.9,
+              "wind_gusts_max": 20.9,
+              "rain_previous_12h": 0.0,
+              "id": "ecmwf",
+              "name": "ECMWF IFS",
+              "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
+            },
+            {
+              "available": true,
+              "temperature_min": 9.0,
+              "temperature_max": 9.1,
+              "apparent_min": 6.0,
+              "rain_probability_max": 6.0,
+              "precipitation_sum": 0.0,
+              "cloud_cover_avg": 98.0,
+              "wind_speed_max": 11.4,
+              "wind_gusts_max": 27.7,
+              "rain_previous_12h": 0.0,
+              "id": "gfs",
+              "name": "NOAA GFS",
+              "url": "https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast"
+            }
+          ]
+        }
+      ],
+      "inumet": null,
+      "metsul_articles": []
+    },
+    {
+      "id": "day-2",
+      "number": 2,
+      "date": "2026-07-26",
+      "label": "Domingo 26 de julio",
+      "weekend": "first",
+      "locations": "La Paz · Las Piedras",
+      "lead_days": 11,
+      "general": {
+        "available": true,
+        "level": "warning",
+        "confidence": "Baja",
+        "headline": "Atención",
+        "summary": "Por ahora los modelos no marcan lluvia significativa. Se proyectan ráfagas de hasta 53 km/h. Es una tendencia temprana y puede cambiar.",
+        "rain_probability_max": 18.0,
+        "precipitation_max": 0.0,
+        "temperature_min": 6.3,
+        "temperature_max": 16.9,
+        "wind_gusts_max": 52.9,
+        "cloud_cover_avg": 84.0,
+        "rain_previous_12h": 0.0,
+        "wet_model_votes": 0,
+        "model_count": 2,
+        "model_disagreement": false
+      },
+      "models": [
+        {
+          "available": true,
+          "level": "good",
+          "confidence": "Baja",
+          "headline": "Sin señal fuerte por ahora",
+          "summary": "Por ahora los modelos no marcan lluvia significativa. Es una tendencia temprana y puede cambiar.",
+          "rain_probability_max": 18.0,
+          "precipitation_max": 0.0,
+          "temperature_min": 7.0,
+          "temperature_max": 14.3,
+          "wind_gusts_max": 21.6,
+          "cloud_cover_avg": 74.0,
+          "rain_previous_12h": 0.0,
+          "wet_model_votes": 0,
+          "model_count": 2,
+          "model_disagreement": false,
+          "id": "ecmwf",
+          "name": "ECMWF IFS",
+          "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
+        },
+        {
+          "available": true,
+          "level": "warning",
+          "confidence": "Baja",
+          "headline": "Atención",
+          "summary": "Por ahora los modelos no marcan lluvia significativa. Se proyectan ráfagas de hasta 53 km/h. Es una tendencia temprana y puede cambiar.",
+          "rain_probability_max": 16.0,
+          "precipitation_max": 0.0,
+          "temperature_min": 6.3,
+          "temperature_max": 16.9,
+          "wind_gusts_max": 52.9,
+          "cloud_cover_avg": 93.0,
+          "rain_previous_12h": 0.0,
+          "wet_model_votes": 0,
+          "model_count": 2,
+          "model_disagreement": false,
+          "id": "gfs",
+          "name": "NOAA GFS",
+          "url": "https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast"
+        }
+      ],
+      "blocks": [
+        {
+          "id": "day-2-la-paz",
+          "time": "14:30–15:20",
+          "location_id": "la_paz",
+          "location": "Casa Jona · La Paz",
+          "type": "Exteriores",
+          "sensitivity": [
+            "lluvia",
+            "viento",
+            "continuidad de cielo"
+          ],
+          "general": {
+            "available": true,
+            "level": "good",
+            "confidence": "Baja",
+            "headline": "Sin señal fuerte por ahora",
+            "summary": "Por ahora los modelos no marcan lluvia significativa. Es una tendencia temprana y puede cambiar.",
+            "rain_probability_max": 12.0,
+            "precipitation_max": 0.0,
+            "temperature_min": 14.3,
+            "temperature_max": 16.9,
+            "wind_gusts_max": 21.6,
+            "cloud_cover_avg": 100.0,
+            "rain_previous_12h": 0.0,
+            "wet_model_votes": 0,
+            "model_count": 2,
+            "model_disagreement": false
+          },
+          "models": [
+            {
+              "available": true,
+              "temperature_min": 14.3,
+              "temperature_max": 14.3,
+              "apparent_min": 12.3,
+              "rain_probability_max": 12.0,
+              "precipitation_sum": 0.0,
+              "cloud_cover_avg": 100.0,
+              "wind_speed_max": 8.7,
+              "wind_gusts_max": 21.6,
+              "rain_previous_12h": 0.0,
+              "id": "ecmwf",
+              "name": "ECMWF IFS",
+              "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
+            },
+            {
+              "available": true,
+              "temperature_min": 16.9,
+              "temperature_max": 16.9,
+              "apparent_min": 15.1,
+              "rain_probability_max": 6.0,
+              "precipitation_sum": 0.0,
+              "cloud_cover_avg": 100.0,
+              "wind_speed_max": 14.9,
+              "wind_gusts_max": 20.5,
+              "rain_previous_12h": 0.0,
+              "id": "gfs",
+              "name": "NOAA GFS",
+              "url": "https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast"
+            }
+          ]
+        },
+        {
+          "id": "day-2-colina",
+          "time": "18:00–19:30",
+          "location_id": "las_piedras",
+          "location": "Colina · Las Piedras",
+          "type": "Exterior noche",
+          "sensitivity": [
+            "pasto mojado",
+            "viento para la vela",
+            "lluvia"
+          ],
+          "general": {
+            "available": true,
+            "level": "good",
+            "confidence": "Baja",
+            "headline": "Sin señal fuerte por ahora",
+            "summary": "Por ahora los modelos no marcan lluvia significativa. Es una tendencia temprana y puede cambiar.",
+            "rain_probability_max": 17.0,
+            "precipitation_max": 0.0,
+            "temperature_min": 11.2,
+            "temperature_max": 14.6,
+            "wind_gusts_max": 27.7,
+            "cloud_cover_avg": 100.0,
+            "rain_previous_12h": 0.0,
+            "wet_model_votes": 0,
+            "model_count": 2,
+            "model_disagreement": false
+          },
+          "models": [
+            {
+              "available": true,
+              "temperature_min": 11.2,
+              "temperature_max": 12.2,
+              "apparent_min": 9.0,
+              "rain_probability_max": 17.0,
+              "precipitation_sum": 0.0,
+              "cloud_cover_avg": 100.0,
+              "wind_speed_max": 9.2,
+              "wind_gusts_max": 20.5,
+              "rain_previous_12h": 0.0,
+              "id": "ecmwf",
+              "name": "ECMWF IFS",
+              "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
+            },
+            {
+              "available": true,
+              "temperature_min": 14.2,
+              "temperature_max": 14.6,
+              "apparent_min": 13.1,
+              "rain_probability_max": 5.0,
+              "precipitation_sum": 0.0,
+              "cloud_cover_avg": 100.0,
+              "wind_speed_max": 10.9,
+              "wind_gusts_max": 27.7,
+              "rain_previous_12h": 0.0,
+              "id": "gfs",
+              "name": "NOAA GFS",
+              "url": "https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast"
+            }
+          ]
+        }
+      ],
+      "inumet": null,
+      "metsul_articles": []
+    },
+    {
+      "id": "day-3",
+      "number": 3,
+      "date": "2026-08-01",
+      "label": "Sábado 1.º de agosto",
+      "weekend": "second",
+      "locations": "Casa de Susana · Parque del Plata",
+      "lead_days": 17,
+      "general": {
+        "available": false,
+        "level": "unknown",
+        "confidence": "Sin datos todavía",
+        "headline": "Aún fuera del alcance",
+        "summary": "La fecha todavía no está dentro del alcance de los modelos consultados."
+      },
+      "models": [
+        {
+          "available": false,
+          "level": "unknown",
+          "confidence": "Sin datos todavía",
+          "headline": "Aún fuera del alcance",
+          "summary": "La fecha todavía no está dentro del alcance de los modelos consultados.",
+          "id": "ecmwf",
+          "name": "ECMWF IFS",
+          "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
+        },
+        {
+          "available": false,
+          "level": "unknown",
+          "confidence": "Sin datos todavía",
+          "headline": "Aún fuera del alcance",
+          "summary": "La fecha todavía no está dentro del alcance de los modelos consultados.",
+          "id": "gfs",
+          "name": "NOAA GFS",
+          "url": "https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast"
+        }
+      ],
+      "blocks": [
+        {
+          "id": "day-3-morning",
+          "time": "07:30–08:00",
+          "location_id": "parque_del_plata",
+          "location": "Casa de Susana · Parque del Plata",
+          "type": "Exterior mañana",
+          "sensitivity": [
+            "rocío",
+            "lluvia",
+            "temperatura"
+          ],
+          "general": {
+            "available": false,
+            "level": "unknown",
+            "confidence": "Sin datos todavía",
+            "headline": "Aún fuera del alcance",
+            "summary": "La fecha todavía no está dentro del alcance de los modelos consultados."
+          },
+          "models": [
+            {
+              "available": false,
+              "id": "ecmwf",
+              "name": "ECMWF IFS",
+              "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
+            },
+            {
+              "available": false,
+              "id": "gfs",
+              "name": "NOAA GFS",
+              "url": "https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast"
+            }
+          ]
+        },
+        {
+          "id": "day-3-interiors",
+          "time": "10:00–18:30",
+          "location_id": "parque_del_plata",
+          "location": "Casa de Susana · Parque del Plata",
+          "type": "Interiores con necesidad de luz solar",
+          "sensitivity": [
+            "nubosidad",
+            "sol directo",
+            "viento / sonido"
+          ],
+          "general": {
+            "available": false,
+            "level": "unknown",
+            "confidence": "Sin datos todavía",
+            "headline": "Aún fuera del alcance",
+            "summary": "La fecha todavía no está dentro del alcance de los modelos consultados."
+          },
+          "models": [
+            {
+              "available": false,
+              "id": "ecmwf",
+              "name": "ECMWF IFS",
+              "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
+            },
+            {
+              "available": false,
+              "id": "gfs",
+              "name": "NOAA GFS",
+              "url": "https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast"
+            }
+          ]
+        },
+        {
+          "id": "day-3-night",
+          "time": "19:00–22:30",
+          "location_id": "parque_del_plata",
+          "location": "Casa de Susana · Parque del Plata",
+          "type": "Exteriores noche",
+          "sensitivity": [
+            "lluvia",
+            "viento",
+            "frío",
+            "humedad"
+          ],
+          "general": {
+            "available": false,
+            "level": "unknown",
+            "confidence": "Sin datos todavía",
+            "headline": "Aún fuera del alcance",
+            "summary": "La fecha todavía no está dentro del alcance de los modelos consultados."
+          },
+          "models": [
+            {
+              "available": false,
+              "id": "ecmwf",
+              "name": "ECMWF IFS",
+              "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
+            },
+            {
+              "available": false,
+              "id": "gfs",
+              "name": "NOAA GFS",
+              "url": "https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast"
+            }
+          ]
+        }
+      ],
+      "inumet": null,
+      "metsul_articles": [
+        {
+          "id": 267328,
+          "published_at": "2026-07-03T09:33:17",
+          "modified_at": "2026-07-03T09:33:17",
+          "title": "Massa de ar da Antártida traz frio congelante em quase 60 cidades",
+          "excerpt": "O ingresso de uma intensa massa de ar frio trouxe um começo de sexta-feira (2) com ar congelante em parte do Rio Grande do Sul com temperaturas que ficaram perto de 5ºC abaixo de zero no Oeste gaúcho, mostram dados de estações meteorológicas levantados pela MetSul Meteorologia. O frio foi mais intenso no Oeste, Centro […]",
+          "url": "https://metsul.com/massa-de-ar-da-antartida-traz-frio-congelante-em-quase-60-cidades/",
+          "author": 861
+        }
+      ]
+    },
+    {
+      "id": "day-4",
+      "number": 4,
+      "date": "2026-08-02",
+      "label": "Domingo 2 de agosto",
+      "weekend": "second",
+      "locations": "Casa de Susana · Parque del Plata",
+      "lead_days": 18,
+      "general": {
+        "available": false,
+        "level": "unknown",
+        "confidence": "Sin datos todavía",
+        "headline": "Aún fuera del alcance",
+        "summary": "La fecha todavía no está dentro del alcance de los modelos consultados."
+      },
+      "models": [
+        {
+          "available": false,
+          "level": "unknown",
+          "confidence": "Sin datos todavía",
+          "headline": "Aún fuera del alcance",
+          "summary": "La fecha todavía no está dentro del alcance de los modelos consultados.",
+          "id": "ecmwf",
+          "name": "ECMWF IFS",
+          "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
+        },
+        {
+          "available": false,
+          "level": "unknown",
+          "confidence": "Sin datos todavía",
+          "headline": "Aún fuera del alcance",
+          "summary": "La fecha todavía no está dentro del alcance de los modelos consultados.",
+          "id": "gfs",
+          "name": "NOAA GFS",
+          "url": "https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast"
+        }
+      ],
+      "blocks": [
+        {
+          "id": "day-4-exterior",
+          "time": "10:00–12:00",
+          "location_id": "parque_del_plata",
+          "location": "Casa de Susana · Parque del Plata",
+          "type": "Exterior día",
+          "sensitivity": [
+            "lluvia",
+            "continuidad de sol",
+            "viento"
+          ],
+          "general": {
+            "available": false,
+            "level": "unknown",
+            "confidence": "Sin datos todavía",
+            "headline": "Aún fuera del alcance",
+            "summary": "La fecha todavía no está dentro del alcance de los modelos consultados."
+          },
+          "models": [
+            {
+              "available": false,
+              "id": "ecmwf",
+              "name": "ECMWF IFS",
+              "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
+            },
+            {
+              "available": false,
+              "id": "gfs",
+              "name": "NOAA GFS",
+              "url": "https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast"
+            }
+          ]
+        },
+        {
+          "id": "day-4-interiors",
+          "time": "12:30–18:00",
+          "location_id": "parque_del_plata",
+          "location": "Casa de Susana · Parque del Plata",
+          "type": "Interiores",
+          "sensitivity": [
+            "ruido de lluvia",
+            "llegadas",
+            "temperatura"
+          ],
+          "general": {
+            "available": false,
+            "level": "unknown",
+            "confidence": "Sin datos todavía",
+            "headline": "Aún fuera del alcance",
+            "summary": "La fecha todavía no está dentro del alcance de los modelos consultados."
+          },
+          "models": [
+            {
+              "available": false,
+              "id": "ecmwf",
+              "name": "ECMWF IFS",
+              "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
+            },
+            {
+              "available": false,
+              "id": "gfs",
+              "name": "NOAA GFS",
+              "url": "https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast"
+            }
+          ]
+        }
+      ],
+      "inumet": null,
+      "metsul_articles": []
+    }
+  ],
+  "sources": {
+    "metsul": {
+      "status": "ok",
+      "kind": "Análisis humanos",
+      "fetched_at": "2026-07-15T17:55:32-03:00",
+      "page_url": "https://metsul.com/categoria/uruguai/",
+      "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
+      "articles": [
+        {
+          "id": 267550,
+          "published_at": "2026-07-15T11:29:55",
+          "modified_at": "2026-07-15T10:54:56",
+          "title": "Caos atmosférico no Cone Sul: de chuva extrema a tornados e neve de metros",
+          "excerpt": "Cenário meteorológico extremamente complexo e caótico dominará a atmosfera de parte da América do Sul nos próximos dias com condições extremas e severas do tempo no Chile, Argentina, Uruguai, Paraguai e o Brasil, adverte a MetSul Meteorologia. Virtualmente quase tudo que pode ocorrer na atmosfera é esperado na região e com fenômenos severos. Haverá a […]",
+          "url": "https://metsul.com/caos-atmosferico-no-cone-sul-de-chuva-extrema-a-tornados-e-neve-de-metros/",
+          "author": 861
+        },
+        {
+          "id": 267528,
+          "published_at": "2026-07-14T19:17:59",
+          "modified_at": "2026-07-14T19:17:59",
+          "title": "Dois rios atmosféricos intensos trarão chuva excessiva a extrema",
+          "excerpt": "Dois poderosos rios atmosféricos atingirão nos próximos dias a América do Sul com chuva excessiva a extrema, tempestades severas e nevascas que podem acumular metros, causando transtornos e estragos em diferentes países. O primeiro avança vai se formar no interior da América do Sul, acompanhando uma intensa corrente de jato em baixos níveis, transportando ar […]",
+          "url": "https://metsul.com/dois-rios-atmosfericos-intensos-trarao-chuva-excessiva-a-extrema/",
+          "author": 861
+        },
+        {
+          "id": 267484,
+          "published_at": "2026-07-12T12:21:14",
+          "modified_at": "2026-07-12T14:07:29",
+          "title": "Primeira onda de tempestades do El Niño trará temporais destrutivos",
+          "excerpt": "A MetSul Meteorologia alerta para um cenário de muito alto risco e grave perigo por uma onda de tempestades que vai perdurar muito dias no Sul do Brasil e que deve ainda afetar o Uruguai e o Centro e o Nordeste da Argentina. Esta será a primeira grande onda de tempo severo no Cone Sul […]",
+          "url": "https://metsul.com/primeira-onda-de-tempestades-do-el-nino-trara-temporais-destrutivos/",
+          "author": 861
+        },
+        {
+          "id": 267453,
+          "published_at": "2026-07-10T11:39:41",
+          "modified_at": "2026-07-10T11:39:41",
+          "title": "Terceira massa de ar frio de julho está a caminho; veja o que esperar",
+          "excerpt": "A terceira massa de ar frio do mês de julho está a caminho do Sul do Brasil e vai causar um novo episódio de temperaturas baixas na região, mas sem a mesma intensidade dos últimos eventos de ar gelado, adverte a MetSul Meteorologia. A MetSul enfatiza que não se tratará de uma incursão de ar […]",
+          "url": "https://metsul.com/terceira-massa-de-ar-frio-de-julho-esta-a-caminho-veja-o-que-esperar/",
+          "author": 861
+        },
+        {
+          "id": 267438,
+          "published_at": "2026-07-09T18:59:05",
+          "modified_at": "2026-07-09T19:02:51",
+          "title": "Frio cede e temperatura vai a 27ºC antes da volta da chuva",
+          "excerpt": "O ingresso de ar mais quente em altitude elevou a temperatura no Sul do Brasil e o frio cedeu com uma madrugada menos fria e uma tarde agradável nesta quinta-feira (9) antes do retorno da chuva previsto para esta sexta-feira (10), antecipa a MetSul Meteorologia. O número de cidades com mínimas negativas nesta quinta no […]",
+          "url": "https://metsul.com/frio-cede-e-temperatura-vai-a-27oc-antes-da-volta-da-chuva/",
+          "author": 861
+        },
+        {
+          "id": 267354,
+          "published_at": "2026-07-04T19:17:39",
+          "modified_at": "2026-07-04T19:17:39",
+          "title": "Repique de cheia coloca Oeste gaúcho em alerta",
+          "excerpt": "O nível do Rio Uruguai permanece em elevação na Fronteira Oeste do Rio Grande do Sul e já supera a cota de inundação em São Borja com a cheia provocada por volumes excessivos de chuva nos últimos dias. Dados do começo da noite deste sábado (4) indicavam o nível do Uruguai em 9,23 metros em […]",
+          "url": "https://metsul.com/repique-de-cheia-coloca-oeste-gaucho-em-alerta/",
+          "author": 853
+        },
+        {
+          "id": 267345,
+          "published_at": "2026-07-04T17:05:33",
+          "modified_at": "2026-07-04T17:13:02",
+          "title": "Terceira tarde seguida de muito frio tem até 5ºC",
+          "excerpt": "O Rio Grande do Sul experimentou neste sábado, a terceira tarde seguida de muito frio com diversas localidades apresentando marcas de um dígito no interior e temperaturas ao redor e pouco acima de 10ºC na Grande Porto Alegre. A terceira tarde seguida de muito frio se explica pela presença abundante de nuvens que impediu maior […]",
+          "url": "https://metsul.com/terceira-tarde-seguida-de-muito-frio-tem-ate-5oc/",
+          "author": 861
+        },
+        {
+          "id": 267342,
+          "published_at": "2026-07-04T08:22:27",
+          "modified_at": "2026-07-04T09:26:22",
+          "title": "Frio segue abaixo de zero em começo gelado de fim de semana",
+          "excerpt": "Rio Grande do Sul registrou neste sábado (4) mais um começo de dia com temperaturas abaixo de zero, embora, como previsto, o frio tenha perdido força pelo enfraquecimento do ar polar e o ingresso de nuvens. Levantamento da MetSul Meteorologia indica que 28 cidades que possuem estações de monitoramento meteorológico registraram temperaturas negativas no começo […]",
+          "url": "https://metsul.com/frio-segue-abaixo-de-zero-em-comeco-gelado-de-fim-de-semana/",
+          "author": 861
+        },
+        {
+          "id": 267328,
+          "published_at": "2026-07-03T09:33:17",
+          "modified_at": "2026-07-03T09:33:17",
+          "title": "Massa de ar da Antártida traz frio congelante em quase 60 cidades",
+          "excerpt": "O ingresso de uma intensa massa de ar frio trouxe um começo de sexta-feira (2) com ar congelante em parte do Rio Grande do Sul com temperaturas que ficaram perto de 5ºC abaixo de zero no Oeste gaúcho, mostram dados de estações meteorológicas levantados pela MetSul Meteorologia. O frio foi mais intenso no Oeste, Centro […]",
+          "url": "https://metsul.com/massa-de-ar-da-antartida-traz-frio-congelante-em-quase-60-cidades/",
+          "author": 861
+        },
+        {
+          "id": 267318,
+          "published_at": "2026-07-02T22:52:49",
+          "modified_at": "2026-07-02T23:59:48",
+          "title": "Neve e gelo atingem Montevidéu e outras cidades do Uruguai",
+          "excerpt": "A forte massa de ar polar que atua sobre o Uruguai proporcionou nesta quinta-feira (2) um raro episódio de precipitação invernal, com registros de neve e graupel em diferentes regiões do país. O fenômeno ocorreu sob temperaturas muito baixas e chamou a atenção pela ocorrência até mesmo em áreas próximas da capital uruguaia. O principal […]",
+          "url": "https://metsul.com/neve-e-gelo-atingem-montevideu-e-outras-cidades-do-uruguai/",
+          "author": 879
+        }
+      ]
+    },
+    "inumet": {
+      "status": "ok",
+      "kind": "Fuente oficial",
+      "fetched_at": "2026-07-15T17:55:32-03:00",
+      "updated_at": "2026-07-15T18:00:00-03:00",
+      "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
+      "forecast": [
+        {
+          "date": "2026-07-15",
+          "label": "Miércoles 15",
+          "temperature_min": 8,
+          "temperature_max": 22,
+          "periods": [
+            {
+              "period": "Mañana",
+              "description": "Nuboso, períodos de cubierto.",
+              "wind": "Sector N 10-30 km/h, rachas de hasta 40 km/h."
+            },
+            {
+              "period": "Tarde/Noche",
+              "description": "Nuboso y cubierto.",
+              "wind": "NE 20-40 km/h."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-16",
+          "label": "Jueves 16",
+          "temperature_min": 13,
+          "temperature_max": 22,
+          "periods": [
+            {
+              "period": "Mañana",
+              "description": "Cubierto. Precipitaciones y tormentas aisladas.",
+              "wind": "NE y N 20-40 km/h."
+            },
+            {
+              "period": "Tarde/Noche",
+              "description": "Nuboso y cubierto. Precipitaciones y tormentas. Mejoras temporarias.",
+              "wind": "N y NE 20-40 km/h, rachas de hasta 50 km/h."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-17",
+          "label": "Viernes 17",
+          "temperature_min": 15,
+          "temperature_max": 25,
+          "periods": [
+            {
+              "period": "Mañana",
+              "description": "Nuboso y cubierto. Precipitaciones y tormentas aisladas. Mejoras temporarias.",
+              "wind": "NE al N 30-50 km/h. Rachas fuertes asociadas a tormentas."
+            },
+            {
+              "period": "Tarde/Noche",
+              "description": "Nuboso y cubierto. Precipitaciones y tormentas. Mejoras temporarias. Nieblas y neblinas.",
+              "wind": "N al NW 30-50 km/h. Rachas fuertes asociadas a tormentas."
+            }
+          ]
+        }
+      ],
+      "alert": {
+        "active": false,
+        "summary": "No hay advertencia meteorológica vigente.",
+        "url": "https://www.inumet.gub.uy/alerta"
+      }
+    },
+    "models": {
+      "status": "ok",
+      "kind": "Modelos numéricos",
+      "fetched_at": "2026-07-15T17:55:32-03:00",
+      "provider": "Open-Meteo",
+      "provider_url": "https://open-meteo.com/",
+      "models": [
+        {
+          "id": "ecmwf",
+          "name": "ECMWF IFS",
+          "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
+        },
+        {
+          "id": "gfs",
+          "name": "NOAA GFS",
+          "url": "https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast"
+        }
+      ],
+      "requests_received": 8,
+      "requests_expected": 8,
+      "errors": []
+    }
+  },
+  "errors": []
+}
