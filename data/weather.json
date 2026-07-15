@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-15T18:01:37-03:00",
+  "generated_at": "2026-07-15T19:11:51-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -670,14 +670,14 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-07-15T18:01:37-03:00",
+      "fetched_at": "2026-07-15T19:11:51-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
         {
           "id": 267550,
           "published_at": "2026-07-15T11:29:55",
-          "modified_at": "2026-07-15T10:54:56",
+          "modified_at": "2026-07-15T18:22:34",
           "title": "Caos atmosférico no Cone Sul: de chuva extrema a tornados e neve de metros",
           "excerpt": "Cenário meteorológico extremamente complexo e caótico dominará a atmosfera de parte da América do Sul nos próximos dias com condições extremas e severas do tempo no Chile, Argentina, Uruguai, Paraguai e o Brasil, adverte a MetSul Meteorologia. Virtualmente quase tudo que pode ocorrer na atmosfera é esperado na região e com fenômenos severos. Haverá a […]",
           "url": "https://metsul.com/caos-atmosferico-no-cone-sul-de-chuva-extrema-a-tornados-e-neve-de-metros/",
@@ -686,7 +686,7 @@
         {
           "id": 267528,
           "published_at": "2026-07-14T19:17:59",
-          "modified_at": "2026-07-14T19:17:59",
+          "modified_at": "2026-07-15T18:23:50",
           "title": "Dois rios atmosféricos intensos trarão chuva excessiva a extrema",
           "excerpt": "Dois poderosos rios atmosféricos atingirão nos próximos dias a América do Sul com chuva excessiva a extrema, tempestades severas e nevascas que podem acumular metros, causando transtornos e estragos em diferentes países. O primeiro avança vai se formar no interior da América do Sul, acompanhando uma intensa corrente de jato em baixos níveis, transportando ar […]",
           "url": "https://metsul.com/dois-rios-atmosfericos-intensos-trarao-chuva-excessiva-a-extrema/",
@@ -769,7 +769,7 @@
     "inumet": {
       "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-07-15T18:01:37-03:00",
+      "fetched_at": "2026-07-15T19:11:51-03:00",
       "updated_at": "2026-07-15T18:00:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
@@ -837,7 +837,7 @@
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-07-15T18:01:37-03:00",
+      "fetched_at": "2026-07-15T19:11:51-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
