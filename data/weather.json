@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-15T21:09:16-03:00",
+  "generated_at": "2026-07-16T00:35:37-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -24,18 +24,18 @@
       "label": "Sábado 25 de julio",
       "weekend": "first",
       "locations": "Ciudad de la Costa · La Paz",
-      "lead_days": 10,
+      "lead_days": 9,
       "general": {
         "available": true,
         "level": "warning",
-        "confidence": "Baja",
+        "confidence": "Media",
         "headline": "Atención",
         "summary": "Por ahora los modelos no marcan lluvia significativa. Puede haber suelo húmedo por lluvia en las horas previas. Es una tendencia temprana y puede cambiar.",
         "rain_probability_max": 15.0,
         "precipitation_max": 0.2,
         "temperature_min": 2.4,
         "temperature_max": 13.4,
-        "wind_gusts_max": 36.0,
+        "wind_gusts_max": 38.2,
         "cloud_cover_avg": 88.0,
         "rain_previous_12h": 1.0,
         "wet_model_votes": 0,
@@ -46,7 +46,7 @@
         {
           "available": true,
           "level": "good",
-          "confidence": "Baja",
+          "confidence": "Media",
           "headline": "Sin señal fuerte por ahora",
           "summary": "Por ahora los modelos no marcan lluvia significativa. Es una tendencia temprana y puede cambiar.",
           "rain_probability_max": 15.0,
@@ -66,14 +66,14 @@
         {
           "available": true,
           "level": "warning",
-          "confidence": "Baja",
+          "confidence": "Media",
           "headline": "Atención",
           "summary": "Por ahora los modelos no marcan lluvia significativa. Puede haber suelo húmedo por lluvia en las horas previas. Es una tendencia temprana y puede cambiar.",
-          "rain_probability_max": 7.0,
+          "rain_probability_max": 6.0,
           "precipitation_max": 0.2,
           "temperature_min": 7.3,
           "temperature_max": 9.0,
-          "wind_gusts_max": 36.0,
+          "wind_gusts_max": 38.2,
           "cloud_cover_avg": 98.0,
           "rain_previous_12h": 1.0,
           "wet_model_votes": 0,
@@ -99,14 +99,14 @@
           "general": {
             "available": true,
             "level": "good",
-            "confidence": "Baja",
+            "confidence": "Media",
             "headline": "Sin señal fuerte por ahora",
             "summary": "Por ahora los modelos no marcan lluvia significativa. Es una tendencia temprana y puede cambiar.",
             "rain_probability_max": 10.0,
             "precipitation_max": 0.0,
             "temperature_min": 3.7,
             "temperature_max": 9.5,
-            "wind_gusts_max": 23.8,
+            "wind_gusts_max": 28.1,
             "cloud_cover_avg": 98.0,
             "rain_previous_12h": 0.8,
             "wet_model_votes": 0,
@@ -138,7 +138,7 @@
               "precipitation_sum": 0.0,
               "cloud_cover_avg": 100.0,
               "wind_speed_max": 30.2,
-              "wind_gusts_max": 17.6,
+              "wind_gusts_max": 28.1,
               "rain_previous_12h": 0.8,
               "id": "gfs",
               "name": "NOAA GFS",
@@ -160,14 +160,14 @@
           "general": {
             "available": true,
             "level": "good",
-            "confidence": "Baja",
+            "confidence": "Media",
             "headline": "Sin señal fuerte por ahora",
             "summary": "Por ahora los modelos no marcan lluvia significativa. Es una tendencia temprana y puede cambiar.",
             "rain_probability_max": 10.0,
             "precipitation_max": 0.0,
             "temperature_min": 7.9,
             "temperature_max": 10.3,
-            "wind_gusts_max": 27.7,
+            "wind_gusts_max": 20.9,
             "cloud_cover_avg": 99.0,
             "rain_previous_12h": 0.0,
             "wet_model_votes": 0,
@@ -195,11 +195,11 @@
               "temperature_min": 7.9,
               "temperature_max": 7.9,
               "apparent_min": 4.8,
-              "rain_probability_max": 6.0,
+              "rain_probability_max": 4.0,
               "precipitation_sum": 0.0,
               "cloud_cover_avg": 100.0,
               "wind_speed_max": 9.3,
-              "wind_gusts_max": 27.7,
+              "wind_gusts_max": 16.6,
               "rain_previous_12h": 0.0,
               "id": "gfs",
               "name": "NOAA GFS",
@@ -218,18 +218,18 @@
       "label": "Domingo 26 de julio",
       "weekend": "first",
       "locations": "La Paz · Las Piedras",
-      "lead_days": 11,
+      "lead_days": 10,
       "general": {
         "available": true,
         "level": "warning",
         "confidence": "Baja",
         "headline": "Atención",
-        "summary": "Por ahora los modelos no marcan lluvia significativa. Se proyectan ráfagas de hasta 53 km/h. Es una tendencia temprana y puede cambiar.",
+        "summary": "Por ahora los modelos no marcan lluvia significativa. Se proyectan ráfagas de hasta 46 km/h. Es una tendencia temprana y puede cambiar.",
         "rain_probability_max": 16.0,
         "precipitation_max": 0.0,
         "temperature_min": 5.5,
         "temperature_max": 14.3,
-        "wind_gusts_max": 52.9,
+        "wind_gusts_max": 46.1,
         "cloud_cover_avg": 78.0,
         "rain_previous_12h": 0.0,
         "wet_model_votes": 0,
@@ -262,12 +262,12 @@
           "level": "warning",
           "confidence": "Baja",
           "headline": "Atención",
-          "summary": "Por ahora los modelos no marcan lluvia significativa. Se proyectan ráfagas de hasta 53 km/h. Es una tendencia temprana y puede cambiar.",
-          "rain_probability_max": 16.0,
+          "summary": "Por ahora los modelos no marcan lluvia significativa. Se proyectan ráfagas de hasta 46 km/h. Es una tendencia temprana y puede cambiar.",
+          "rain_probability_max": 6.0,
           "precipitation_max": 0.0,
           "temperature_min": 5.5,
           "temperature_max": 13.4,
-          "wind_gusts_max": 52.9,
+          "wind_gusts_max": 46.1,
           "cloud_cover_avg": 83.0,
           "rain_previous_12h": 0.0,
           "wet_model_votes": 0,
@@ -328,11 +328,11 @@
               "temperature_min": 13.4,
               "temperature_max": 13.4,
               "apparent_min": 9.9,
-              "rain_probability_max": 6.0,
+              "rain_probability_max": 3.0,
               "precipitation_sum": 0.0,
               "cloud_cover_avg": 77.0,
               "wind_speed_max": 13.1,
-              "wind_gusts_max": 20.5,
+              "wind_gusts_max": 16.6,
               "rain_previous_12h": 0.0,
               "id": "gfs",
               "name": "NOAA GFS",
@@ -361,7 +361,7 @@
             "precipitation_max": 0.0,
             "temperature_min": 9.5,
             "temperature_max": 12.2,
-            "wind_gusts_max": 27.7,
+            "wind_gusts_max": 27.4,
             "cloud_cover_avg": 74.0,
             "rain_previous_12h": 0.0,
             "wet_model_votes": 0,
@@ -389,11 +389,11 @@
               "temperature_min": 9.5,
               "temperature_max": 10.2,
               "apparent_min": 6.6,
-              "rain_probability_max": 5.0,
+              "rain_probability_max": 0.0,
               "precipitation_sum": 0.0,
               "cloud_cover_avg": 48.0,
               "wind_speed_max": 11.1,
-              "wind_gusts_max": 27.7,
+              "wind_gusts_max": 27.4,
               "rain_previous_12h": 0.0,
               "id": "gfs",
               "name": "NOAA GFS",
@@ -412,7 +412,7 @@
       "label": "Sábado 1.º de agosto",
       "weekend": "second",
       "locations": "Casa de Susana · Parque del Plata",
-      "lead_days": 17,
+      "lead_days": 16,
       "general": {
         "available": false,
         "level": "unknown",
@@ -564,7 +564,7 @@
       "label": "Domingo 2 de agosto",
       "weekend": "second",
       "locations": "Casa de Susana · Parque del Plata",
-      "lead_days": 18,
+      "lead_days": 17,
       "general": {
         "available": false,
         "level": "unknown",
@@ -670,7 +670,7 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-07-15T21:09:16-03:00",
+      "fetched_at": "2026-07-16T00:35:37-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
@@ -769,28 +769,10 @@
     "inumet": {
       "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-07-15T21:09:16-03:00",
-      "updated_at": "2026-07-15T18:00:00-03:00",
+      "fetched_at": "2026-07-16T00:35:37-03:00",
+      "updated_at": "2026-07-16T00:00:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
-        {
-          "date": "2026-07-15",
-          "label": "Miércoles 15",
-          "temperature_min": 8,
-          "temperature_max": 22,
-          "periods": [
-            {
-              "period": "Mañana",
-              "description": "Nuboso, períodos de cubierto.",
-              "wind": "Sector N 10-30 km/h, rachas de hasta 40 km/h."
-            },
-            {
-              "period": "Tarde/Noche",
-              "description": "Nuboso y cubierto.",
-              "wind": "NE 20-40 km/h."
-            }
-          ]
-        },
         {
           "date": "2026-07-16",
           "label": "Jueves 16",
@@ -799,7 +781,7 @@
           "periods": [
             {
               "period": "Mañana",
-              "description": "Cubierto. Precipitaciones y tormentas aisladas.",
+              "description": "Cubierto. Desmejorando con precipitaciones y tormentas Mejoras temporarias.",
               "wind": "NE y N 20-40 km/h."
             },
             {
@@ -826,6 +808,24 @@
               "wind": "N al NW 30-50 km/h. Rachas fuertes asociadas a tormentas."
             }
           ]
+        },
+        {
+          "date": "2026-07-18",
+          "label": "Sábado 18",
+          "temperature_min": 12,
+          "temperature_max": 20,
+          "periods": [
+            {
+              "period": "Mañana",
+              "description": "Cubierto. Precipitaciones y tormentas. Mejoras temporarias.",
+              "wind": "Sector N 20-40 km/h. Periodos de variables."
+            },
+            {
+              "period": "Tarde/Noche",
+              "description": "Cubierto. Precipitaciones y tormentas. Mejoras temporarias.",
+              "wind": "Sector E 10-30 km/h. Periodos de variables 0-10 km/h."
+            }
+          ]
         }
       ],
       "alert": {
@@ -837,7 +837,7 @@
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-07-15T21:09:16-03:00",
+      "fetched_at": "2026-07-16T00:35:37-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
