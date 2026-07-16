@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-16T11:21:34-03:00",
+  "generated_at": "2026-07-16T13:40:49-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -545,17 +545,7 @@
         }
       ],
       "inumet": null,
-      "metsul_articles": [
-        {
-          "id": 267328,
-          "published_at": "2026-07-03T09:33:17",
-          "modified_at": "2026-07-03T09:33:17",
-          "title": "Massa de ar da Antártida traz frio congelante em quase 60 cidades",
-          "excerpt": "O ingresso de uma intensa massa de ar frio trouxe um começo de sexta-feira (2) com ar congelante em parte do Rio Grande do Sul com temperaturas que ficaram perto de 5ºC abaixo de zero no Oeste gaúcho, mostram dados de estações meteorológicas levantados pela MetSul Meteorologia. O frio foi mais intenso no Oeste, Centro […]",
-          "url": "https://metsul.com/massa-de-ar-da-antartida-traz-frio-congelante-em-quase-60-cidades/",
-          "author": 861
-        }
-      ]
+      "metsul_articles": []
     },
     {
       "id": "day-4",
@@ -670,10 +660,19 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-07-16T11:21:34-03:00",
+      "fetched_at": "2026-07-16T13:40:49-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
+        {
+          "id": 267570,
+          "published_at": "2026-07-16T12:04:13",
+          "modified_at": "2026-07-16T11:34:23",
+          "title": "Prepare-se para uma segunda metade de julho com extremos no clima",
+          "excerpt": "A segunda metade de julho será radicalmente distinta da primeira quinzena do mês no clima do Centro-Sul do Brasil com muito mais chuva no Sul e temperatura acima a muito acima da média histórica em praticamente todas as áreas do Centro-Oeste, Sudeste e o Sul, projeta a MetSul Meteorologia. Julho é o segundo mês do […]",
+          "url": "https://metsul.com/prepare-se-para-uma-segunda-metade-de-julho-com-extremos-no-clima/",
+          "author": 853
+        },
         {
           "id": 267561,
           "published_at": "2026-07-16T09:19:55",
@@ -754,29 +753,20 @@
           "excerpt": "Rio Grande do Sul registrou neste sábado (4) mais um começo de dia com temperaturas abaixo de zero, embora, como previsto, o frio tenha perdido força pelo enfraquecimento do ar polar e o ingresso de nuvens. Levantamento da MetSul Meteorologia indica que 28 cidades que possuem estações de monitoramento meteorológico registraram temperaturas negativas no começo […]",
           "url": "https://metsul.com/frio-segue-abaixo-de-zero-em-comeco-gelado-de-fim-de-semana/",
           "author": 861
-        },
-        {
-          "id": 267328,
-          "published_at": "2026-07-03T09:33:17",
-          "modified_at": "2026-07-03T09:33:17",
-          "title": "Massa de ar da Antártida traz frio congelante em quase 60 cidades",
-          "excerpt": "O ingresso de uma intensa massa de ar frio trouxe um começo de sexta-feira (2) com ar congelante em parte do Rio Grande do Sul com temperaturas que ficaram perto de 5ºC abaixo de zero no Oeste gaúcho, mostram dados de estações meteorológicas levantados pela MetSul Meteorologia. O frio foi mais intenso no Oeste, Centro […]",
-          "url": "https://metsul.com/massa-de-ar-da-antartida-traz-frio-congelante-em-quase-60-cidades/",
-          "author": 861
         }
       ]
     },
     "inumet": {
       "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-07-16T11:21:34-03:00",
-      "updated_at": "2026-07-16T06:00:00-03:00",
+      "fetched_at": "2026-07-16T13:40:49-03:00",
+      "updated_at": "2026-07-16T12:00:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
         {
           "date": "2026-07-16",
           "label": "Jueves 16",
-          "temperature_min": 16,
+          "temperature_min": 15,
           "temperature_max": 22,
           "periods": [
             {
@@ -837,7 +827,7 @@
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-07-16T11:21:34-03:00",
+      "fetched_at": "2026-07-16T13:40:49-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
