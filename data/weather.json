@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-16T18:15:28-03:00",
+  "generated_at": "2026-07-16T19:16:30-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -660,10 +660,19 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-07-16T18:15:28-03:00",
+      "fetched_at": "2026-07-16T19:16:30-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
+        {
+          "id": 267585,
+          "published_at": "2026-07-16T18:58:48",
+          "modified_at": "2026-07-16T17:28:05",
+          "title": "MetSul reforça alerta: vento Norte muito intenso trará danos e falta de luz",
+          "excerpt": "A MetSul Meteorologia reforça o alerta de uma corrente de jato em baixos níveis (JBN) excepcionalmente intensa e fora do comum que vai atuar entre esta sexta-feira (17) e o sábado (18) no Rio Grande do Sul, transportando ar muito quente de Norte e favorecendo vento Norte forte a muito intenso, o que vai provocar […]",
+          "url": "https://metsul.com/metsul-reforca-alerta-vento-norte-muito-intenso-trara-danos-e-falta-de-luz/",
+          "author": 853
+        },
         {
           "id": 267570,
           "published_at": "2026-07-16T12:04:13",
@@ -744,22 +753,13 @@
           "excerpt": "O Rio Grande do Sul experimentou neste sábado, a terceira tarde seguida de muito frio com diversas localidades apresentando marcas de um dígito no interior e temperaturas ao redor e pouco acima de 10ºC na Grande Porto Alegre. A terceira tarde seguida de muito frio se explica pela presença abundante de nuvens que impediu maior […]",
           "url": "https://metsul.com/terceira-tarde-seguida-de-muito-frio-tem-ate-5oc/",
           "author": 861
-        },
-        {
-          "id": 267342,
-          "published_at": "2026-07-04T08:22:27",
-          "modified_at": "2026-07-04T09:26:22",
-          "title": "Frio segue abaixo de zero em começo gelado de fim de semana",
-          "excerpt": "Rio Grande do Sul registrou neste sábado (4) mais um começo de dia com temperaturas abaixo de zero, embora, como previsto, o frio tenha perdido força pelo enfraquecimento do ar polar e o ingresso de nuvens. Levantamento da MetSul Meteorologia indica que 28 cidades que possuem estações de monitoramento meteorológico registraram temperaturas negativas no começo […]",
-          "url": "https://metsul.com/frio-segue-abaixo-de-zero-em-comeco-gelado-de-fim-de-semana/",
-          "author": 861
         }
       ]
     },
     "inumet": {
       "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-07-16T18:15:28-03:00",
+      "fetched_at": "2026-07-16T19:16:30-03:00",
       "updated_at": "2026-07-16T18:00:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
@@ -827,7 +827,7 @@
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-07-16T18:15:28-03:00",
+      "fetched_at": "2026-07-16T19:16:30-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
