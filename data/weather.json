@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-17T18:07:05-03:00",
+  "generated_at": "2026-07-17T19:05:58-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -737,10 +737,19 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-07-17T18:07:05-03:00",
+      "fetched_at": "2026-07-17T19:05:58-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
+        {
+          "id": 267633,
+          "published_at": "2026-07-17T18:19:49",
+          "modified_at": "2026-07-17T18:19:49",
+          "title": "Jato traz vento de quase 100 km/h, causa estragos e provoca calor recorde",
+          "excerpt": "A história climática gaúcha foi reescrita nesta sexta (17) com um dia excepcionalmente quente em julho e que teve ainda vento Norte forte a intenso em grande parte do estado, até com rajadas perto de 100 km/h em alguns pontos, por conta de uma poderosa corrente de jato em baixos níveis. Porto Alegre teve máxima […]",
+          "url": "https://metsul.com/jato-traz-vento-de-quase-100-km-h-causa-estragos-e-provoca-calor-recorde/",
+          "author": 853
+        },
         {
           "id": 267614,
           "published_at": "2026-07-17T09:53:21",
@@ -821,22 +830,13 @@
           "excerpt": "A terceira massa de ar frio do mês de julho está a caminho do Sul do Brasil e vai causar um novo episódio de temperaturas baixas na região, mas sem a mesma intensidade dos últimos eventos de ar gelado, adverte a MetSul Meteorologia. A MetSul enfatiza que não se tratará de uma incursão de ar […]",
           "url": "https://metsul.com/terceira-massa-de-ar-frio-de-julho-esta-a-caminho-veja-o-que-esperar/",
           "author": 861
-        },
-        {
-          "id": 267438,
-          "published_at": "2026-07-09T18:59:05",
-          "modified_at": "2026-07-09T19:02:51",
-          "title": "Frio cede e temperatura vai a 27ºC antes da volta da chuva",
-          "excerpt": "O ingresso de ar mais quente em altitude elevou a temperatura no Sul do Brasil e o frio cedeu com uma madrugada menos fria e uma tarde agradável nesta quinta-feira (9) antes do retorno da chuva previsto para esta sexta-feira (10), antecipa a MetSul Meteorologia. O número de cidades com mínimas negativas nesta quinta no […]",
-          "url": "https://metsul.com/frio-cede-e-temperatura-vai-a-27oc-antes-da-volta-da-chuva/",
-          "author": 861
         }
       ]
     },
     "inumet": {
       "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-07-17T18:07:05-03:00",
+      "fetched_at": "2026-07-17T19:05:58-03:00",
       "updated_at": "2026-07-17T18:00:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
@@ -904,7 +904,7 @@
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-07-17T18:07:05-03:00",
+      "fetched_at": "2026-07-17T19:05:58-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
