@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-16T21:11:51-03:00",
+  "generated_at": "2026-07-17T00:35:49-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -24,7 +24,7 @@
       "label": "Sábado 25 de julio",
       "weekend": "first",
       "locations": "Ciudad de la Costa · La Paz",
-      "lead_days": 9,
+      "lead_days": 8,
       "general": {
         "available": true,
         "level": "good",
@@ -102,7 +102,7 @@
             "confidence": "Media",
             "headline": "Sin señal fuerte por ahora",
             "summary": "Por ahora los modelos no marcan lluvia significativa. Es una tendencia temprana y puede cambiar.",
-            "rain_probability_max": 10.0,
+            "rain_probability_max": 12.0,
             "precipitation_max": 0.0,
             "temperature_min": 7.5,
             "temperature_max": 12.6,
@@ -119,7 +119,7 @@
               "temperature_min": 7.5,
               "temperature_max": 12.6,
               "apparent_min": 5.1,
-              "rain_probability_max": 10.0,
+              "rain_probability_max": 12.0,
               "precipitation_sum": 0.0,
               "cloud_cover_avg": 94.0,
               "wind_speed_max": 10.2,
@@ -163,7 +163,7 @@
             "confidence": "Media",
             "headline": "Sin señal fuerte por ahora",
             "summary": "Por ahora los modelos no marcan lluvia significativa. Es una tendencia temprana y puede cambiar.",
-            "rain_probability_max": 5.0,
+            "rain_probability_max": 8.0,
             "precipitation_max": 0.0,
             "temperature_min": 9.3,
             "temperature_max": 10.9,
@@ -180,7 +180,7 @@
               "temperature_min": 9.3,
               "temperature_max": 10.9,
               "apparent_min": 8.2,
-              "rain_probability_max": 5.0,
+              "rain_probability_max": 8.0,
               "precipitation_sum": 0.0,
               "cloud_cover_avg": 68.0,
               "wind_speed_max": 2.5,
@@ -218,14 +218,14 @@
       "label": "Domingo 26 de julio",
       "weekend": "first",
       "locations": "La Paz · Las Piedras",
-      "lead_days": 10,
+      "lead_days": 9,
       "general": {
         "available": true,
         "level": "warning",
-        "confidence": "Baja",
+        "confidence": "Media",
         "headline": "Atención",
         "summary": "Por ahora los modelos no marcan lluvia significativa. Se proyectan ráfagas de hasta 55 km/h. Es una tendencia temprana y puede cambiar.",
-        "rain_probability_max": 16.0,
+        "rain_probability_max": 27.0,
         "precipitation_max": 0.2,
         "temperature_min": 6.6,
         "temperature_max": 16.4,
@@ -240,10 +240,10 @@
         {
           "available": true,
           "level": "good",
-          "confidence": "Baja",
+          "confidence": "Media",
           "headline": "Sin señal fuerte por ahora",
           "summary": "Por ahora los modelos no marcan lluvia significativa. Es una tendencia temprana y puede cambiar.",
-          "rain_probability_max": 16.0,
+          "rain_probability_max": 18.0,
           "precipitation_max": 0.2,
           "temperature_min": 6.6,
           "temperature_max": 14.6,
@@ -260,10 +260,10 @@
         {
           "available": true,
           "level": "warning",
-          "confidence": "Baja",
+          "confidence": "Media",
           "headline": "Atención",
           "summary": "Por ahora los modelos no marcan lluvia significativa. Se proyectan ráfagas de hasta 55 km/h. Es una tendencia temprana y puede cambiar.",
-          "rain_probability_max": 16.0,
+          "rain_probability_max": 27.0,
           "precipitation_max": 0.0,
           "temperature_min": 7.5,
           "temperature_max": 16.4,
@@ -293,10 +293,10 @@
           "general": {
             "available": true,
             "level": "good",
-            "confidence": "Baja",
+            "confidence": "Media",
             "headline": "Sin señal fuerte por ahora",
             "summary": "Por ahora los modelos no marcan lluvia significativa. Es una tendencia temprana y puede cambiar.",
-            "rain_probability_max": 14.0,
+            "rain_probability_max": 16.0,
             "precipitation_max": 0.0,
             "temperature_min": 14.6,
             "temperature_max": 16.2,
@@ -313,7 +313,7 @@
               "temperature_min": 14.6,
               "temperature_max": 14.6,
               "apparent_min": 12.6,
-              "rain_probability_max": 14.0,
+              "rain_probability_max": 16.0,
               "precipitation_sum": 0.0,
               "cloud_cover_avg": 89.0,
               "wind_speed_max": 12.7,
@@ -328,7 +328,7 @@
               "temperature_min": 16.2,
               "temperature_max": 16.2,
               "apparent_min": 14.1,
-              "rain_probability_max": 11.0,
+              "rain_probability_max": 14.0,
               "precipitation_sum": 0.0,
               "cloud_cover_avg": 100.0,
               "wind_speed_max": 20.0,
@@ -354,10 +354,10 @@
           "general": {
             "available": true,
             "level": "warning",
-            "confidence": "Baja",
+            "confidence": "Media",
             "headline": "Atención",
             "summary": "Por ahora los modelos no marcan lluvia significativa. Se proyectan ráfagas de hasta 45 km/h. Es una tendencia temprana y puede cambiar.",
-            "rain_probability_max": 16.0,
+            "rain_probability_max": 21.0,
             "precipitation_max": 0.0,
             "temperature_min": 11.7,
             "temperature_max": 14.9,
@@ -374,7 +374,7 @@
               "temperature_min": 11.7,
               "temperature_max": 12.6,
               "apparent_min": 9.6,
-              "rain_probability_max": 16.0,
+              "rain_probability_max": 18.0,
               "precipitation_sum": 0.0,
               "cloud_cover_avg": 95.0,
               "wind_speed_max": 13.9,
@@ -389,7 +389,7 @@
               "temperature_min": 14.9,
               "temperature_max": 14.9,
               "apparent_min": 13.1,
-              "rain_probability_max": 8.0,
+              "rain_probability_max": 21.0,
               "precipitation_sum": 0.0,
               "cloud_cover_avg": 100.0,
               "wind_speed_max": 19.0,
@@ -412,13 +412,23 @@
       "label": "Sábado 1.º de agosto",
       "weekend": "second",
       "locations": "Casa de Susana · Parque del Plata",
-      "lead_days": 16,
+      "lead_days": 15,
       "general": {
-        "available": false,
-        "level": "unknown",
-        "confidence": "Sin datos todavía",
-        "headline": "Aún fuera del alcance",
-        "summary": "La fecha todavía no está dentro del alcance de los modelos consultados."
+        "available": true,
+        "level": "warning",
+        "confidence": "Baja",
+        "headline": "Atención",
+        "summary": "Por ahora los modelos no marcan lluvia significativa. Se proyectan ráfagas de hasta 50 km/h. Puede haber suelo húmedo por lluvia en las horas previas. Es una tendencia temprana y puede cambiar.",
+        "rain_probability_max": 23.0,
+        "precipitation_max": 0.0,
+        "temperature_min": 10.1,
+        "temperature_max": 11.8,
+        "wind_gusts_max": 50.0,
+        "cloud_cover_avg": 100.0,
+        "rain_previous_12h": 17.0,
+        "wet_model_votes": 0,
+        "model_count": 1,
+        "model_disagreement": false
       },
       "models": [
         {
@@ -432,11 +442,21 @@
           "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
         },
         {
-          "available": false,
-          "level": "unknown",
-          "confidence": "Sin datos todavía",
-          "headline": "Aún fuera del alcance",
-          "summary": "La fecha todavía no está dentro del alcance de los modelos consultados.",
+          "available": true,
+          "level": "warning",
+          "confidence": "Baja",
+          "headline": "Atención",
+          "summary": "Por ahora los modelos no marcan lluvia significativa. Se proyectan ráfagas de hasta 50 km/h. Puede haber suelo húmedo por lluvia en las horas previas. Es una tendencia temprana y puede cambiar.",
+          "rain_probability_max": 23.0,
+          "precipitation_max": 0.0,
+          "temperature_min": 10.1,
+          "temperature_max": 11.8,
+          "wind_gusts_max": 50.0,
+          "cloud_cover_avg": 100.0,
+          "rain_previous_12h": 17.0,
+          "wet_model_votes": 0,
+          "model_count": 1,
+          "model_disagreement": false,
           "id": "gfs",
           "name": "NOAA GFS",
           "url": "https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast"
@@ -455,11 +475,21 @@
             "temperatura"
           ],
           "general": {
-            "available": false,
-            "level": "unknown",
-            "confidence": "Sin datos todavía",
-            "headline": "Aún fuera del alcance",
-            "summary": "La fecha todavía no está dentro del alcance de los modelos consultados."
+            "available": true,
+            "level": "warning",
+            "confidence": "Baja",
+            "headline": "Atención",
+            "summary": "Por ahora los modelos no marcan lluvia significativa. Se proyectan ráfagas de hasta 46 km/h. Es una tendencia temprana y puede cambiar.",
+            "rain_probability_max": 20.0,
+            "precipitation_max": 0.0,
+            "temperature_min": 10.9,
+            "temperature_max": 10.9,
+            "wind_gusts_max": 46.1,
+            "cloud_cover_avg": 100.0,
+            "rain_previous_12h": 0.0,
+            "wet_model_votes": 0,
+            "model_count": 1,
+            "model_disagreement": false
           },
           "models": [
             {
@@ -469,7 +499,16 @@
               "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
             },
             {
-              "available": false,
+              "available": true,
+              "temperature_min": 10.9,
+              "temperature_max": 10.9,
+              "apparent_min": 6.6,
+              "rain_probability_max": 20.0,
+              "precipitation_sum": 0.0,
+              "cloud_cover_avg": 100.0,
+              "wind_speed_max": 30.5,
+              "wind_gusts_max": 46.1,
+              "rain_previous_12h": 0.0,
               "id": "gfs",
               "name": "NOAA GFS",
               "url": "https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast"
@@ -488,11 +527,21 @@
             "viento / sonido"
           ],
           "general": {
-            "available": false,
-            "level": "unknown",
-            "confidence": "Sin datos todavía",
-            "headline": "Aún fuera del alcance",
-            "summary": "La fecha todavía no está dentro del alcance de los modelos consultados."
+            "available": true,
+            "level": "warning",
+            "confidence": "Baja",
+            "headline": "Atención",
+            "summary": "Por ahora los modelos no marcan lluvia significativa. Se proyectan ráfagas de hasta 50 km/h. Es una tendencia temprana y puede cambiar.",
+            "rain_probability_max": 18.0,
+            "precipitation_max": 0.0,
+            "temperature_min": 11.0,
+            "temperature_max": 11.8,
+            "wind_gusts_max": 50.0,
+            "cloud_cover_avg": 100.0,
+            "rain_previous_12h": 0.0,
+            "wet_model_votes": 0,
+            "model_count": 1,
+            "model_disagreement": false
           },
           "models": [
             {
@@ -502,7 +551,16 @@
               "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
             },
             {
-              "available": false,
+              "available": true,
+              "temperature_min": 11.0,
+              "temperature_max": 11.8,
+              "apparent_min": 6.1,
+              "rain_probability_max": 18.0,
+              "precipitation_sum": 0.0,
+              "cloud_cover_avg": 100.0,
+              "wind_speed_max": 34.6,
+              "wind_gusts_max": 50.0,
+              "rain_previous_12h": 0.0,
               "id": "gfs",
               "name": "NOAA GFS",
               "url": "https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast"
@@ -522,11 +580,21 @@
             "humedad"
           ],
           "general": {
-            "available": false,
-            "level": "unknown",
-            "confidence": "Sin datos todavía",
-            "headline": "Aún fuera del alcance",
-            "summary": "La fecha todavía no está dentro del alcance de los modelos consultados."
+            "available": true,
+            "level": "good",
+            "confidence": "Baja",
+            "headline": "Sin señal fuerte por ahora",
+            "summary": "Por ahora los modelos no marcan lluvia significativa. Es una tendencia temprana y puede cambiar.",
+            "rain_probability_max": 17.0,
+            "precipitation_max": 0.0,
+            "temperature_min": null,
+            "temperature_max": null,
+            "wind_gusts_max": 0.0,
+            "cloud_cover_avg": null,
+            "rain_previous_12h": 0.0,
+            "wet_model_votes": 0,
+            "model_count": 1,
+            "model_disagreement": false
           },
           "models": [
             {
@@ -536,7 +604,16 @@
               "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
             },
             {
-              "available": false,
+              "available": true,
+              "temperature_min": null,
+              "temperature_max": null,
+              "apparent_min": null,
+              "rain_probability_max": 17.0,
+              "precipitation_sum": 0.0,
+              "cloud_cover_avg": null,
+              "wind_speed_max": null,
+              "wind_gusts_max": null,
+              "rain_previous_12h": 0.0,
               "id": "gfs",
               "name": "NOAA GFS",
               "url": "https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast"
@@ -554,7 +631,7 @@
       "label": "Domingo 2 de agosto",
       "weekend": "second",
       "locations": "Casa de Susana · Parque del Plata",
-      "lead_days": 17,
+      "lead_days": 16,
       "general": {
         "available": false,
         "level": "unknown",
@@ -660,19 +737,10 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-07-16T21:11:51-03:00",
+      "fetched_at": "2026-07-17T00:35:49-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
-        {
-          "id": 267593,
-          "published_at": "2026-07-16T19:52:52",
-          "modified_at": "2026-07-16T19:52:52",
-          "title": "Aquecimento adiabático trará calor extraordinário para julho",
-          "excerpt": "O calor passou dos 30ºC hoje no Rio Grande do Sul, o que não ocorria desde meados do outono, e a MetSul Meteorologia alerta que o calor vai aumentar ainda mais entre esta sexta (17) e o sábado (18) no estado com a atuação de uma poderosa corrente de jato em baixos níveis sobre o […]",
-          "url": "https://metsul.com/aquecimento-adiabatico-trara-calor-extraordinario-para-julho/",
-          "author": 853
-        },
         {
           "id": 267585,
           "published_at": "2026-07-16T18:58:48",
@@ -680,6 +748,15 @@
           "title": "MetSul reforça alerta: vento Norte muito intenso trará danos e falta de luz",
           "excerpt": "A MetSul Meteorologia reforça o alerta de uma corrente de jato em baixos níveis (JBN) excepcionalmente intensa e fora do comum que vai atuar entre esta sexta-feira (17) e o sábado (18) no Rio Grande do Sul, transportando ar muito quente de Norte e favorecendo vento Norte forte a muito intenso, o que vai provocar […]",
           "url": "https://metsul.com/metsul-reforca-alerta-vento-norte-muito-intenso-trara-danos-e-falta-de-luz/",
+          "author": 853
+        },
+        {
+          "id": 267593,
+          "published_at": "2026-07-16T18:52:52",
+          "modified_at": "2026-07-16T21:57:04",
+          "title": "Aquecimento adiabático trará calor extraordinário para julho",
+          "excerpt": "O calor passou dos 30ºC hoje no Rio Grande do Sul, o que não ocorria desde meados do outono, e a MetSul Meteorologia alerta que o calor vai aumentar ainda mais entre esta sexta (17) e o sábado (18) no estado com a atuação de uma poderosa corrente de jato em baixos níveis sobre o […]",
+          "url": "https://metsul.com/aquecimento-adiabatico-trara-calor-extraordinario-para-julho/",
           "author": 853
         },
         {
@@ -759,28 +836,10 @@
     "inumet": {
       "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-07-16T21:11:51-03:00",
-      "updated_at": "2026-07-16T19:50:00-03:00",
+      "fetched_at": "2026-07-17T00:35:49-03:00",
+      "updated_at": "2026-07-17T00:00:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
-        {
-          "date": "2026-07-16",
-          "label": "Jueves 16",
-          "temperature_min": 15,
-          "temperature_max": 22,
-          "periods": [
-            {
-              "period": "Mañana",
-              "description": "Nuboso y cubierto.",
-              "wind": "NE y N 20-40 km/h."
-            },
-            {
-              "period": "Tarde/Noche",
-              "description": "Nuboso y cubierto, períodos de algo nuboso.",
-              "wind": "N y NE 20-40 km/h, rachas de hasta 50 km/h."
-            }
-          ]
-        },
         {
           "date": "2026-07-17",
           "label": "Viernes 17",
@@ -789,13 +848,13 @@
           "periods": [
             {
               "period": "Mañana",
-              "description": "Nuboso y cubierto. Precipitaciones y tormentas aisladas. Mejoras temporarias.",
+              "description": "Nuboso y cubierto. Desmejorando con precipitaciones y tormentas Mejoras temporarias.",
               "wind": "NE al N 30-50 km/h. Rachas fuertes asociadas a tormentas."
             },
             {
               "period": "Tarde/Noche",
               "description": "Nuboso y cubierto. Precipitaciones y tormentas. Mejoras temporarias. Nieblas y neblinas.",
-              "wind": "N al NW 30-50 km/h. Rachas fuertes asociadas a tormentas."
+              "wind": "N al NW 30-50 km/h, amainando. Rachas fuertes asociadas a tormentas."
             }
           ]
         },
@@ -808,12 +867,30 @@
             {
               "period": "Mañana",
               "description": "Cubierto. Precipitaciones y tormentas. Mejoras temporarias.",
-              "wind": "Sector N 20-40 km/h. Periodos de variables."
+              "wind": "Sector N 20-40 km/h. Periodos del SE 10-20 km/h."
             },
             {
               "period": "Tarde/Noche",
               "description": "Cubierto. Precipitaciones y tormentas. Mejoras temporarias.",
-              "wind": "Sector E 10-30 km/h. Periodos de variables 0-10 km/h."
+              "wind": "Sector E 10-40 km/h. Periodos de variables 0-10 km/h."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-19",
+          "label": "Domingo 19",
+          "temperature_min": 10,
+          "temperature_max": 13,
+          "periods": [
+            {
+              "period": "Mañana",
+              "description": "Cubierto. Probables precipitaciones. Ventoso.",
+              "wind": "SE al S 20-40 km/h, rachas de hasta 60 km/h."
+            },
+            {
+              "period": "Tarde/Noche",
+              "description": "Nuboso y cubierto. Precipitaciones aisladas.",
+              "wind": "S al SE 20-40 km/h."
             }
           ]
         }
@@ -827,7 +904,7 @@
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-07-16T21:11:51-03:00",
+      "fetched_at": "2026-07-17T00:35:49-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
