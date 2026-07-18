@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-18T10:47:48-03:00",
+  "generated_at": "2026-07-18T12:14:02-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -832,7 +832,7 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-07-18T10:47:48-03:00",
+      "fetched_at": "2026-07-18T12:14:02-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
@@ -844,6 +844,15 @@
           "excerpt": "A MetSul Meteorologia alerta para cenário de alto risco de chuva volumosa e tempo severo a muito severo com temporais em parte do Rio Grande do Sul durante este fim de semana como consequência de uma frente quente e que passará a semi-estacionária entre o Uruguai e o Rio Grande do Sul. De acordo com […]",
           "url": "https://metsul.com/temporais-avancam-neste-fim-de-semana-com-risco-de-danos-e-transtornos/",
           "author": 879
+        },
+        {
+          "id": 267644,
+          "published_at": "2026-07-18T08:27:28",
+          "modified_at": "2026-07-18T11:32:22",
+          "title": "Violento temporal causa morte e estragos no Uruguai",
+          "excerpt": "A passagem de um violento temporal durante a madrugada deste sábado (18) deixou um cenário de destruição na cidade de Salto, no Uruguai. A combinação de chuva intensa e rajadas de vento extremamente fortes provocou destelhamentos, derrubou árvores, postes e estruturas metálicas, interrompeu o fornecimento de energia elétrica para milhares de pessoas e causou a […]",
+          "url": "https://metsul.com/violento-temporal-causa-morte-e-estragos-no-uruguai/",
+          "author": 861
         },
         {
           "id": 267633,
@@ -916,39 +925,30 @@
           "excerpt": "Dois poderosos rios atmosféricos atingirão nos próximos dias a América do Sul com chuva excessiva a extrema, tempestades severas e nevascas que podem acumular metros, causando transtornos e estragos em diferentes países. O primeiro avança vai se formar no interior da América do Sul, acompanhando uma intensa corrente de jato em baixos níveis, transportando ar […]",
           "url": "https://metsul.com/dois-rios-atmosfericos-intensos-trarao-chuva-excessiva-a-extrema/",
           "author": 861
-        },
-        {
-          "id": 267484,
-          "published_at": "2026-07-12T12:21:14",
-          "modified_at": "2026-07-12T14:07:29",
-          "title": "Primeira onda de tempestades do El Niño trará temporais destrutivos",
-          "excerpt": "A MetSul Meteorologia alerta para um cenário de muito alto risco e grave perigo por uma onda de tempestades que vai perdurar muito dias no Sul do Brasil e que deve ainda afetar o Uruguai e o Centro e o Nordeste da Argentina. Esta será a primeira grande onda de tempo severo no Cone Sul […]",
-          "url": "https://metsul.com/primeira-onda-de-tempestades-do-el-nino-trara-temporais-destrutivos/",
-          "author": 861
         }
       ]
     },
     "inumet": {
       "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-07-18T10:47:48-03:00",
-      "updated_at": "2026-07-18T06:00:00-03:00",
+      "fetched_at": "2026-07-18T12:14:02-03:00",
+      "updated_at": "2026-07-18T11:20:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
         {
           "date": "2026-07-18",
           "label": "Sábado 18",
-          "temperature_min": 12,
+          "temperature_min": 14,
           "temperature_max": 19,
           "periods": [
             {
               "period": "Mañana",
-              "description": "Cubierto. Precipitaciones y tormentas. Mejoras temporarias.",
+              "description": "Cubierto. Precipitaciones y tormentas. Mejorando. Nieblas y neblinas.",
               "wind": "SE y E 10-30 km/h. Probables rachas fuertes asociadas a tormentas."
             },
             {
               "period": "Tarde/Noche",
-              "description": "Cubierto. Probables precipitaciones. Neblinas y bancos de niebla.",
+              "description": "Cubierto. Probables precipitaciones. Nieblas y neblinas.",
               "wind": "Sector E 20-40 km/h. Periodos de variables 0-10 km/h."
             }
           ]
@@ -999,7 +999,7 @@
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-07-18T10:47:48-03:00",
+      "fetched_at": "2026-07-18T12:14:02-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
