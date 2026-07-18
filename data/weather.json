@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-18T18:05:42-03:00",
+  "generated_at": "2026-07-18T19:06:35-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -832,7 +832,7 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-07-18T18:05:42-03:00",
+      "fetched_at": "2026-07-18T19:06:35-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
@@ -931,8 +931,8 @@
     "inumet": {
       "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-07-18T18:05:42-03:00",
-      "updated_at": "2026-07-18T15:40:00-03:00",
+      "fetched_at": "2026-07-18T19:06:35-03:00",
+      "updated_at": "2026-07-18T18:00:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
         {
@@ -948,7 +948,7 @@
             },
             {
               "period": "Tarde/Noche",
-              "description": "Cubierto. Probables precipitaciones. Nieblas y neblinas.",
+              "description": "Cubierto. Precipitaciones aisladas.  Nieblas y neblinas.",
               "wind": "Sector E 20-40 km/h. Periodos de variables 0-10 km/h."
             }
           ]
@@ -956,12 +956,12 @@
         {
           "date": "2026-07-19",
           "label": "Domingo 19",
-          "temperature_min": 11,
-          "temperature_max": 15,
+          "temperature_min": 12,
+          "temperature_max": 14,
           "periods": [
             {
               "period": "Mañana",
-              "description": "Cubierto. Precipitaciones y probables tormentas.",
+              "description": "Cubierto. Precipitaciones y probables tormentas. Mejoras temporarias.",
               "wind": "SE y E 20-40 km/h, rachas de hasta 50 km/h."
             },
             {
@@ -974,17 +974,17 @@
         {
           "date": "2026-07-20",
           "label": "Lunes 20",
-          "temperature_min": 10,
+          "temperature_min": 11,
           "temperature_max": 14,
           "periods": [
             {
               "period": "Mañana",
-              "description": "Cubierto. Precipitaciones escasas y aisladas. Ventoso.",
+              "description": "Cubierto. Precipitaciones escasas y aisladas.",
               "wind": "SE y S 20-40 km/h, rachas de 50-60 km/h."
             },
             {
               "period": "Tarde/Noche",
-              "description": "Nuboso y cubierto.",
+              "description": "Nuboso y cubierto. Probables precipitaciones aisladas.",
               "wind": "SE 10-30 km/h."
             }
           ]
@@ -999,7 +999,7 @@
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-07-18T18:05:42-03:00",
+      "fetched_at": "2026-07-18T19:06:35-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
