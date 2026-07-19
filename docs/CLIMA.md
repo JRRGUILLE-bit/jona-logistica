@@ -19,7 +19,9 @@ INUMET ───────────────┼─> scripts/update_weath
 ECMWF y GFS ──────────┘
 ```
 
-GitHub Actions repite este proceso una vez por hora. La página es estática: el navegador no consulta directamente a los proveedores, sino que lee el último `weather.json` generado. Esto mejora la velocidad, evita múltiples consultas por visitante y permite conservar el último resultado si una fuente falla temporalmente.
+GitHub Actions intenta repetir este proceso una vez por hora y cuenta con cuatro ejecuciones diarias adicionales de refuerzo. La página es estática: el navegador no consulta directamente a los proveedores, sino que lee el último `weather.json` generado. Esto mejora la velocidad, evita múltiples consultas por visitante y permite conservar el último resultado si una fuente falla temporalmente.
+
+El botón **Actualizar pronóstico** vuelve a descargar ese archivo sin caché. El enlace **Forzar consulta en GitHub** abre el workflow; iniciar una nueva recolección requiere estar autenticado y tener permisos sobre el repositorio.
 
 ## Fuentes
 
@@ -70,7 +72,9 @@ Aunque aparezca una confianza alta, el pronóstico puede cambiar. Para decisione
 
 ## Actualización y tolerancia a fallos
 
-El workflow está definido en `.github/workflows/update-weather.yml` y corre alrededor del minuto 17 de cada hora. También admite ejecución manual.
+El workflow está definido en `.github/workflows/update-weather.yml` y está configurado para correr alrededor del minuto 17 de cada hora. Como redundancia, también intenta ejecutarse a las 00:43, 06:43, 12:43 y 18:43 en la zona `America/Montevideo`, además de admitir ejecución manual.
+
+GitHub Actions puede demorar o descartar una ejecución programada. Los horarios de refuerzo reducen la posibilidad de pasar muchas horas sin datos nuevos, pero no constituyen una garantía absoluta.
 
 Si una fuente no responde:
 
