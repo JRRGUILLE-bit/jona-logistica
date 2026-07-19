@@ -9,6 +9,9 @@ on:
       - ".github/workflows/update-weather.yml"
   schedule:
     - cron: "17 * * * *"
+      timezone: "America/Montevideo"
+    - cron: "43 0,6,12,18 * * *"
+      timezone: "America/Montevideo"
   workflow_dispatch:
 
 permissions:
