@@ -88,7 +88,7 @@ a{color:inherit}
   transition:transform .18s ease,border-color .18s ease;
 }
 .home-link:hover{transform:translateY(-2px);border-color:var(--accent-strong)}
-.home-link:focus-visible,.weekend-link:focus-visible,.article-link:focus-visible,summary:focus-visible{
+.home-link:focus-visible,.weekend-link:focus-visible,.article-link:focus-visible,.update-button:focus-visible,.update-link:focus-visible,summary:focus-visible{
   outline:3px solid var(--focus);
   outline-offset:3px;
 }
@@ -140,6 +140,31 @@ h1{
   text-align:right;
 }
 .updated strong{display:block;margin-top:2px;color:var(--ink);font-size:12px}
+.update-panel{flex:0 0 auto;display:grid;justify-items:end;gap:9px}
+.update-actions{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}
+.update-button,.update-link{
+  min-height:36px;
+  padding:8px 11px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:rgba(4,20,32,.78);
+  color:var(--ink);
+  font-family:Oswald,Impact,sans-serif;
+  font-size:11px;
+  font-weight:500;
+  letter-spacing:.06em;
+  line-height:1;
+  text-transform:uppercase;
+  text-decoration:none;
+  transition:transform .18s ease,border-color .18s ease,background .18s ease;
+}
+.update-button{appearance:none;cursor:pointer}
+.update-button:hover:not(:disabled),.update-link:hover{transform:translateY(-2px);border-color:var(--accent-strong);background:rgba(10,39,56,.9)}
+.update-button:disabled{cursor:wait;opacity:.72}
+.refresh-icon{display:inline-block;margin-right:5px;font-size:15px;line-height:0;vertical-align:-1px}
+.update-button.loading .refresh-icon{animation:spin .8s linear infinite}
+.refresh-status{min-height:14px;margin:0;color:var(--muted);font-size:10px;line-height:1.35;text-align:right}
+@keyframes spin{to{transform:rotate(360deg)}}
 .source-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin-top:30px}
 .source-card{
   min-height:116px;
@@ -307,7 +332,10 @@ footer a{color:var(--accent);text-decoration:none}
   .page{padding:12px}
   .hero{padding:28px 20px;border-radius:13px}
   .hero-top{display:block}
-  .updated{margin-top:20px;text-align:left;display:inline-block}
+  .update-panel{justify-items:start;margin-top:20px}
+  .updated{margin-top:0;text-align:left;display:inline-block}
+  .update-actions{justify-content:flex-start}
+  .refresh-status{text-align:left}
   h1{font-size:clamp(48px,15vw,68px)}
   .hero-copy>p{font-size:14px}
   .weekend-nav{grid-template-columns:1fr}
@@ -323,7 +351,11 @@ footer a{color:var(--accent);text-decoration:none}
   .block-metrics{grid-column:auto}
   .block-time{font-size:22px}
 }
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.home-link,.weekend-link,.article-link,.open-label:after{transition:none}}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .home-link,.weekend-link,.article-link,.update-button,.update-link,.open-label:after{transition:none}
+  .update-button.loading .refresh-icon{animation:none}
+}
 </style>
 </head>
 <body>
@@ -336,7 +368,14 @@ footer a{color:var(--accent);text-decoration:none}
         <h1>Clima de rodaje</h1>
         <p>MetSul, INUMET y modelos numéricos comparados según cada día, locación y bloque horario del plan de rodaje.</p>
       </div>
-      <div class="updated">Última consulta<strong id="updatedAt">Cargando…</strong></div>
+      <div class="update-panel">
+        <div class="updated">Última consulta<strong id="updatedAt">Cargando…</strong></div>
+        <div class="update-actions">
+          <button id="refreshWeather" class="update-button" type="button"><span class="refresh-icon" aria-hidden="true">↻</span>Actualizar pronóstico</button>
+          <a class="update-link" href="https://github.com/JRRGUILLE-bit/jona-logistica-mapa/actions/workflows/update-weather.yml" target="_blank" rel="noopener">Forzar consulta en GitHub</a>
+        </div>
+        <p id="refreshStatus" class="refresh-status" aria-live="polite"></p>
+      </div>
     </div>
     <div id="sourceGrid" class="source-grid" aria-live="polite"></div>
     <div id="alertBox" class="alert-box"></div>
@@ -518,7 +557,18 @@ function renderArticles(articles){
   </a>`).join('');
 }
 
-async function loadWeather(){
+let hasWeatherData=false;
+let weatherRequestInFlight=false;
+
+async function loadWeather({manual=false}={}){
+  if(weatherRequestInFlight)return;
+  weatherRequestInFlight=true;
+  const refreshButton=document.getElementById('refreshWeather');
+  const refreshStatus=document.getElementById('refreshStatus');
+  refreshButton.disabled=true;
+  refreshButton.classList.add('loading');
+  if(manual)refreshStatus.textContent='Buscando la última actualización…';
+
   try{
     const response=await fetch(`${DATA_URL}?v=${Date.now()}`,{cache:'no-store'});
     if(!response.ok)throw new Error(`HTTP ${response.status}`);
@@ -527,14 +577,24 @@ async function loadWeather(){
     renderSources(data);
     renderWeekends(data);
     renderArticles(data.sources?.metsul?.articles||[]);
+    hasWeatherData=true;
+    if(manual)refreshStatus.textContent=`Últimos datos cargados · ${displayDate(data.generated_at)}`;
   }catch(error){
-    document.getElementById('updatedAt').textContent='No disponible';
-    document.getElementById('weatherContent').innerHTML=`<div class="error-state"><strong>No se pudo cargar el pronóstico.</strong><br>La página conservará la última actualización disponible cuando vuelva a conectarse.</div>`;
-    document.getElementById('articles').innerHTML='<div class="error-state">MetSul no está disponible en este momento.</div>';
+    if(!hasWeatherData){
+      document.getElementById('updatedAt').textContent='No disponible';
+      document.getElementById('weatherContent').innerHTML=`<div class="error-state"><strong>No se pudo cargar el pronóstico.</strong><br>La página conservará la última actualización disponible cuando vuelva a conectarse.</div>`;
+      document.getElementById('articles').innerHTML='<div class="error-state">MetSul no está disponible en este momento.</div>';
+    }
+    refreshStatus.textContent='No se pudo actualizar. Probá nuevamente.';
     console.error(error);
+  }finally{
+    weatherRequestInFlight=false;
+    refreshButton.disabled=false;
+    refreshButton.classList.remove('loading');
   }
 }
 
+document.getElementById('refreshWeather').addEventListener('click',()=>loadWeather({manual:true}));
 loadWeather();
 </script>
 </body>
