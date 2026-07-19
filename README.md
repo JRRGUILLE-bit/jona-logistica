@@ -16,7 +16,8 @@ Centro web de apoyo para la producción de **Jona**. Reúne en una sola landing 
 - Comparación de los modelos ECMWF IFS y GFS.
 - Contexto editorial de MetSul y pronóstico/advertencias oficiales de INUMET.
 - Indicación clara cuando una fecha todavía está fuera del alcance de los modelos.
-- Actualización automática una vez por hora mediante GitHub Actions.
+- Actualización automática horaria mediante GitHub Actions, con cuatro ejecuciones diarias adicionales de refuerzo.
+- Botón para volver a cargar sin caché el último pronóstico publicado y acceso a la ejecución manual para usuarios autorizados.
 
 Las jornadas configuradas actualmente son:
 
@@ -57,10 +58,13 @@ La implementación y sus límites están explicados en [docs/CLIMA.md](docs/CLIM
 El workflow `.github/workflows/update-weather.yml` se ejecuta:
 
 - cada hora, alrededor del minuto 17;
+- como refuerzo, alrededor de las 00:43, 06:43, 12:43 y 18:43 de `America/Montevideo`;
 - manualmente desde la pestaña **Actions**;
 - cuando cambia el recolector o el propio workflow.
 
-La tarea ejecuta `scripts/update_weather.py`, consulta las fuentes y actualiza `data/weather.json`. Si el archivo cambia, GitHub Actions crea un commit automático. GitHub puede demorar algunos minutos una ejecución programada; la frecuencia configurada sigue siendo horaria.
+La tarea ejecuta `scripts/update_weather.py`, consulta las fuentes y actualiza `data/weather.json`. Si el archivo cambia, GitHub Actions crea un commit automático. GitHub puede demorar o descartar alguna ejecución programada, por lo que los cuatro horarios adicionales funcionan como redundancia y no como garantía absoluta de puntualidad.
+
+El botón **Actualizar pronóstico** de la página vuelve a descargar el último `weather.json` publicado sin usar caché. No inicia una nueva recolección. El enlace **Forzar consulta en GitHub** abre el workflow para que una persona autenticada y con permisos pueda usar **Run workflow**.
 
 ## Archivos principales
 
