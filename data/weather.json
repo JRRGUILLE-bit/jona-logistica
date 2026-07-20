@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-20T10:17:43-03:00",
+  "generated_at": "2026-07-20T13:01:54-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -119,7 +119,7 @@
               "temperature_min": 12.1,
               "temperature_max": 16.0,
               "apparent_min": 12.1,
-              "rain_probability_max": 7.0,
+              "rain_probability_max": 3.0,
               "precipitation_sum": 0.0,
               "cloud_cover_avg": 92.0,
               "wind_speed_max": 5.4,
@@ -163,7 +163,7 @@
             "confidence": "Alta",
             "headline": "Sin señal fuerte por ahora",
             "summary": "Por ahora los modelos no marcan lluvia significativa.",
-            "rain_probability_max": 0.0,
+            "rain_probability_max": 1.0,
             "precipitation_max": 0.0,
             "temperature_min": 11.8,
             "temperature_max": 13.5,
@@ -180,7 +180,7 @@
               "temperature_min": 11.8,
               "temperature_max": 12.1,
               "apparent_min": 10.5,
-              "rain_probability_max": 0.0,
+              "rain_probability_max": 1.0,
               "precipitation_sum": 0.0,
               "cloud_cover_avg": 100.0,
               "wind_speed_max": 11.6,
@@ -225,7 +225,7 @@
         "confidence": "Media",
         "headline": "Sin señal fuerte por ahora",
         "summary": "Por ahora los modelos no marcan lluvia significativa.",
-        "rain_probability_max": 3.0,
+        "rain_probability_max": 8.0,
         "precipitation_max": 0.0,
         "temperature_min": 6.6,
         "temperature_max": 18.1,
@@ -243,7 +243,7 @@
           "confidence": "Media",
           "headline": "Sin señal fuerte por ahora",
           "summary": "Por ahora los modelos no marcan lluvia significativa.",
-          "rain_probability_max": 2.0,
+          "rain_probability_max": 8.0,
           "precipitation_max": 0.0,
           "temperature_min": 6.6,
           "temperature_max": 18.1,
@@ -870,7 +870,7 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-07-20T10:17:43-03:00",
+      "fetched_at": "2026-07-20T13:01:54-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
@@ -969,8 +969,8 @@
     "inumet": {
       "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-07-20T10:17:43-03:00",
-      "updated_at": "2026-07-20T09:46:00-03:00",
+      "fetched_at": "2026-07-20T13:01:54-03:00",
+      "updated_at": "2026-07-20T12:00:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
         {
@@ -1037,7 +1037,7 @@
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-07-20T10:17:43-03:00",
+      "fetched_at": "2026-07-20T13:01:54-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
