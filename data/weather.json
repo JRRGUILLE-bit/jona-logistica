@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-22T19:16:06-03:00",
+  "generated_at": "2026-07-22T19:41:10-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -860,10 +860,19 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-07-22T19:16:06-03:00",
+      "fetched_at": "2026-07-22T19:41:10-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
+        {
+          "id": 267791,
+          "published_at": "2026-07-22T19:39:30",
+          "modified_at": "2026-07-22T19:39:30",
+          "title": "Mapa da enchente: onde os rios vão subir e baixar",
+          "excerpt": "O Rio Grande do Sul voltou a viver o drama das enchentes, as primeiras do El Niño de 2026, e todas as atenções se voltam para os níveis dos rios em várias regiões do estado. A chuva persiste em parte do estado, mas não trará mudança relevante no cenário dos rios. E qual o cenário? […]",
+          "url": "https://metsul.com/mapa-da-enchente-onde-os-rios-vao-subir-e-baixar/",
+          "author": 861
+        },
         {
           "id": 267775,
           "published_at": "2026-07-22T10:59:24",
@@ -944,22 +953,13 @@
           "excerpt": "O fim de semana foi marcado por calor fora do normal, vento Norte perto e acima de 100 km/h e temporais no Rio Grande do Sul com a chuva avançando pelo estado, sobretudo neste domingo, e teve acumulados altos em parte do território gaúcho. O calor foi mais intenso no Litoral Norte pela interação do […]",
           "url": "https://metsul.com/chuva-vai-aumentar-com-risco-de-alagamentos-e-inundacoes/",
           "author": 861
-        },
-        {
-          "id": 267698,
-          "published_at": "2026-07-19T19:39:24",
-          "modified_at": "2026-07-19T22:15:32",
-          "title": "Chuva e vento causam danos em 41 cidades gaúchas",
-          "excerpt": "O vento Norte forte a intenso não associado a temporais e tempestades de chuva e vento que atingem o Rio Grande do Sul ampliaram os estragos neste domingo no estado, levando a Defesa Civil estadual a elevar de 18 para 41 o número de municípios que reportaram danos. O boletim divulgado no início da noite […]",
-          "url": "https://metsul.com/chuva-e-vento-causam-danos-em-41-cidades-gauchas/",
-          "author": 879
         }
       ]
     },
     "inumet": {
       "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-07-22T19:16:06-03:00",
+      "fetched_at": "2026-07-22T19:41:10-03:00",
       "updated_at": "2026-07-22T18:00:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
@@ -1027,7 +1027,7 @@
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-07-22T19:16:06-03:00",
+      "fetched_at": "2026-07-22T19:41:10-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
