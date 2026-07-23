@@ -1,4 +1,5 @@
 name: Update weather data
+# Manual refresh marker: 2026-07-23 18:48 America/Montevideo
 
 on:
   push:
