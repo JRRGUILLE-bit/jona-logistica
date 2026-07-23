@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'jona-offline-';
-const CACHE_NAME = `${CACHE_PREFIX}v3`;
+const CACHE_NAME = `${CACHE_PREFIX}v4`;
 const SCOPE_URL = new URL(self.registration.scope);
 const NAVIGATION_TIMEOUT_MS = 3500;
 
@@ -19,6 +19,7 @@ const CORE_PATHS = [
   './favicon-16x16.png',
   './apple-touch-icon.png',
   './android-chrome-192x192.png',
+  './app-icon-512.svg',
   './404.html',
   './movilidad/',
   './movilidad/index.html',
