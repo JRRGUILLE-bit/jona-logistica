@@ -1,6 +1,7 @@
 # Jona tenía 15 años — Base de operaciones
 
 [![Actualizar clima](https://github.com/JRRGUILLE-bit/jona-logistica/actions/workflows/update-weather.yml/badge.svg)](https://github.com/JRRGUILLE-bit/jona-logistica/actions/workflows/update-weather.yml)
+[![Comprobar enlaces](https://github.com/JRRGUILLE-bit/jona-logistica/actions/workflows/check-links.yml/badge.svg)](https://github.com/JRRGUILLE-bit/jona-logistica/actions/workflows/check-links.yml)
 
 Sitio web público de apoyo operativo para la producción audiovisual de **Jona tenía 15 años**. Centraliza información de rodaje, pronóstico meteorológico, movilidad, documentación, comercios cercanos, aplicaciones técnicas y comunicación del equipo.
 
@@ -24,6 +25,8 @@ La franja **Próxima jornada** cambia automáticamente según la fecha. Para las
 | **Discord** | `/discord/` | Descargas de Discord para iOS y Android y espacio reservado para la futura invitación al servidor. |
 
 La ruta histórica `/links/` se conserva como redirección hacia `/docs/` para no romper accesos guardados.
+
+El archivo `404.html` ofrece una salida clara cuando se abre una URL inexistente, con accesos a Inicio, Clima y Docs.
 
 ## Jornadas configuradas
 
@@ -94,6 +97,26 @@ El job usa Python 3.12, actualiza `data/weather.json` y mantiene una memoria de 
 
 El botón de actualización dentro de Clima vuelve a pedir el último JSON publicado sin caché. No inicia por sí solo una nueva consulta a las fuentes.
 
+## Control automático de enlaces
+
+El workflow `.github/workflows/check-links.yml` utiliza Lychee para detectar enlaces rotos en HTML y Markdown.
+
+Tiene dos controles separados:
+
+- **Enlaces internos y anclas:** valida rutas relativas, archivos enlazados y fragmentos como `#dia-1` sin depender de internet. Este control es estricto y falla si falta un destino.
+- **Enlaces externos:** revisa Docs, tiendas de aplicaciones, Maps, fuentes meteorológicas, descargas y demás URLs públicas con caché, reintentos y concurrencia limitada.
+
+Se ejecuta:
+
+- cuando cambian páginas, documentación, estilos, scripts, recursos enlazados o descargas;
+- en cada pull request que modifique esos archivos;
+- una vez por día, alrededor de las 09:20 de Uruguay;
+- manualmente desde **Actions → Check links**.
+
+Los resultados aparecen en el resumen del job. Los límites temporales de un proveedor con respuesta HTTP `429` no se consideran un enlace roto, pero las respuestas inexistentes o inválidas sí hacen fallar el control.
+
+`.lycheeignore` contiene únicamente exclusiones intencionales, como la URL local usada durante la previsualización. No debe utilizarse para ocultar enlaces realmente rotos.
+
 ## Movilidad y avatares
 
 La página de Movilidad organiza el primer fin de semana por:
@@ -129,13 +152,25 @@ MENELAO es una herramienta independiente para copiar una fuente audiovisual a do
 
 Discord se mantiene como sección separada. El botón de ingreso al servidor queda desactivado hasta que producción genere una invitación válida.
 
+## Vista previa al compartir
+
+La portada declara metadatos Open Graph y Twitter Card para que WhatsApp, Discord y otras plataformas muestren una tarjeta visual al compartir el enlace.
+
+La imagen publicada es:
+
+```text
+social-preview-jona-1200x630.jpg
+```
+
+Tiene dimensiones de 1200 × 630 píxeles y no forma parte del contenido visible de la portada: se utiliza solamente como vista previa social.
+
 ## Rendimiento y accesibilidad
 
 El sitio es estático y no depende de un framework. Las principales optimizaciones son:
 
 - fondos principales en WebP;
 - dimensiones explícitas y carga diferida para avatares;
-- video de Movilidad diferido hasta que el navegador queda libre;
+- video de Movilidad diferido hasta que la interfaz queda disponible;
 - alternativa estática para ahorro de datos y movimiento reducido;
 - `content-visibility` para bloques fuera de pantalla;
 - efectos de desenfoque reducidos en celular;
@@ -148,8 +183,10 @@ El sitio es estático y no depende de un framework. Las principales optimizacion
 ```text
 .
 ├── index.html                         # Portada y próxima jornada dinámica
+├── 404.html                           # Página personalizada para URLs inexistentes
 ├── home.css                           # Estilos específicos de la portada
 ├── site-touchup.css                   # Capa visual compartida
+├── social-preview-jona-1200x630.jpg   # Vista previa para compartir el sitio
 ├── clima/
 │   └── index.html                     # Pronóstico operativo
 ├── movilidad/
@@ -176,7 +213,9 @@ El sitio es estático y no depende de un framework. Las principales optimizacion
 │   ├── update_weather_plan.py         # Fechas, bloques y locaciones de Jona
 │   └── translate_metsul.py            # Traducción y caché de MetSul
 ├── .github/workflows/
-│   └── update-weather.yml             # Actualización automática
+│   ├── update-weather.yml             # Actualización automática del clima
+│   └── check-links.yml                # Comprobación de enlaces internos y externos
+├── .lycheeignore                      # Exclusiones intencionales del comprobador
 └── .nojekyll
 ```
 
@@ -214,11 +253,12 @@ Antes de cada jornada conviene verificar:
 
 1. la hora de la última actualización del clima;
 2. advertencias vigentes de INUMET;
-3. enlaces de Docs y permisos de Drive;
-4. citaciones y puntos de encuentro;
-5. horarios orientativos de comercios;
-6. que las descargas públicas de MENELAO respondan;
-7. que la invitación de Discord siga vigente una vez creada.
+3. el estado del workflow **Check links**;
+4. enlaces de Docs y permisos de Drive;
+5. citaciones y puntos de encuentro;
+6. horarios orientativos de comercios;
+7. que las descargas públicas de MENELAO respondan;
+8. que la invitación de Discord siga vigente una vez creada.
 
 ## Alcance
 
