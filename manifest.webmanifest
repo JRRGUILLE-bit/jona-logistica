@@ -15,6 +15,7 @@
   "orientation": "any",
   "background_color": "#07151d",
   "theme_color": "#07151d",
+  "prefer_related_applications": false,
   "categories": [
     "productivity",
     "utilities"
@@ -33,6 +34,12 @@
       "purpose": "any"
     },
     {
+      "src": "app-icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
       "src": "apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png",
@@ -47,8 +54,8 @@
       "url": "/jona-logistica/clima/?source=shortcut",
       "icons": [
         {
-          "src": "favicon.svg?v=3",
-          "sizes": "any",
+          "src": "app-icon-512.svg",
+          "sizes": "512x512",
           "type": "image/svg+xml"
         }
       ]
@@ -60,8 +67,8 @@
       "url": "/jona-logistica/movilidad/?source=shortcut",
       "icons": [
         {
-          "src": "favicon.svg?v=3",
-          "sizes": "any",
+          "src": "app-icon-512.svg",
+          "sizes": "512x512",
           "type": "image/svg+xml"
         }
       ]
@@ -73,8 +80,8 @@
       "url": "/jona-logistica/docs/?source=shortcut",
       "icons": [
         {
-          "src": "favicon.svg?v=3",
-          "sizes": "any",
+          "src": "app-icon-512.svg",
+          "sizes": "512x512",
           "type": "image/svg+xml"
         }
       ]
