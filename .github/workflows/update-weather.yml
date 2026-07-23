@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - "scripts/update_weather.py"
+      - "scripts/update_weather_plan.py"
       - ".github/workflows/update-weather.yml"
   schedule:
     - cron: "17 * * * *"
@@ -35,7 +36,7 @@ jobs:
           python-version: "3.12"
 
       - name: Collect weather sources
-        run: python scripts/update_weather.py
+        run: python scripts/update_weather_plan.py
 
       - name: Save updated data
         run: |
