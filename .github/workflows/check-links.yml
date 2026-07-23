@@ -44,7 +44,7 @@ jobs:
         uses: actions/checkout@v5
 
       - name: Check internal links, files and anchors
-        uses: lycheeverse/lychee-action@v2
+        uses: lycheeverse/lychee-action@v2.9.0
         with:
           args: >-
             --offline
@@ -78,7 +78,7 @@ jobs:
             lychee-${{ runner.os }}-
 
       - name: Check external links
-        uses: lycheeverse/lychee-action@v2
+        uses: lycheeverse/lychee-action@v2.9.0
         with:
           args: >-
             --root-dir "${{ github.workspace }}"
