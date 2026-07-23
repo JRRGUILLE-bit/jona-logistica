@@ -20,7 +20,12 @@ REDIRECT = Path("links/index.html")
 
 def local_target(source: Path, value: str) -> Path | None:
     value = value.strip()
-    if not value or value.startswith(("#", "mailto:", "tel:", "data:", "javascript:")):
+    if (
+        not value
+        or "${" in value
+        or "{{" in value
+        or value.startswith(("#", "mailto:", "tel:", "data:", "javascript:"))
+    ):
         return None
     parsed = urlsplit(value)
     if parsed.scheme or value.startswith("//"):
