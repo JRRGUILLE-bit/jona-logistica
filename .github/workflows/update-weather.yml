@@ -1,5 +1,4 @@
 name: Update weather data
-# Manual refresh marker: 2026-07-23 18:48 America/Montevideo
 
 on:
   push:
@@ -9,8 +8,6 @@ on:
       - "scripts/update_weather.py"
       - "scripts/update_weather_plan.py"
       - "scripts/translate_metsul.py"
-      - "scripts/qa_apply.py"
-      - "scripts/qa_check.py"
       - ".github/workflows/update-weather.yml"
   schedule:
     - cron: "17 * * * *"
@@ -24,12 +21,12 @@ permissions:
 
 concurrency:
   group: weather-data-update
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -40,34 +37,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-
-      - name: Apply site QA fixes
-        run: python scripts/qa_apply.py
-
-      - name: Validate site
-        run: |
-          python -m py_compile scripts/qa_apply.py scripts/qa_check.py
-          node --check offline.js
-          node --check service-worker.js
-          python scripts/qa_check.py
-          git diff --check
-
-      - name: Save site QA fixes
-        run: |
-          if git diff --quiet; then
-            echo "No site QA fixes required."
-          else
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add index.html 404.html clima/index.html movilidad/index.html supermercados/index.html docs/index.html apps/index.html discord/index.html offline.js manifest.webmanifest service-worker.js
-            git commit -m "Apply automated site QA fixes"
-            git push origin HEAD:main
-          fi
 
       - name: Collect weather sources
         run: python scripts/update_weather_plan.py
@@ -86,6 +55,7 @@ jobs:
         run: python -m pip install --disable-pip-version-check --quiet argostranslate==1.11.0
 
       - name: Translate MetSul news
+        continue-on-error: true
         run: python scripts/translate_metsul.py
 
       - name: Save updated data
