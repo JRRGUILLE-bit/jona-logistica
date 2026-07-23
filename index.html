@@ -9,7 +9,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
-<meta name="description" content="Centro de logística del rodaje de Jona.">
+<meta name="description" content="Centro de logística del rodaje de Jona: clima, movilidad, compras y documentos de producción.">
 <link rel="canonical" href="https://jrrguille-bit.github.io/jona-logistica-mapa/">
 <meta property="og:title" content="Jona Logística">
 <meta property="og:description" content="Clima, movilidad, compras y documentos para el rodaje de Jona.">
@@ -23,11 +23,15 @@
 :root{
   color-scheme:dark;
   --ink:#f5f0e8;
-  --muted:#c1c8c7;
+  --muted:#b9c2c3;
   --accent:#dc9140;
-  --accent-soft:rgba(220,145,64,.18);
-  --line:rgba(220,145,64,.72);
+  --accent-strong:#f0ab58;
+  --accent-soft:rgba(220,145,64,.16);
+  --line:rgba(220,145,64,.48);
+  --hair:rgba(255,255,255,.11);
+  --panel:rgba(4,18,26,.76);
   --focus:#ffd18f;
+  --shadow:0 26px 70px rgba(0,0,0,.34);
 }
 *{box-sizing:border-box}
 html{min-height:100%;background:#07151d}
@@ -48,7 +52,7 @@ body:before{
   z-index:0;
   pointer-events:none;
   background:url("b16f4d42-4937-42be-839e-e54647e64100.png") center/cover no-repeat;
-  filter:contrast(1.12) brightness(1.08);
+  filter:contrast(1.1) brightness(.78) saturate(.82);
   transform:scale(1.012);
 }
 body:after{
@@ -58,174 +62,220 @@ body:after{
   z-index:0;
   pointer-events:none;
   background:
-    radial-gradient(circle at 50% 43%,rgba(6,19,27,.01) 0,rgba(6,19,27,.11) 47%,rgba(3,12,17,.35) 100%),
-    linear-gradient(180deg,rgba(4,14,20,.03),rgba(4,14,20,.18));
+    radial-gradient(circle at 50% 20%,rgba(27,92,119,.12),transparent 44%),
+    linear-gradient(180deg,rgba(3,13,19,.22),rgba(3,13,19,.68));
 }
 .shell{
   position:relative;
   z-index:1;
-  width:min(100%,1120px);
+  width:min(100%,1180px);
   min-height:100svh;
   margin:0 auto;
-  padding:max(32px,env(safe-area-inset-top)) clamp(20px,5vw,64px) max(28px,env(safe-area-inset-bottom));
+  padding:max(34px,env(safe-area-inset-top)) clamp(18px,5vw,66px) max(28px,env(safe-area-inset-bottom));
   display:grid;
   place-items:center;
 }
 .hero{
-  width:min(100%,760px);
+  width:min(100%,940px);
   text-align:center;
   animation:arrive .7s cubic-bezier(.2,.8,.2,1) both;
 }
 .eyebrow{
-  display:flex;
+  display:inline-flex;
   align-items:center;
-  justify-content:center;
-  gap:14px;
+  gap:10px;
   margin:0 0 20px;
-  color:var(--accent);
+  padding:8px 13px;
+  border:1px solid rgba(220,145,64,.34);
+  border-radius:999px;
+  background:rgba(4,18,26,.52);
+  color:var(--accent-strong);
   font-family:Oswald,Impact,sans-serif;
-  font-size:clamp(13px,1.5vw,17px);
+  font-size:12px;
   font-weight:500;
-  letter-spacing:.38em;
+  letter-spacing:.24em;
   text-transform:uppercase;
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
 }
-.eyebrow:before,.eyebrow:after{
-  content:"";
-  width:38px;
-  height:1px;
-  background:linear-gradient(90deg,transparent,var(--accent));
-}
-.eyebrow:after{background:linear-gradient(90deg,var(--accent),transparent)}
+.eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px var(--accent-soft)}
 .brand{
-  margin:0 0 clamp(34px,6vh,56px);
+  margin:0;
   font-family:Oswald,Impact,"Arial Narrow",sans-serif;
   text-transform:uppercase;
-  text-shadow:0 8px 36px rgba(0,0,0,.46);
+  text-shadow:0 10px 38px rgba(0,0,0,.48);
 }
 .brand-jona{
   display:block;
-  font-size:clamp(62px,10vw,116px);
+  font-size:clamp(66px,10vw,118px);
   font-weight:500;
-  line-height:.84;
+  line-height:.82;
   letter-spacing:.035em;
 }
 .brand-logistica{
   display:block;
-  margin-top:.27em;
-  font-size:clamp(50px,8.4vw,96px);
+  margin-top:.28em;
+  font-size:clamp(45px,7.8vw,88px);
   font-weight:400;
-  line-height:1.08;
-  letter-spacing:.16em;
-  padding-left:.16em;
-  color:#e9e5de;
+  line-height:1;
+  letter-spacing:.18em;
+  padding-left:.18em;
+  color:#ebe7df;
+}
+.intro{
+  max-width:660px;
+  margin:24px auto 34px;
+  color:var(--muted);
+  font-size:clamp(13px,1.5vw,15px);
+  line-height:1.65;
+  text-shadow:0 3px 14px rgba(0,0,0,.6);
 }
 .actions{
-  width:min(100%,670px);
+  width:100%;
   margin:0 auto;
   display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
   gap:14px;
 }
 .action{
   position:relative;
-  width:100%;
-  min-height:100px;
-  padding:17px 60px 17px 20px;
+  min-width:0;
+  min-height:142px;
+  padding:22px 58px 22px 22px;
   display:grid;
-  grid-template-columns:72px minmax(0,1fr);
+  grid-template-columns:64px minmax(0,1fr);
   align-items:center;
-  gap:20px;
-  border:1px solid var(--line);
-  border-radius:10px;
-  background:linear-gradient(135deg,rgba(4,17,24,.84),rgba(8,24,32,.68));
+  gap:18px;
+  overflow:hidden;
+  border:1px solid var(--hair);
+  border-radius:16px;
+  background:linear-gradient(145deg,rgba(4,18,27,.88),rgba(8,29,39,.72));
   color:var(--ink);
-  box-shadow:0 20px 54px rgba(0,0,0,.22),inset 0 1px rgba(255,255,255,.025);
-  backdrop-filter:blur(12px);
-  -webkit-backdrop-filter:blur(12px);
+  box-shadow:var(--shadow),inset 0 1px rgba(255,255,255,.035);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
   text-decoration:none;
   text-align:left;
   transition:border-color .2s ease,transform .2s ease,background .2s ease,box-shadow .2s ease;
 }
-.action:hover{
-  transform:translateY(-3px);
-  border-color:var(--accent);
-  background:linear-gradient(135deg,rgba(15,32,39,.94),rgba(9,25,33,.84));
-  box-shadow:0 24px 60px rgba(0,0,0,.32),0 0 0 1px var(--accent-soft);
+.action:before{
+  content:"";
+  position:absolute;
+  inset:0 auto 0 0;
+  width:3px;
+  background:linear-gradient(180deg,transparent,var(--accent),transparent);
+  opacity:.72;
 }
+.action:after{
+  content:"";
+  position:absolute;
+  right:-42px;
+  top:-54px;
+  width:135px;
+  height:135px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(220,145,64,.13),transparent 68%);
+  opacity:.7;
+  transition:transform .25s ease,opacity .25s ease;
+}
+.action:hover{
+  transform:translateY(-4px);
+  border-color:var(--line);
+  background:linear-gradient(145deg,rgba(9,30,40,.96),rgba(9,36,47,.84));
+  box-shadow:0 30px 70px rgba(0,0,0,.42),0 0 0 1px var(--accent-soft);
+}
+.action:hover:after{transform:scale(1.14);opacity:1}
 .action:focus-visible{outline:3px solid var(--focus);outline-offset:5px}
 .action-icon{
-  width:66px;
-  height:66px;
+  width:62px;
+  height:62px;
   display:grid;
   place-items:center;
-  border-right:1px solid rgba(255,255,255,.18);
-  color:var(--accent);
+  border:1px solid rgba(220,145,64,.38);
+  border-radius:15px;
+  background:linear-gradient(145deg,rgba(220,145,64,.12),rgba(4,17,24,.45));
+  color:var(--accent-strong);
+  box-shadow:inset 0 1px rgba(255,255,255,.04);
 }
-.action-icon svg{width:43px;height:43px;stroke:currentColor}
+.action-icon svg{width:34px;height:34px;stroke:currentColor}
+.action-copy{min-width:0;position:relative;z-index:1}
+.action-kicker{
+  display:block;
+  margin-bottom:6px;
+  color:var(--accent);
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
 .action-title{
   display:block;
   font-family:Oswald,Impact,sans-serif;
-  font-size:clamp(24px,3.3vw,34px);
+  font-size:clamp(25px,3vw,32px);
   font-weight:500;
-  line-height:1.08;
-  letter-spacing:.055em;
+  line-height:1.05;
+  letter-spacing:.045em;
   text-transform:uppercase;
+}
+.action-description{
+  display:block;
+  margin-top:8px;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.45;
 }
 .arrow{
   position:absolute;
+  z-index:2;
   right:24px;
   top:50%;
-  width:15px;
-  height:15px;
+  width:13px;
+  height:13px;
   border-top:2px solid var(--accent);
   border-right:2px solid var(--accent);
   transform:translateY(-50%) rotate(45deg);
   transition:transform .2s ease;
 }
 .action:hover .arrow{transform:translate(4px,-50%) rotate(45deg)}
-@keyframes arrive{
-  from{opacity:0;transform:translateY(18px)}
-  to{opacity:1;transform:translateY(0)}
+.footer{
+  margin:22px 0 0;
+  color:rgba(245,240,232,.62);
+  font-family:Oswald,Impact,sans-serif;
+  font-size:10px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  text-shadow:0 3px 12px rgba(0,0,0,.6);
 }
-@media(max-width:620px){
-  body:before{background-position:center center}
-  body:after{background:linear-gradient(180deg,rgba(3,13,19,.16),rgba(3,13,19,.38))}
-  .shell{padding-left:16px;padding-right:16px}
-  .eyebrow{letter-spacing:.24em}
-  .brand{margin-bottom:34px}
-  .brand-jona{font-size:clamp(56px,19vw,82px)}
-  .brand-logistica{
-    margin-top:.3em;
-    font-size:clamp(41px,13.8vw,61px);
-    line-height:1.1;
-    letter-spacing:.11em;
-    padding-left:.11em;
-  }
-  .action{
-    min-height:92px;
-    grid-template-columns:56px minmax(0,1fr);
-    gap:15px;
-    padding:14px 44px 14px 13px;
-    border-radius:9px;
-  }
-  .action-icon{width:56px;height:58px}
-  .action-icon svg{width:37px;height:37px}
-  .action-title{font-size:clamp(22px,6.4vw,28px)}
-  .arrow{right:17px}
+@keyframes arrive{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:760px){
+  body:before{background-position:center center;filter:contrast(1.1) brightness(.66) saturate(.75)}
+  .shell{padding-left:15px;padding-right:15px;align-items:start}
+  .hero{padding-top:18px}
+  .eyebrow{margin-bottom:18px;letter-spacing:.19em}
+  .brand-jona{font-size:clamp(58px,18vw,84px)}
+  .brand-logistica{font-size:clamp(39px,12.4vw,58px);letter-spacing:.12em;padding-left:.12em}
+  .intro{margin:20px auto 28px;padding:0 8px}
+  .actions{grid-template-columns:1fr;gap:11px}
+  .action{min-height:112px;padding:17px 47px 17px 15px;grid-template-columns:54px minmax(0,1fr);gap:14px;border-radius:13px}
+  .action-icon{width:52px;height:52px;border-radius:12px}
+  .action-icon svg{width:29px;height:29px}
+  .action-title{font-size:24px}
+  .action-description{font-size:11px;margin-top:6px}
+  .arrow{right:18px}
 }
-@media(prefers-reduced-motion:reduce){
-  .hero{animation:none}
-  .action,.arrow{transition:none}
-}
+@media(prefers-reduced-motion:reduce){.hero{animation:none}.action,.action:after,.arrow{transition:none}}
 </style>
 </head>
 <body>
 <main class="shell">
   <section class="hero" aria-labelledby="page-title">
-    <p class="eyebrow">Producción Jona</p>
+    <p class="eyebrow">Centro de producción</p>
     <h1 class="brand" id="page-title">
       <span class="brand-jona">Jona</span>
       <span class="brand-logistica">Logística</span>
     </h1>
+    <p class="intro">La información operativa del rodaje, organizada en un solo lugar para acceder rápido desde el set.</p>
+
     <nav class="actions" aria-label="Secciones de logística">
       <a class="action" href="clima/">
         <span class="action-icon" aria-hidden="true">
@@ -235,9 +285,14 @@ body:after{
             <path d="M34 47h15a8 8 0 0 0 0-16 13 13 0 0 0-24-4"></path>
           </svg>
         </span>
-        <span class="action-title">Clima</span>
+        <span class="action-copy">
+          <span class="action-kicker">Pronóstico</span>
+          <span class="action-title">Clima</span>
+          <span class="action-description">Condiciones previstas para cada jornada.</span>
+        </span>
         <span class="arrow" aria-hidden="true"></span>
       </a>
+
       <a class="action" href="movilidad/">
         <span class="action-icon" aria-hidden="true">
           <svg viewBox="0 0 64 64" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -249,9 +304,14 @@ body:after{
             <path d="M6 32h7M51 32h7"></path>
           </svg>
         </span>
-        <span class="action-title">Movilidad</span>
+        <span class="action-copy">
+          <span class="action-kicker">Traslados</span>
+          <span class="action-title">Movilidad</span>
+          <span class="action-description">Autos, conductores, pasajeros y recorridos.</span>
+        </span>
         <span class="arrow" aria-hidden="true"></span>
       </a>
+
       <a class="action" href="supermercados/">
         <span class="action-icon" aria-hidden="true">
           <svg viewBox="0 0 64 64" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -261,9 +321,14 @@ body:after{
             <path d="M42 8v16M34 16h16"></path>
           </svg>
         </span>
-        <span class="action-title">Compras</span>
+        <span class="action-copy">
+          <span class="action-kicker">Cercanía</span>
+          <span class="action-title">Compras</span>
+          <span class="action-description">Supermercados, farmacias y comercios útiles.</span>
+        </span>
         <span class="arrow" aria-hidden="true"></span>
       </a>
+
       <a class="action" href="links/">
         <span class="action-icon" aria-hidden="true">
           <svg viewBox="0 0 64 64" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -272,10 +337,16 @@ body:after{
             <path d="M44 20l4-4a10 10 0 0 1 14 14L50 42a10 10 0 0 1-14 0"></path>
           </svg>
         </span>
-        <span class="action-title">Links</span>
+        <span class="action-copy">
+          <span class="action-kicker">Documentación</span>
+          <span class="action-title">Links</span>
+          <span class="action-description">Guion, planes, equipos y citaciones.</span>
+        </span>
         <span class="arrow" aria-hidden="true"></span>
       </a>
     </nav>
+
+    <p class="footer">Producción Jona · 2026</p>
   </section>
 </main>
 </body>
