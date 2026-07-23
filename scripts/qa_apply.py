@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://jrrguille-bit.github.io/jona-logistica/"
-SOCIAL = BASE + "social-preview-jona-1200x630.jpg"
+SOCIAL = BASE + "card.png?v=1"
 PAGES = [
     Path("index.html"), Path("404.html"), Path("clima/index.html"),
     Path("movilidad/index.html"), Path("supermercados/index.html"),
