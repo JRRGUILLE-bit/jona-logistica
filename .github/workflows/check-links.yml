@@ -58,7 +58,7 @@ jobs:
           failIfEmpty: true
           format: markdown
           jobSummary: true
-          output: lychee/internal-links.md
+          output: internal-links.md
 
   external-links:
     name: External links
@@ -99,7 +99,7 @@ jobs:
           failIfEmpty: true
           format: markdown
           jobSummary: true
-          output: lychee/external-links.md
+          output: external-links.md
 
       - name: Save link-check cache
         if: always()
