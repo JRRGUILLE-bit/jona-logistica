@@ -81,7 +81,7 @@ SHOOT_DAYS = [
         "date": "2026-07-26",
         "label": "Domingo 26 de julio",
         "weekend": "first",
-        "locations": "La Paz · Las Piedras",
+        "locations": "Plaza de la Ciudad de La Paz · Colina · Las Piedras",
         "blocks": [
             {
                 "id": "day-2-la-paz",
@@ -89,7 +89,7 @@ SHOOT_DAYS = [
                 "start": "14:30",
                 "end": "15:20",
                 "location_id": "la_paz",
-                "location": "Casa Jona · La Paz",
+                "location": "Plaza de la Ciudad de La Paz",
                 "type": "Exteriores",
                 "sensitivity": ["lluvia", "viento", "continuidad de cielo"],
             },

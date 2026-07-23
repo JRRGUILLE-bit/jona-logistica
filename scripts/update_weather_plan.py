@@ -75,7 +75,7 @@ collector.SHOOT_DAYS = [
         "date": "2026-07-26",
         "label": "Domingo 26 de julio",
         "weekend": "first",
-        "locations": "Auto y Casa Jona · La Paz · Colina · Las Piedras",
+        "locations": "Plaza de la Ciudad de La Paz · Colina · Las Piedras",
         "blocks": [
             {
                 "id": "day-2-la-paz",
@@ -83,7 +83,7 @@ collector.SHOOT_DAYS = [
                 "start": "14:00",
                 "end": "15:30",
                 "location_id": "la_paz",
-                "location": "Auto y Casa Jona · La Paz",
+                "location": "Plaza de la Ciudad de La Paz",
                 "type": "Exteriores día",
                 "sensitivity": ["lluvia", "viento", "continuidad de cielo"],
             },

@@ -235,7 +235,7 @@
       "date": "2026-07-26",
       "label": "Domingo 26 de julio",
       "weekend": "first",
-      "locations": "Auto y Casa Jona · La Paz · Colina · Las Piedras",
+      "locations": "Plaza de la Ciudad de La Paz · Colina · Las Piedras",
       "lead_days": 3,
       "general": {
         "available": true,
@@ -301,7 +301,7 @@
           "id": "day-2-la-paz",
           "time": "14:00–15:30",
           "location_id": "la_paz",
-          "location": "Auto y Casa Jona · La Paz",
+          "location": "Plaza de la Ciudad de La Paz",
           "type": "Exteriores día",
           "sensitivity": [
             "lluvia",
