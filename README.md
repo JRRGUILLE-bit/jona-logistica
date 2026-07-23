@@ -2,7 +2,7 @@
 
 [![Actualizar clima](https://github.com/JRRGUILLE-bit/jona-logistica-mapa/actions/workflows/update-weather.yml/badge.svg)](https://github.com/JRRGUILLE-bit/jona-logistica-mapa/actions/workflows/update-weather.yml)
 
-Centro web de apoyo para la producción de **Jona**. Reúne en una sola landing el pronóstico meteorológico de las jornadas de rodaje y el acceso rápido a supermercados, farmacias y otros comercios útiles.
+Centro web de apoyo para la producción de **Jona**. Reúne en una sola landing el pronóstico meteorológico de las jornadas de rodaje, la movilidad del crew y el acceso rápido a supermercados, farmacias y otros comercios útiles.
 
 **Sitio publicado:** [jrrguille-bit.github.io/jona-logistica-mapa](https://jrrguille-bit.github.io/jona-logistica-mapa/)
 
@@ -12,7 +12,7 @@ Centro web de apoyo para la producción de **Jona**. Reúne en una sola landing 
 
 - Cuatro jornadas agrupadas en primer y segundo fin de semana.
 - Resumen general por día con nivel de riesgo, lluvia, temperatura, ráfagas y confianza.
-- Detalle desplegable por bloque horario y localidad.
+- Detalle por bloque horario y por locación del plan de rodaje.
 - Comparación de los modelos ECMWF IFS y GFS.
 - Contexto editorial de MetSul y pronóstico/advertencias oficiales de INUMET.
 - Indicación clara cuando una fecha todavía está fuera del alcance de los modelos.
@@ -21,14 +21,27 @@ Centro web de apoyo para la producción de **Jona**. Reúne en una sola landing 
 
 Las jornadas configuradas actualmente son:
 
-| Jornada | Fecha | Zonas de referencia |
+| Jornada | Fecha | Locaciones de referencia |
 |---|---|---|
-| Día 1 | sábado 25 de julio de 2026 | Ciudad de la Costa y La Paz |
-| Día 2 | domingo 26 de julio de 2026 | La Paz y Las Piedras |
-| Día 3 | sábado 1 de agosto de 2026 | Parque del Plata |
-| Día 4 | domingo 2 de agosto de 2026 | Parque del Plata |
+| Día 1 | sábado 25 de julio de 2026 | Taller en Ciudad de la Costa y Casa Negro en La Paz |
+| Día 2 | domingo 26 de julio de 2026 | Auto/Casa Jona en La Paz y Colina en Las Piedras |
+| Día 3 | sábado 1 de agosto de 2026 | Colina en La Paz y casa en Parque del Plata |
+| Día 4 | domingo 2 de agosto de 2026 | Casa en Parque del Plata |
 
 No se publican direcciones particulares: las consultas meteorológicas usan centros aproximados de cada localidad.
+
+### Movilidad del crew
+
+- Página separada en `movilidad/`.
+- Distribución por día, auto y zona de salida.
+- Identificación clara de quien conduce y de quienes viajan juntos.
+- Nombres de pila o alias en pantalla, con el rol de cada integrante debajo.
+- Día 1: cinco autos.
+- Día 2: cuatro autos.
+- Fondo animado con alternativa estática para dispositivos o preferencias de movimiento reducido.
+- Dieciséis retratos goblin chibi con transparencia real, uno por integrante del crew.
+
+Los retratos reemplazan los antiguos círculos de iniciales. Se muestran recortados dentro de avatares circulares, sin modificar la información logística.
 
 ### Supermercados y farmacias
 
@@ -72,7 +85,14 @@ El botón **Actualizar pronóstico** de la página vuelve a descargar el último
 .
 ├── index.html                         # Landing de Jona Logística
 ├── clima/index.html                   # Interfaz del pronóstico
+├── movilidad/index.html               # Autos, conductores, pasajeros e iconos
 ├── supermercados/index.html           # Comercios y farmacias
+├── 01_maite_pineyrua_segura.png       # Iconos goblin transparentes del crew
+├── ...
+├── 16_carolina_romero.png
+├── jona-movilidad-fondo-mobile.webm   # Fondo animado de Movilidad
+├── jona-movilidad-fondo-mobile.mp4    # Alternativa de video
+├── jona-movilidad-fondo-poster.webp   # Fondo estático / poster
 ├── data/weather.json                  # Última actualización meteorológica
 ├── scripts/update_weather.py          # Recolector y resumen de fuentes
 ├── docs/CLIMA.md                      # Documentación del sistema de clima
@@ -80,7 +100,7 @@ El botón **Actualizar pronóstico** de la página vuelve a descargar el último
 └── .nojekyll
 ```
 
-Las imágenes de fondo permanecen en la raíz porque GitHub Pages publica el repositorio como sitio estático.
+Las imágenes y medios de fondo permanecen en la raíz porque GitHub Pages publica el repositorio como sitio estático.
 
 ## Ejecución local
 
