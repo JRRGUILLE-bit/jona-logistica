@@ -138,3 +138,36 @@ body:after{
   content:none!important;
   display:none!important;
 }
+
+/* Próxima jornada */
+.next-shoot{
+  width:100%;
+  margin:24px auto 0;
+  padding:15px 17px;
+  display:grid;
+  grid-template-columns:48px minmax(0,1fr) auto;
+  align-items:center;
+  gap:15px;
+  border:1px solid rgba(220,145,64,.34);
+  border-radius:15px;
+  background:linear-gradient(145deg,rgba(4,18,27,.90),rgba(8,29,39,.76));
+  box-shadow:0 16px 42px rgba(0,0,0,.25),inset 0 1px rgba(255,255,255,.035);
+  text-align:left;
+}
+.next-shoot-icon{width:46px;height:46px;display:grid;place-items:center;border:1px solid rgba(220,145,64,.42);border-radius:13px;background:rgba(220,145,64,.09);color:var(--accent-strong)}
+.next-shoot-icon svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.next-shoot-copy{min-width:0}
+.next-shoot-kicker{display:block;margin-bottom:4px;color:var(--accent);font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase}
+.next-shoot-copy strong{display:block;font-family:Oswald,Impact,sans-serif;font-size:23px;font-weight:500;line-height:1.05;letter-spacing:.035em;text-transform:uppercase}
+.next-shoot-copy>span:last-child{display:block;margin-top:5px;color:var(--muted);font-size:11px;line-height:1.4}
+.next-shoot-actions{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}
+.next-shoot-actions a{min-height:36px;padding:9px 12px;display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(220,145,64,.40);border-radius:999px;background:rgba(2,15,24,.50);color:var(--ink);font-size:9px;font-weight:700;letter-spacing:.08em;text-decoration:none;text-transform:uppercase;transition:transform .17s ease,border-color .17s ease,background .17s ease}
+.next-shoot-actions a:hover{transform:translateY(-2px);border-color:var(--accent-strong);background:rgba(9,38,55,.90)}
+.hero>.page-meta{margin:12px 0 0}
+@media(max-width:760px){
+  .next-shoot{grid-template-columns:44px minmax(0,1fr);padding:14px;gap:12px}
+  .next-shoot-icon{width:42px;height:42px;border-radius:11px}
+  .next-shoot-copy strong{font-size:21px}
+  .next-shoot-actions{grid-column:1/-1;justify-content:stretch}
+  .next-shoot-actions a{flex:1 1 120px}
+}
