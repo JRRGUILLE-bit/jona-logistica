@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#061827">
+<link rel="icon" href="../favicon.svg?v=3" type="image/svg+xml" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../android-chrome-192x192.png">
+<meta name="description" content="Accesos directos a los documentos de producción del rodaje de Jona.">
+<link rel="canonical" href="https://jrrguille-bit.github.io/jona-logistica-mapa/links/">
+<meta property="og:title" content="Links — Jona Logística">
+<meta property="og:description" content="Guion, planes, equipos y citaciones de producción.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jrrguille-bit.github.io/jona-logistica-mapa/links/">
+<title>Links — Jona Logística</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#061827;
+  --ink:#f5f0e8;
+  --muted:#aebbc4;
+  --accent:#dc9140;
+  --accent-strong:#f0aa56;
+  --line:rgba(220,145,64,.52);
+  --hair:rgba(255,255,255,.12);
+  --panel:rgba(4,20,32,.84);
+  --focus:#ffd18f;
+  --shadow:0 22px 65px rgba(0,0,0,.40);
+}
+*{box-sizing:border-box}
+html{min-height:100%;background:var(--bg)}
+body{
+  margin:0;
+  min-height:100vh;
+  position:relative;
+  isolation:isolate;
+  overflow-x:hidden;
+  color:var(--ink);
+  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:var(--bg);
+}
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  background:url("../b16f4d42-4937-42be-839e-e54647e64100.png") center/cover no-repeat;
+  filter:contrast(1.1) brightness(.62) saturate(.72);
+  transform:scale(1.012);
+}
+body:after{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  background:
+    linear-gradient(180deg,rgba(2,13,21,.58),rgba(2,13,21,.88)),
+    radial-gradient(circle at 50% 8%,rgba(25,89,123,.24),transparent 50%);
+}
+a{color:inherit}
+.page{position:relative;z-index:1;width:min(1080px,100%);margin:0 auto;padding:88px 22px 46px}
+.home-link{
+  position:fixed;
+  z-index:20;
+  top:20px;
+  left:20px;
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  min-height:44px;
+  padding:10px 16px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:rgba(4,20,32,.86);
+  color:var(--ink);
+  text-decoration:none;
+  font-family:Oswald,Impact,sans-serif;
+  font-size:15px;
+  font-weight:500;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+  box-shadow:0 12px 30px rgba(0,0,0,.32);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  transition:transform .18s ease,border-color .18s ease,background .18s ease;
+}
+.home-link:hover{transform:translateY(-2px);border-color:var(--accent-strong);background:rgba(7,28,42,.94)}
+.home-link:focus-visible,.link-card:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
+.hero{
+  padding:clamp(28px,5vw,52px);
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:linear-gradient(135deg,rgba(4,19,31,.92),rgba(7,34,51,.76));
+  box-shadow:var(--shadow);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+}
+.eyebrow{display:flex;align-items:center;gap:11px;margin:0 0 14px;color:var(--accent);font-family:Oswald,Impact,sans-serif;font-size:13px;font-weight:500;letter-spacing:.24em;text-transform:uppercase}
+.eyebrow:before{content:"";width:30px;height:1px;background:var(--accent)}
+h1{margin:0;font-family:Oswald,Impact,"Arial Narrow",sans-serif;font-size:clamp(54px,8vw,88px);font-weight:500;line-height:.95;letter-spacing:.035em;text-transform:uppercase;text-shadow:0 8px 30px rgba(0,0,0,.56)}
+.intro{max-width:700px;margin:18px 0 0;color:var(--muted);font-size:14px;line-height:1.6}
+.links-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:22px}
+.link-card{
+  position:relative;
+  min-height:126px;
+  padding:22px 58px 22px 22px;
+  display:grid;
+  grid-template-columns:58px minmax(0,1fr);
+  align-items:center;
+  gap:18px;
+  border:1px solid var(--hair);
+  border-radius:14px;
+  background:linear-gradient(145deg,rgba(5,23,35,.88),rgba(7,31,46,.76));
+  text-decoration:none;
+  box-shadow:0 16px 42px rgba(0,0,0,.28);
+  backdrop-filter:blur(15px);
+  -webkit-backdrop-filter:blur(15px);
+  transition:transform .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease;
+}
+.link-card:hover{transform:translateY(-3px);border-color:var(--line);background:linear-gradient(145deg,rgba(8,31,46,.96),rgba(9,38,55,.88));box-shadow:0 22px 52px rgba(0,0,0,.38)}
+.link-icon{width:56px;height:56px;display:grid;place-items:center;border:1px solid rgba(220,145,64,.42);border-radius:12px;background:rgba(4,17,27,.55);color:var(--accent)}
+.link-icon svg{width:31px;height:31px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.link-copy strong{display:block;font-family:Oswald,Impact,sans-serif;font-size:clamp(22px,3vw,28px);font-weight:500;line-height:1.08;letter-spacing:.045em;text-transform:uppercase}
+.link-copy span{display:block;margin-top:7px;color:var(--muted);font-size:12px;line-height:1.4}
+.arrow{position:absolute;right:24px;top:50%;width:13px;height:13px;border-top:2px solid var(--accent);border-right:2px solid var(--accent);transform:translateY(-50%) rotate(45deg);transition:transform .18s ease}
+.link-card:hover .arrow{transform:translate(4px,-50%) rotate(45deg)}
+.note{margin:18px 4px 0;color:var(--muted);font-size:11px;line-height:1.5}
+@media(max-width:720px){.links-grid{grid-template-columns:1fr}.page{padding-left:15px;padding-right:15px}.home-link{top:12px;left:12px}.hero{padding:27px 21px}.link-card{min-height:112px;padding:18px 48px 18px 16px;grid-template-columns:52px minmax(0,1fr);gap:14px}.link-icon{width:50px;height:50px}.link-copy strong{font-size:24px}.arrow{right:18px}}
+@media(prefers-reduced-motion:reduce){.home-link,.link-card,.arrow{transition:none}}
+</style>
+</head>
+<body>
+<a class="home-link" href="../" aria-label="Volver al inicio">← Inicio</a>
+<main class="page">
+  <header class="hero">
+    <p class="eyebrow">Producción Jona</p>
+    <h1>Links</h1>
+    <p class="intro">Accesos directos a los documentos centrales del rodaje. Los archivos se abren en Google Drive y respetan los permisos definidos en cada documento.</p>
+  </header>
+
+  <section class="links-grid" aria-label="Documentos de producción">
+    <a class="link-card" href="https://drive.google.com/file/d/1VzlNj7_zgREH-goF1sIfrc-xgLkj3DhX/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+      <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M8 3h11l6 6v20H8z"></path><path d="M19 3v7h6M12 16h9M12 21h9"></path></svg></span>
+      <span class="link-copy"><strong>Guion</strong><span>Versión de trabajo del guion</span></span>
+      <span class="arrow" aria-hidden="true"></span>
+    </a>
+
+    <a class="link-card" href="https://docs.google.com/spreadsheets/d/1YecQX-C6c6acIv_-rPKAzYUpezzngsgB8IYx-5iq-RY/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+      <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="5" y="7" width="22" height="20" rx="2"></rect><path d="M10 4v6M22 4v6M5 13h22M11 18h3M18 18h3M11 23h3M18 23h3"></path></svg></span>
+      <span class="link-copy"><strong>Plan de rodaje</strong><span>Jornadas, escenas y organización del rodaje</span></span>
+      <span class="arrow" aria-hidden="true"></span>
+    </a>
+
+    <a class="link-card" href="https://docs.google.com/spreadsheets/d/1dS3mO9iq4tCP3jFR8Up4eNE8R7KxFY6Sz6ZiP6hxoEc/edit" target="_blank" rel="noopener noreferrer">
+      <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M7 6h18v22H7z"></path><path d="M11 3v6M21 3v6M11 14h10M11 19h10M11 24h7"></path></svg></span>
+      <span class="link-copy"><strong>Plan de trabajo</strong><span>Organización general de tareas y producción</span></span>
+      <span class="arrow" aria-hidden="true"></span>
+    </a>
+
+    <a class="link-card" href="https://docs.google.com/spreadsheets/d/1T9Vgvehvm_tJvbQQYqK5QA-xi_sTx1-ZCK0k--Q_WuI/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">
+      <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M5 10h22v17H5z"></path><path d="M10 10V6h12v4M12 16h8M12 21h8"></path></svg></span>
+      <span class="link-copy"><strong>Equipos Ignis</strong><span>Listado y control de equipos de Ignis</span></span>
+      <span class="arrow" aria-hidden="true"></span>
+    </a>
+
+    <a class="link-card" href="https://docs.google.com/spreadsheets/d/11vfXwyag7-DtkuvvFYisTQ_zVAKpTUE3p-A0BeUMM4E/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">
+      <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M5 10h22v17H5z"></path><path d="M10 10V6h12v4M12 16h8M12 21h8"></path></svg></span>
+      <span class="link-copy"><strong>Equipos Musiteli</strong><span>Listado y control de equipos de Musiteli</span></span>
+      <span class="arrow" aria-hidden="true"></span>
+    </a>
+
+    <a class="link-card" href="https://docs.google.com/document/d/1uPplJ5RJcYxkhQEvv11-yEusTcgHst_m5wGb57xOTQ4/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+      <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M6 6h20v21H6z"></path><path d="M11 12h10M11 17h10M11 22h7"></path><path d="M10 3v6M22 3v6"></path></svg></span>
+      <span class="link-copy"><strong>Citaciones</strong><span>Horarios y convocatorias del equipo</span></span>
+      <span class="arrow" aria-hidden="true"></span>
+    </a>
+  </section>
+  <p class="note">Algunos documentos pueden solicitar inicio de sesión o autorización de acceso.</p>
+</main>
+</body>
+</html>
