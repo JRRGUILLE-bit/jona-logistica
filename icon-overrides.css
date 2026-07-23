@@ -1,0 +1,36 @@
+/* Iconos ilustrados de la portada */
+.next-shoot-icon,
+.actions .action .action-icon{
+  background-position:center!important;
+  background-repeat:no-repeat!important;
+}
+
+.next-shoot-icon{
+  background-image:url("proxima%20jornada.png")!important;
+  background-size:cover!important;
+}
+.next-shoot-icon svg{visibility:hidden}
+
+.actions .action:nth-child(3) .action-icon{
+  background-image:url("compas%20icono.png")!important;
+  background-size:cover!important;
+}
+.actions .action:nth-child(4) .action-icon{
+  background-image:url("docs%20%20.png")!important;
+  background-size:cover!important;
+}
+.actions .action:nth-child(5) .action-icon{
+  background-image:url("apps.png")!important;
+  background-size:cover!important;
+}
+.actions .action:nth-child(6) .action-icon{
+  background-image:url("discord.png")!important;
+  background-size:cover!important;
+}
+
+.actions .action:nth-child(3) .action-icon svg,
+.actions .action:nth-child(4) .action-icon svg,
+.actions .action:nth-child(5) .action-icon svg,
+.actions .action:nth-child(6) .action-icon svg{
+  visibility:hidden;
+}
