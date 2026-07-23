@@ -12,13 +12,14 @@ import hashlib
 import json
 import sys
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable
 
 ROOT = Path(__file__).resolve().parents[1]
 WEATHER_PATH = ROOT / "data" / "weather.json"
 CACHE_PATH = ROOT / "data" / "metsul-translations.json"
 SOURCE_CODE = "pt"
 TARGET_CODE = "es"
+PIVOT_CODE = "en"
 MAX_CACHE_ENTRIES = 250
 
 
@@ -55,50 +56,80 @@ def cache_key(title: str, excerpt: str) -> str:
     return hashlib.sha256(source.encode("utf-8")).hexdigest()
 
 
-def installed_translation(from_code: str, to_code: str):
+def installed_pair(from_code: str, to_code: str) -> bool:
     import argostranslate.translate
 
     languages = argostranslate.translate.get_installed_languages()
     source = next((lang for lang in languages if lang.code == from_code), None)
     target = next((lang for lang in languages if lang.code == to_code), None)
     if source is None or target is None:
-        return None
+        return False
     try:
-        return source.get_translation(target)
+        source.get_translation(target)
+        return True
     except Exception:
-        return None
+        return False
 
 
-def ensure_translation_model():
-    translation = installed_translation(SOURCE_CODE, TARGET_CODE)
-    if translation is not None:
-        return translation
-
+def install_pair(from_code: str, to_code: str, available: list[Any]) -> None:
     import argostranslate.package
 
-    print("Installing Argos Portuguese → Spanish model…")
-    argostranslate.package.update_package_index()
-    available = argostranslate.package.get_available_packages()
+    if installed_pair(from_code, to_code):
+        return
+
     candidates = [
         package
         for package in available
-        if package.from_code == SOURCE_CODE and package.to_code == TARGET_CODE
+        if package.from_code == from_code and package.to_code == to_code
     ]
     if not candidates:
-        raise RuntimeError("Argos no ofrece un modelo portugués → español")
+        raise RuntimeError(f"Argos no ofrece el modelo {from_code} → {to_code}")
 
     package = sorted(candidates, key=lambda item: item.package_version)[-1]
+    print(f"Installing Argos {from_code} → {to_code} model…")
     argostranslate.package.install_from_path(package.download())
-    translation = installed_translation(SOURCE_CODE, TARGET_CODE)
-    if translation is None:
-        raise RuntimeError("El modelo de Argos se instaló pero no quedó disponible")
-    return translation
 
 
-def safe_translate(translation, text: str) -> str:
+def ensure_translation_engine() -> tuple[Callable[[str], str], str]:
+    import argostranslate.package
+    import argostranslate.translate
+
+    if installed_pair(SOURCE_CODE, TARGET_CODE):
+        return (
+            lambda text: argostranslate.translate.translate(text, SOURCE_CODE, TARGET_CODE),
+            "direct",
+        )
+
+    argostranslate.package.update_package_index()
+    available = argostranslate.package.get_available_packages()
+
+    direct_available = any(
+        package.from_code == SOURCE_CODE and package.to_code == TARGET_CODE
+        for package in available
+    )
+    if direct_available:
+        install_pair(SOURCE_CODE, TARGET_CODE, available)
+        route = "direct"
+    else:
+        install_pair(SOURCE_CODE, PIVOT_CODE, available)
+        install_pair(PIVOT_CODE, TARGET_CODE, available)
+        route = f"{SOURCE_CODE}-{PIVOT_CODE}-{TARGET_CODE}"
+
+    def translate_text(text: str) -> str:
+        return argostranslate.translate.translate(text, SOURCE_CODE, TARGET_CODE)
+
+    # Fail during setup rather than halfway through the article list.
+    probe = str(translate_text("Previsão do tempo") or "").strip()
+    if not probe:
+        raise RuntimeError("Argos se instaló pero no pudo traducir portugués a español")
+
+    return translate_text, route
+
+
+def safe_translate(translate_text: Callable[[str], str], text: str) -> str:
     if not text:
         return ""
-    result = str(translation.translate(text) or "").strip()
+    result = str(translate_text(text) or "").strip()
     # Guard against empty or pathological repetitive model output.
     if not result or len(result) > max(500, len(text) * 5):
         raise ValueError("La traducción automática produjo una salida inválida")
@@ -108,7 +139,8 @@ def safe_translate(translation, text: str) -> str:
 def translate_articles(
     articles: list[dict[str, Any]],
     entries: dict[str, dict[str, Any]],
-    translation,
+    translate_text: Callable[[str], str],
+    route: str,
 ) -> tuple[int, int]:
     translated_count = 0
     cached_count = 0
@@ -124,13 +156,14 @@ def translate_articles(
             excerpt_es = str(cached.get("excerpt_es") or excerpt_pt)
             cached_count += 1
         else:
-            title_es = safe_translate(translation, title_pt)
-            excerpt_es = safe_translate(translation, excerpt_pt) if excerpt_pt else ""
+            title_es = safe_translate(translate_text, title_pt)
+            excerpt_es = safe_translate(translate_text, excerpt_pt) if excerpt_pt else ""
             entries[key] = {
                 "title_pt": title_pt,
                 "excerpt_pt": excerpt_pt,
                 "title_es": title_es,
                 "excerpt_es": excerpt_es,
+                "route": route,
             }
             translated_count += 1
 
@@ -144,6 +177,7 @@ def translate_articles(
                 "original_language": "pt",
                 "translation_status": "translated",
                 "translation_engine": "Argos Translate",
+                "translation_route": route,
             }
         )
 
@@ -200,14 +234,17 @@ def main() -> int:
     entries = cache.setdefault("entries", {})
 
     try:
-        translation = ensure_translation_model()
-        translated_count, cached_count = translate_articles(articles, entries, translation)
+        translate_text, route = ensure_translation_engine()
+        translated_count, cached_count = translate_articles(
+            articles, entries, translate_text, route
+        )
         propagate_to_days(payload, articles)
         source["translation"] = {
             "status": "ok",
             "engine": "Argos Translate",
             "source_language": SOURCE_CODE,
             "target_language": TARGET_CODE,
+            "route": route,
             "translated_now": translated_count,
             "from_cache": cached_count,
         }
@@ -215,7 +252,7 @@ def main() -> int:
         write_json(CACHE_PATH, cache)
         print(
             f"MetSul: {translated_count} traducciones nuevas, "
-            f"{cached_count} recuperadas del caché."
+            f"{cached_count} recuperadas del caché. Ruta: {route}."
         )
     except Exception as exc:
         # Translation is an enhancement: never erase or block weather data.
