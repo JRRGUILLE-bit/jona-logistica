@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Run the weather collector with the current Jona shooting-plan locations and times."""
+"""Run the weather collector with the current Jona shooting-plan locations and times.
+
+Updating this file also triggers an immediate weather refresh through GitHub Actions.
+"""
 
 from __future__ import annotations
 
