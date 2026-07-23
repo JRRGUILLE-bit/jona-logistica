@@ -15,6 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Create Docs section and preserve old URL
         run: |
@@ -26,7 +28,6 @@ jobs:
           home_path = Path('index.html')
 
           docs = links_path.read_text(encoding='utf-8')
-
           docs = docs.replace('aria-label="Seis documentos disponibles"', 'aria-label="Siete documentos disponibles"')
           docs = docs.replace('<strong>6</strong>\n        <span>Accesos directos</span>', '<strong>7</strong>\n        <span>Accesos directos</span>')
           docs = docs.replace('https://jrrguille-bit.github.io/jona-logistica/links/', 'https://jrrguille-bit.github.io/jona-logistica/docs/')
@@ -59,7 +60,7 @@ jobs:
           home = home.replace(old_icon, new_icon, 1)
           home_path.write_text(home, encoding='utf-8')
 
-          redirect = '''<!doctype html>
+          links_path.write_text('''<!doctype html>
 <html lang="es">
 <head>
 <meta charset="utf-8">
@@ -71,8 +72,7 @@ jobs:
 </head>
 <body><p>Redirigiendo a <a href="../docs/">Docs</a>…</p></body>
 </html>
-'''
-          links_path.write_text(redirect, encoding='utf-8')
+''', encoding='utf-8')
           PY
 
       - name: Commit Docs section
@@ -81,4 +81,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add index.html docs/index.html links/index.html
           git commit -m "Rename Links section to Docs and add guion tecnico"
-          git push
+          git pull --rebase origin main
+          git push origin main
