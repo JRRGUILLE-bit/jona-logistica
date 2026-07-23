@@ -1,0 +1,83 @@
+{
+  "name": "Jona tenía 15 años — Base de operaciones",
+  "short_name": "Jona Ops",
+  "description": "Clima, movilidad, documentos, compras, aplicaciones y comunicación del rodaje.",
+  "id": "/jona-logistica/",
+  "start_url": "/jona-logistica/?source=pwa",
+  "scope": "/jona-logistica/",
+  "lang": "es-UY",
+  "dir": "ltr",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "orientation": "any",
+  "background_color": "#07151d",
+  "theme_color": "#07151d",
+  "categories": [
+    "productivity",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "favicon.svg?v=3",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Clima",
+      "short_name": "Clima",
+      "description": "Abrir el pronóstico de rodaje.",
+      "url": "/jona-logistica/clima/?source=shortcut",
+      "icons": [
+        {
+          "src": "favicon.svg?v=3",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Movilidad",
+      "short_name": "Movilidad",
+      "description": "Abrir autos, recorridos y pasajeros.",
+      "url": "/jona-logistica/movilidad/?source=shortcut",
+      "icons": [
+        {
+          "src": "favicon.svg?v=3",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Docs",
+      "short_name": "Docs",
+      "description": "Abrir los documentos centrales de producción.",
+      "url": "/jona-logistica/docs/?source=shortcut",
+      "icons": [
+        {
+          "src": "favicon.svg?v=3",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ]
+}
