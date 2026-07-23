@@ -11,6 +11,16 @@
 }
 .next-shoot-icon svg{visibility:hidden}
 
+/* Clima necesita un recorte más cerrado porque el original es un collage. */
+.actions .action:nth-child(1) .action-icon{
+  background-image:url("clima.png")!important;
+  background-position:center 55%!important;
+  background-size:250% auto!important;
+}
+.actions .action:nth-child(2) .action-icon{
+  background-image:url("movildiad.png")!important;
+  background-size:cover!important;
+}
 .actions .action:nth-child(3) .action-icon{
   background-image:url("compas%20icono.png")!important;
   background-size:cover!important;
@@ -28,9 +38,6 @@
   background-size:cover!important;
 }
 
-.actions .action:nth-child(3) .action-icon svg,
-.actions .action:nth-child(4) .action-icon svg,
-.actions .action:nth-child(5) .action-icon svg,
-.actions .action:nth-child(6) .action-icon svg{
+.actions .action .action-icon svg{
   visibility:hidden;
 }
