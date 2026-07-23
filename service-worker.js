@@ -1,16 +1,19 @@
 const CACHE_PREFIX = 'jona-offline-';
-const CACHE_NAME = `${CACHE_PREFIX}v2`;
+const CACHE_NAME = `${CACHE_PREFIX}v3`;
 const SCOPE_URL = new URL(self.registration.scope);
+const NAVIGATION_TIMEOUT_MS = 3500;
 
 const CORE_PATHS = [
   './',
   './index.html',
-  './offline.js',
+  './manifest.webmanifest',
+  './offline.js?v=2',
   './home.css?v=20260723-3',
   './site-touchup.css?v=20260723-1',
   './site-touchup.css?v=20260723-2',
   './assets/site-bg-1600.webp',
   './assets/weather-bg-1600.webp',
+  './social-preview-jona-1200x630.jpg',
   './favicon.svg?v=3',
   './favicon-32x32.png',
   './favicon-16x16.png',
@@ -31,6 +34,8 @@ const CORE_PATHS = [
   './apps/index.html',
   './discord/',
   './discord/index.html',
+  './links/',
+  './links/index.html',
   './assets/avatars/01_maite_pineyrua_segura.webp',
   './assets/avatars/02_victoria_alexandre.webp',
   './assets/avatars/03_luthien_fernandez.webp',
@@ -75,6 +80,10 @@ self.addEventListener('activate', event => {
   })());
 });
 
+self.addEventListener('message', event => {
+  if (event.data?.type === 'SKIP_WAITING') self.skipWaiting();
+});
+
 function cleanRequest(request) {
   const url = new URL(request.url);
   url.search = '';
@@ -84,20 +93,22 @@ function cleanRequest(request) {
 async function networkFirstNavigation(request) {
   const cache = await caches.open(CACHE_NAME);
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 4500);
+  const timeout = setTimeout(() => controller.abort(), NAVIGATION_TIMEOUT_MS);
 
   try {
     const response = await fetch(request, { signal: controller.signal });
     clearTimeout(timeout);
     if (response.ok) await cache.put(cleanRequest(request), response.clone());
     return response;
-  } catch (error) {
+  } catch {
     clearTimeout(timeout);
     const url = new URL(request.url);
     let cached = await cache.match(cleanRequest(request), { ignoreSearch: true });
+
     if (!cached && url.pathname.endsWith('/')) {
       cached = await cache.match(new URL('index.html', url).href, { ignoreSearch: true });
     }
+
     if (cached) return cached;
     const home = await cache.match(HOME_URL, { ignoreSearch: true });
     return home || Response.error();
@@ -107,30 +118,33 @@ async function networkFirstNavigation(request) {
 async function weatherNetworkFirst(request) {
   const cache = await caches.open(CACHE_NAME);
   const key = new Request(WEATHER_URL);
+
   try {
     const response = await fetch(request);
     if (response.ok) await cache.put(key, response.clone());
     return response;
-  } catch (error) {
+  } catch {
     return (await cache.match(key)) || Response.error();
   }
 }
 
 async function cacheFirst(request) {
   const cache = await caches.open(CACHE_NAME);
-  const cached = await cache.match(request, { ignoreSearch: true });
+  const key = cleanRequest(request);
+  const cached = await cache.match(key, { ignoreSearch: true });
+
   if (cached) {
     fetch(request).then(response => {
-      if (response.ok) cache.put(cleanRequest(request), response.clone());
+      if (response.ok) cache.put(key, response.clone());
     }).catch(() => {});
     return cached;
   }
 
   try {
     const response = await fetch(request);
-    if (response.ok) await cache.put(cleanRequest(request), response.clone());
+    if (response.ok) await cache.put(key, response.clone());
     return response;
-  } catch (error) {
+  } catch {
     return Response.error();
   }
 }
@@ -154,7 +168,7 @@ self.addEventListener('fetch', event => {
 
   if (/\.(?:mp4|webm|zip)$/i.test(url.pathname)) return;
 
-  if (/\.(?:css|js|png|jpe?g|webp|svg|ico|woff2?)$/i.test(url.pathname)) {
+  if (/\.(?:css|js|json|webmanifest|png|jpe?g|webp|svg|ico|woff2?)$/i.test(url.pathname)) {
     event.respondWith(cacheFirst(request));
   }
 });
