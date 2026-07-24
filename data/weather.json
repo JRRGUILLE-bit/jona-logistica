@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-24T16:46:53-03:00",
+  "generated_at": "2026-07-24T18:20:43-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -119,11 +119,11 @@
               "available": true,
               "temperature_min": 7.8,
               "temperature_max": 15.4,
-              "apparent_min": 6.2,
+              "apparent_min": 6.5,
               "rain_probability_max": 0.0,
               "precipitation_sum": 0.0,
               "cloud_cover_avg": 98.0,
-              "wind_speed_max": 7.0,
+              "wind_speed_max": 8.0,
               "wind_gusts_max": 20.5,
               "rain_previous_12h": 0.0,
               "id": "ecmwf",
@@ -180,11 +180,11 @@
               "available": true,
               "temperature_min": 12.2,
               "temperature_max": 13.2,
-              "apparent_min": 11.2,
+              "apparent_min": 11.8,
               "rain_probability_max": 0.0,
               "precipitation_sum": 0.0,
               "cloud_cover_avg": 90.0,
-              "wind_speed_max": 9.8,
+              "wind_speed_max": 5.8,
               "wind_gusts_max": 17.6,
               "rain_previous_12h": 0.3,
               "id": "ecmwf",
@@ -218,12 +218,12 @@
           {
             "period": "Mañana",
             "description": "Nuboso, períodos de cubierto. Nieblas y neblinas.",
-            "wind": "NE 10-30 km/h. Periodos de variables  0-10 km/h."
+            "wind": "Sector N 05-20 km/h."
           },
           {
             "period": "Tarde/Noche",
             "description": "Nuboso, períodos de cubierto. Baja probabilidad de precipitaciones. Neblinas.",
-            "wind": "NE y N 10-30 km/h."
+            "wind": "NE al N y NW 10-30 km/h."
           }
         ]
       },
@@ -330,11 +330,11 @@
               "available": true,
               "temperature_min": 16.3,
               "temperature_max": 17.0,
-              "apparent_min": 16.1,
+              "apparent_min": 16.0,
               "rain_probability_max": 4.0,
               "precipitation_sum": 0.0,
               "cloud_cover_avg": 30.0,
-              "wind_speed_max": 6.8,
+              "wind_speed_max": 7.5,
               "wind_gusts_max": 18.4,
               "rain_previous_12h": 3.2,
               "id": "ecmwf",
@@ -429,8 +429,8 @@
         "periods": [
           {
             "period": "Mañana",
-            "description": "Cubierto a nuboso. Baja probabilidad de precipitaciones escasas. Neblinas.",
-            "wind": "NW al SW 10-30 km/h."
+            "description": "Cubierto a nuboso. Baja probabilidad de precipitaciones escasas. Neblinas y bancos de niebla.",
+            "wind": "NW al SW 05-30 km/h."
           },
           {
             "period": "Tarde/Noche",
@@ -544,11 +544,11 @@
               "available": true,
               "temperature_min": 11.0,
               "temperature_max": 11.0,
-              "apparent_min": 9.5,
+              "apparent_min": 10.2,
               "rain_probability_max": 40.0,
               "precipitation_sum": 0.1,
               "cloud_cover_avg": 100.0,
-              "wind_speed_max": 12.3,
+              "wind_speed_max": 7.1,
               "wind_gusts_max": 44.3,
               "rain_previous_12h": 22.0,
               "id": "ecmwf",
@@ -899,7 +899,7 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-07-24T16:46:53-03:00",
+      "fetched_at": "2026-07-24T18:20:43-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
@@ -1070,22 +1070,22 @@
         "source_language": "pt",
         "target_language": "es",
         "route": "direct",
-        "translated_now": 1,
-        "from_cache": 9
+        "translated_now": 0,
+        "from_cache": 10
       }
     },
     "inumet": {
       "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-07-24T16:46:53-03:00",
-      "updated_at": "2026-07-24T14:08:00-03:00",
+      "fetched_at": "2026-07-24T18:20:43-03:00",
+      "updated_at": "2026-07-24T18:00:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
         {
           "date": "2026-07-24",
           "label": "Viernes 24",
           "temperature_min": 8,
-          "temperature_max": 15,
+          "temperature_max": 16,
           "periods": [
             {
               "period": "Mañana",
@@ -1095,7 +1095,7 @@
             {
               "period": "Tarde/Noche",
               "description": "Nuboso y cubierto. Probables precipitaciones escasas. Neblinas y bancos de niebla.",
-              "wind": "NE y N 10-20 km/h. Periodos de variables 0-10 km/h."
+              "wind": "NE y N 05-20 km/h."
             }
           ]
         },
@@ -1108,12 +1108,12 @@
             {
               "period": "Mañana",
               "description": "Nuboso, períodos de cubierto. Nieblas y neblinas.",
-              "wind": "NE 10-30 km/h. Periodos de variables  0-10 km/h."
+              "wind": "Sector N 05-20 km/h."
             },
             {
               "period": "Tarde/Noche",
               "description": "Nuboso, períodos de cubierto. Baja probabilidad de precipitaciones. Neblinas.",
-              "wind": "NE y N 10-30 km/h."
+              "wind": "NE al N y NW 10-30 km/h."
             }
           ]
         },
@@ -1125,8 +1125,8 @@
           "periods": [
             {
               "period": "Mañana",
-              "description": "Cubierto a nuboso. Baja probabilidad de precipitaciones escasas. Neblinas.",
-              "wind": "NW al SW 10-30 km/h."
+              "description": "Cubierto a nuboso. Baja probabilidad de precipitaciones escasas. Neblinas y bancos de niebla.",
+              "wind": "NW al SW 05-30 km/h."
             },
             {
               "period": "Tarde/Noche",
@@ -1145,7 +1145,7 @@
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-07-24T16:46:53-03:00",
+      "fetched_at": "2026-07-24T18:20:43-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
