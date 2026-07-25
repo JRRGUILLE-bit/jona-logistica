@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-25T11:02:11-03:00",
+  "generated_at": "2026-07-25T12:19:26-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -31,7 +31,7 @@
         "confidence": "Alta",
         "headline": "Atención",
         "summary": "Por ahora los modelos no marcan lluvia significativa. Se proyectan ráfagas de hasta 41 km/h.",
-        "rain_probability_max": 2.0,
+        "rain_probability_max": 31.0,
         "precipitation_max": 0.3,
         "temperature_min": 7.2,
         "temperature_max": 17.4,
@@ -49,7 +49,7 @@
           "confidence": "Alta",
           "headline": "Sin señal fuerte por ahora",
           "summary": "Por ahora los modelos no marcan lluvia significativa.",
-          "rain_probability_max": 2.0,
+          "rain_probability_max": 31.0,
           "precipitation_max": 0.3,
           "temperature_min": 7.2,
           "temperature_max": 16.4,
@@ -103,7 +103,7 @@
             "confidence": "Alta",
             "headline": "Sin señal fuerte por ahora",
             "summary": "Por ahora los modelos no marcan lluvia significativa.",
-            "rain_probability_max": 0.0,
+            "rain_probability_max": 3.0,
             "precipitation_max": 0.1,
             "temperature_min": 8.4,
             "temperature_max": 15.8,
@@ -120,7 +120,7 @@
               "temperature_min": 8.4,
               "temperature_max": 15.8,
               "apparent_min": 7.2,
-              "rain_probability_max": 0.0,
+              "rain_probability_max": 3.0,
               "precipitation_sum": 0.1,
               "cloud_cover_avg": 99.0,
               "wind_speed_max": 7.2,
@@ -212,7 +212,7 @@
       "inumet": {
         "date": "2026-07-25",
         "label": "Sábado 25",
-        "temperature_min": 6,
+        "temperature_min": 5,
         "temperature_max": 18,
         "periods": [
           {
@@ -260,7 +260,7 @@
         "confidence": "Alta",
         "headline": "Sin señal fuerte por ahora",
         "summary": "Por ahora los modelos no marcan lluvia significativa.",
-        "rain_probability_max": 27.0,
+        "rain_probability_max": 12.0,
         "precipitation_max": 0.0,
         "temperature_min": 9.6,
         "temperature_max": 17.0,
@@ -278,7 +278,7 @@
           "confidence": "Alta",
           "headline": "Sin señal fuerte por ahora",
           "summary": "Por ahora los modelos no marcan lluvia significativa.",
-          "rain_probability_max": 27.0,
+          "rain_probability_max": 12.0,
           "precipitation_max": 0.0,
           "temperature_min": 9.6,
           "temperature_max": 17.0,
@@ -933,7 +933,7 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-07-25T11:02:11-03:00",
+      "fetched_at": "2026-07-25T12:19:26-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
@@ -1111,14 +1111,14 @@
     "inumet": {
       "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-07-25T11:02:11-03:00",
-      "updated_at": "2026-07-25T06:00:00-03:00",
+      "fetched_at": "2026-07-25T12:19:26-03:00",
+      "updated_at": "2026-07-25T12:00:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
         {
           "date": "2026-07-25",
           "label": "Sábado 25",
-          "temperature_min": 6,
+          "temperature_min": 5,
           "temperature_max": 18,
           "periods": [
             {
@@ -1179,7 +1179,7 @@
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-07-25T11:02:11-03:00",
+      "fetched_at": "2026-07-25T12:19:26-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
