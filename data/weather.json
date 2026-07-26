@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-26T12:29:27-03:00",
+  "generated_at": "2026-07-26T13:36:29-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -338,8 +338,8 @@
       "inumet": {
         "date": "2026-07-26",
         "label": "Domingo 26",
-        "temperature_min": 8,
-        "temperature_max": 15,
+        "temperature_min": 7,
+        "temperature_max": 19,
         "periods": [
           {
             "period": "Mañana",
@@ -830,14 +830,14 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-07-26T12:29:27-03:00",
+      "fetched_at": "2026-07-26T13:36:29-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
         {
           "id": 268850,
           "published_at": "2026-07-26T11:45:57",
-          "modified_at": "2026-07-26T11:45:57",
+          "modified_at": "2026-07-26T13:00:02",
           "title": "Dos episodios de lluvia evolucionarán hasta 250 mm, inundaciones y temporales",
           "excerpt": "La MetSul Meteorología refuerza la advertencia de que dos episodios de lluvia en este fin de julio y a principios de agosto, en un período de apenas diez días, deben traer acumulados de precipitación altos en varias regiones del Río Grande del Sur, manteniendo los ríos altos y con alto riesgo de nuevas inundaciones. El primer episodio [...]",
           "url": "https://metsul.com/dois-episodios-de-chuva-volumosa-trarao-ate-250-mm-cheias-e-temporais/",
@@ -1001,22 +1001,22 @@
         "source_language": "pt",
         "target_language": "es",
         "route": "direct",
-        "translated_now": 1,
-        "from_cache": 9
+        "translated_now": 0,
+        "from_cache": 10
       }
     },
     "inumet": {
-      "status": "stale",
+      "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-07-26T10:56:25-03:00",
-      "updated_at": "2026-07-26T06:00:00-03:00",
+      "fetched_at": "2026-07-26T13:36:29-03:00",
+      "updated_at": "2026-07-26T13:20:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
         {
           "date": "2026-07-26",
           "label": "Domingo 26",
-          "temperature_min": 8,
-          "temperature_max": 15,
+          "temperature_min": 7,
+          "temperature_max": 19,
           "periods": [
             {
               "period": "Mañana",
@@ -1071,13 +1071,12 @@
         "active": false,
         "summary": "No hay advertencia meteorológica vigente.",
         "url": "https://www.inumet.gub.uy/alerta"
-      },
-      "error": "No se encontró la fecha de actualización de INUMET"
+      }
     },
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-07-26T12:29:27-03:00",
+      "fetched_at": "2026-07-26T13:36:29-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
@@ -1097,7 +1096,5 @@
       "errors": []
     }
   },
-  "errors": [
-    "inumet: No se encontró la fecha de actualización de INUMET"
-  ]
+  "errors": []
 }
