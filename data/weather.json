@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-26T10:56:25-03:00",
+  "generated_at": "2026-07-26T12:29:27-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -157,7 +157,7 @@
         "confidence": "Baja · modelos divididos",
         "headline": "Atención",
         "summary": "Los modelos consultados no coinciden sobre la lluvia.",
-        "rain_probability_max": 25.0,
+        "rain_probability_max": 27.0,
         "precipitation_max": 0.6,
         "temperature_min": 9.8,
         "temperature_max": 17.7,
@@ -175,7 +175,7 @@
           "confidence": "Alta",
           "headline": "Atención",
           "summary": "Los modelos coinciden en una señal de lluvia.",
-          "rain_probability_max": 25.0,
+          "rain_probability_max": 27.0,
           "precipitation_max": 0.6,
           "temperature_min": 9.8,
           "temperature_max": 17.0,
@@ -228,7 +228,7 @@
             "confidence": "Alta",
             "headline": "Sin señal fuerte por ahora",
             "summary": "Por ahora los modelos no marcan lluvia significativa.",
-            "rain_probability_max": 1.0,
+            "rain_probability_max": 0.0,
             "precipitation_max": 0.0,
             "temperature_min": 16.4,
             "temperature_max": 17.7,
@@ -245,7 +245,7 @@
               "temperature_min": 16.4,
               "temperature_max": 16.9,
               "apparent_min": 15.5,
-              "rain_probability_max": 1.0,
+              "rain_probability_max": 0.0,
               "precipitation_sum": 0.0,
               "cloud_cover_avg": 84.0,
               "wind_speed_max": 10.8,
@@ -369,7 +369,7 @@
         "confidence": "Media",
         "headline": "Riesgo meteorológico",
         "summary": "Los modelos coinciden en una señal de lluvia. Se proyectan ráfagas de hasta 68 km/h. Puede haber suelo húmedo por lluvia en las horas previas.",
-        "rain_probability_max": 94.0,
+        "rain_probability_max": 91.0,
         "precipitation_max": 30.7,
         "temperature_min": 10.9,
         "temperature_max": 17.8,
@@ -387,7 +387,7 @@
           "confidence": "Media",
           "headline": "Riesgo meteorológico",
           "summary": "Los modelos coinciden en una señal de lluvia. Se proyectan ráfagas de hasta 68 km/h. Puede haber suelo húmedo por lluvia en las horas previas.",
-          "rain_probability_max": 94.0,
+          "rain_probability_max": 91.0,
           "precipitation_max": 30.7,
           "temperature_min": 10.9,
           "temperature_max": 17.8,
@@ -830,10 +830,26 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-07-26T10:56:25-03:00",
+      "fetched_at": "2026-07-26T12:29:27-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
+        {
+          "id": 268850,
+          "published_at": "2026-07-26T11:45:57",
+          "modified_at": "2026-07-26T11:45:57",
+          "title": "Dos episodios de lluvia evolucionarán hasta 250 mm, inundaciones y temporales",
+          "excerpt": "La MetSul Meteorología refuerza la advertencia de que dos episodios de lluvia en este fin de julio y a principios de agosto, en un período de apenas diez días, deben traer acumulados de precipitación altos en varias regiones del Río Grande del Sur, manteniendo los ríos altos y con alto riesgo de nuevas inundaciones. El primer episodio [...]",
+          "url": "https://metsul.com/dois-episodios-de-chuva-volumosa-trarao-ate-250-mm-cheias-e-temporais/",
+          "author": 861,
+          "title_pt": "Dois episódios de chuva volumosa trarão até 250 mm, cheias e temporais",
+          "excerpt_pt": "A MetSul Meteorologia reforça o alerta que dois episódios de chuva neste fim de julho e no início de agosto, em um período de apenas dez dias, devem trazer acumulados de precipitação altos em várias regiões do Rio Grande do Sul, mantendo os rios altos e com elevado risco de novas cheias. O primeiro episódio […]",
+          "language": "es",
+          "original_language": "pt",
+          "translation_status": "translated",
+          "translation_engine": "Argos Translate",
+          "translation_route": "direct"
+        },
         {
           "id": 268812,
           "published_at": "2026-07-25T08:15:22",
@@ -977,22 +993,6 @@
           "translation_status": "translated",
           "translation_engine": "Argos Translate",
           "translation_route": "direct"
-        },
-        {
-          "id": 267724,
-          "published_at": "2026-07-20T14:08:35",
-          "modified_at": "2026-07-20T20:10:11",
-          "title": "Casi 50 ciudades gauchas registran daños por lluvia y viento",
-          "excerpt": "Chuva y viento que alcanzan el Río Grande del Sur desde el fin de la semana pasada dejaron daños y trastornos en 49 municipios, con estragos concentrados principalmente en residencias, escuelas, edificios públicos, redes de energía eléctrica, carreteras y áreas urbanas. El levantamiento más actual de la Defensa Civil muestra un escenario de perjuicios dispersos por prácticamente [...]",
-          "url": "https://metsul.com/quase-50-cidades-gauchas-registram-danos-por-chuva-e-vento/",
-          "author": 879,
-          "title_pt": "Quase 50 cidades gaúchas registram danos por chuva e vento",
-          "excerpt_pt": "Chuva e vento que atingirem o Rio Grande do Sul desde o fim da semana passada deixaram danos e transtornos em 49 municípios, com estragos concentrados principalmente em residências, escolas, prédios públicos, redes de energia elétrica, rodovias e áreas urbanas. O levantamento mais atual da Defesa Civil mostra um cenário de prejuízos espalhados por praticamente […]",
-          "language": "es",
-          "original_language": "pt",
-          "translation_status": "translated",
-          "translation_engine": "Argos Translate",
-          "translation_route": "direct"
         }
       ],
       "translation": {
@@ -1001,12 +1001,12 @@
         "source_language": "pt",
         "target_language": "es",
         "route": "direct",
-        "translated_now": 0,
-        "from_cache": 10
+        "translated_now": 1,
+        "from_cache": 9
       }
     },
     "inumet": {
-      "status": "ok",
+      "status": "stale",
       "kind": "Fuente oficial",
       "fetched_at": "2026-07-26T10:56:25-03:00",
       "updated_at": "2026-07-26T06:00:00-03:00",
@@ -1071,12 +1071,13 @@
         "active": false,
         "summary": "No hay advertencia meteorológica vigente.",
         "url": "https://www.inumet.gub.uy/alerta"
-      }
+      },
+      "error": "No se encontró la fecha de actualización de INUMET"
     },
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-07-26T10:56:25-03:00",
+      "fetched_at": "2026-07-26T12:29:27-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
@@ -1096,5 +1097,7 @@
       "errors": []
     }
   },
-  "errors": []
+  "errors": [
+    "inumet: No se encontró la fecha de actualización de INUMET"
+  ]
 }
