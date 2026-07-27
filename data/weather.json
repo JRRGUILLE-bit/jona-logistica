@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-27T19:18:17-03:00",
+  "generated_at": "2026-07-27T19:42:22-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -727,7 +727,7 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-07-27T19:18:17-03:00",
+      "fetched_at": "2026-07-27T19:42:22-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
@@ -898,14 +898,14 @@
         "source_language": "pt",
         "target_language": "es",
         "route": "direct",
-        "translated_now": 1,
-        "from_cache": 9
+        "translated_now": 0,
+        "from_cache": 10
       }
     },
     "inumet": {
       "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-07-27T19:18:17-03:00",
+      "fetched_at": "2026-07-27T19:42:22-03:00",
       "updated_at": "2026-07-27T18:00:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
@@ -973,7 +973,7 @@
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-07-27T19:18:17-03:00",
+      "fetched_at": "2026-07-27T19:42:22-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
