@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-26T21:12:31-03:00",
+  "generated_at": "2026-07-27T01:02:35-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -24,7 +24,7 @@
       "label": "Sábado 25 de julio",
       "weekend": "first",
       "locations": "Taller · Ciudad de la Costa · Casa Negro · La Paz",
-      "lead_days": -1,
+      "lead_days": -2,
       "general": {
         "available": false,
         "level": "unknown",
@@ -150,61 +150,31 @@
       "label": "Domingo 26 de julio",
       "weekend": "first",
       "locations": "Plaza de la Ciudad de La Paz · Colina · Las Piedras",
-      "lead_days": 0,
+      "lead_days": -1,
       "general": {
-        "available": true,
-        "level": "warning",
-        "confidence": "Baja · modelos divididos",
-        "headline": "Atención",
-        "summary": "Los modelos consultados no coinciden sobre la lluvia.",
-        "rain_probability_max": 27.0,
-        "precipitation_max": 0.6,
-        "temperature_min": 9.8,
-        "temperature_max": 17.4,
-        "wind_gusts_max": 28.1,
-        "cloud_cover_avg": 62.0,
-        "rain_previous_12h": 0.0,
-        "wet_model_votes": 1,
-        "model_count": 2,
-        "model_disagreement": true
+        "available": false,
+        "level": "unknown",
+        "confidence": "Sin datos todavía",
+        "headline": "Aún fuera del alcance",
+        "summary": "La fecha todavía no está dentro del alcance de los modelos consultados."
       },
       "models": [
         {
-          "available": true,
-          "level": "warning",
-          "confidence": "Alta",
-          "headline": "Atención",
-          "summary": "Los modelos coinciden en una señal de lluvia.",
-          "rain_probability_max": 27.0,
-          "precipitation_max": 0.6,
-          "temperature_min": 9.8,
-          "temperature_max": 17.2,
-          "wind_gusts_max": 23.8,
-          "cloud_cover_avg": 48.0,
-          "rain_previous_12h": 0.0,
-          "wet_model_votes": 2,
-          "model_count": 2,
-          "model_disagreement": false,
+          "available": false,
+          "level": "unknown",
+          "confidence": "Sin datos todavía",
+          "headline": "Aún fuera del alcance",
+          "summary": "La fecha todavía no está dentro del alcance de los modelos consultados.",
           "id": "ecmwf",
           "name": "ECMWF IFS",
           "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
         },
         {
-          "available": true,
-          "level": "good",
-          "confidence": "Alta",
-          "headline": "Sin señal fuerte por ahora",
-          "summary": "Por ahora los modelos no marcan lluvia significativa.",
-          "rain_probability_max": 0.0,
-          "precipitation_max": 0.0,
-          "temperature_min": 10.8,
-          "temperature_max": 17.4,
-          "wind_gusts_max": 28.1,
-          "cloud_cover_avg": 76.0,
-          "rain_previous_12h": 0.0,
-          "wet_model_votes": 0,
-          "model_count": 2,
-          "model_disagreement": false,
+          "available": false,
+          "level": "unknown",
+          "confidence": "Sin datos todavía",
+          "headline": "Aún fuera del alcance",
+          "summary": "La fecha todavía no está dentro del alcance de los modelos consultados.",
           "id": "gfs",
           "name": "NOAA GFS",
           "url": "https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast"
@@ -223,49 +193,21 @@
             "continuidad de cielo"
           ],
           "general": {
-            "available": true,
-            "level": "good",
-            "confidence": "Alta",
-            "headline": "Sin señal fuerte por ahora",
-            "summary": "Por ahora los modelos no marcan lluvia significativa.",
-            "rain_probability_max": 2.0,
-            "precipitation_max": 0.0,
-            "temperature_min": 16.5,
-            "temperature_max": 17.4,
-            "wind_gusts_max": 23.8,
-            "cloud_cover_avg": 32.0,
-            "rain_previous_12h": 0.6,
-            "wet_model_votes": 0,
-            "model_count": 2,
-            "model_disagreement": false
+            "available": false,
+            "level": "unknown",
+            "confidence": "Sin datos todavía",
+            "headline": "Aún fuera del alcance",
+            "summary": "La fecha todavía no está dentro del alcance de los modelos consultados."
           },
           "models": [
             {
-              "available": true,
-              "temperature_min": 16.5,
-              "temperature_max": 17.0,
-              "apparent_min": 16.0,
-              "rain_probability_max": 2.0,
-              "precipitation_sum": 0.0,
-              "cloud_cover_avg": 8.0,
-              "wind_speed_max": 7.9,
-              "wind_gusts_max": 23.8,
-              "rain_previous_12h": 0.6,
+              "available": false,
               "id": "ecmwf",
               "name": "ECMWF IFS",
               "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
             },
             {
-              "available": true,
-              "temperature_min": 17.4,
-              "temperature_max": 17.4,
-              "apparent_min": 16.0,
-              "rain_probability_max": 0.0,
-              "precipitation_sum": 0.0,
-              "cloud_cover_avg": 56.0,
-              "wind_speed_max": 10.3,
-              "wind_gusts_max": 10.4,
-              "rain_previous_12h": 0.0,
+              "available": false,
               "id": "gfs",
               "name": "NOAA GFS",
               "url": "https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast"
@@ -285,49 +227,21 @@
             "frío"
           ],
           "general": {
-            "available": true,
-            "level": "good",
-            "confidence": "Alta",
-            "headline": "Sin señal fuerte por ahora",
-            "summary": "Por ahora los modelos no marcan lluvia significativa.",
-            "rain_probability_max": 0.0,
-            "precipitation_max": 0.0,
-            "temperature_min": 11.0,
-            "temperature_max": 13.2,
-            "wind_gusts_max": 26.6,
-            "cloud_cover_avg": 14.0,
-            "rain_previous_12h": 0.6,
-            "wet_model_votes": 0,
-            "model_count": 2,
-            "model_disagreement": false
+            "available": false,
+            "level": "unknown",
+            "confidence": "Sin datos todavía",
+            "headline": "Aún fuera del alcance",
+            "summary": "La fecha todavía no está dentro del alcance de los modelos consultados."
           },
           "models": [
             {
-              "available": true,
-              "temperature_min": 11.0,
-              "temperature_max": 13.0,
-              "apparent_min": 9.8,
-              "rain_probability_max": 0.0,
-              "precipitation_sum": 0.0,
-              "cloud_cover_avg": 19.0,
-              "wind_speed_max": 8.0,
-              "wind_gusts_max": 15.5,
-              "rain_previous_12h": 0.6,
+              "available": false,
               "id": "ecmwf",
               "name": "ECMWF IFS",
               "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
             },
             {
-              "available": true,
-              "temperature_min": 11.4,
-              "temperature_max": 13.2,
-              "apparent_min": 9.6,
-              "rain_probability_max": 0.0,
-              "precipitation_sum": 0.0,
-              "cloud_cover_avg": 10.0,
-              "wind_speed_max": 11.4,
-              "wind_gusts_max": 26.6,
-              "rain_previous_12h": 0.0,
+              "available": false,
               "id": "gfs",
               "name": "NOAA GFS",
               "url": "https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast"
@@ -335,24 +249,7 @@
           ]
         }
       ],
-      "inumet": {
-        "date": "2026-07-26",
-        "label": "Domingo 26",
-        "temperature_min": 8,
-        "temperature_max": 15,
-        "periods": [
-          {
-            "period": "Mañana",
-            "description": "Nuboso, períodos de cubierto. Baja probabilidad de precipitaciones escasas. Nieblas y neblinas.",
-            "wind": "NW al sector S 05-30 km/h."
-          },
-          {
-            "period": "Tarde/Noche",
-            "description": "Nuboso, períodos de algo nuboso. Nieblas y neblinas.",
-            "wind": "SE al E y NE 10-30 km/h."
-          }
-        ]
-      },
+      "inumet": null,
       "metsul_articles": []
     },
     {
@@ -362,11 +259,11 @@
       "label": "Sábado 1.º de agosto",
       "weekend": "second",
       "locations": "Colina · La Paz · Casa · Parque del Plata",
-      "lead_days": 6,
+      "lead_days": 5,
       "general": {
         "available": true,
         "level": "danger",
-        "confidence": "Media",
+        "confidence": "Alta",
         "headline": "Riesgo meteorológico",
         "summary": "Los modelos coinciden en una señal de lluvia. Se proyectan ráfagas de hasta 68 km/h. Puede haber suelo húmedo por lluvia en las horas previas.",
         "rain_probability_max": 98.0,
@@ -375,7 +272,7 @@
         "temperature_max": 19.2,
         "wind_gusts_max": 68.0,
         "cloud_cover_avg": 86.0,
-        "rain_previous_12h": 9.5,
+        "rain_previous_12h": 12.8,
         "wet_model_votes": 2,
         "model_count": 2,
         "model_disagreement": false
@@ -384,16 +281,16 @@
         {
           "available": true,
           "level": "danger",
-          "confidence": "Media",
+          "confidence": "Alta",
           "headline": "Riesgo meteorológico",
           "summary": "Los modelos coinciden en una señal de lluvia. Se proyectan ráfagas de hasta 68 km/h. Puede haber suelo húmedo por lluvia en las horas previas.",
           "rain_probability_max": 98.0,
-          "precipitation_max": 18.9,
+          "precipitation_max": 20.8,
           "temperature_min": 10.1,
-          "temperature_max": 17.6,
+          "temperature_max": 18.6,
           "wind_gusts_max": 68.0,
-          "cloud_cover_avg": 84.0,
-          "rain_previous_12h": 9.5,
+          "cloud_cover_avg": 85.0,
+          "rain_previous_12h": 12.8,
           "wet_model_votes": 2,
           "model_count": 2,
           "model_disagreement": false,
@@ -404,14 +301,14 @@
         {
           "available": true,
           "level": "danger",
-          "confidence": "Media",
+          "confidence": "Alta",
           "headline": "Riesgo meteorológico",
-          "summary": "Los modelos coinciden en una señal de lluvia. Puede haber suelo húmedo por lluvia en las horas previas.",
+          "summary": "Los modelos coinciden en una señal de lluvia. Se proyectan ráfagas de hasta 62 km/h. Puede haber suelo húmedo por lluvia en las horas previas.",
           "rain_probability_max": 94.0,
           "precipitation_max": 48.2,
           "temperature_min": 11.5,
           "temperature_max": 19.2,
-          "wind_gusts_max": 39.2,
+          "wind_gusts_max": 62.3,
           "cloud_cover_avg": 88.0,
           "rain_previous_12h": 4.6,
           "wet_model_votes": 2,
@@ -439,32 +336,32 @@
           "general": {
             "available": true,
             "level": "warning",
-            "confidence": "Baja · modelos divididos",
+            "confidence": "Alta",
             "headline": "Atención",
-            "summary": "Los modelos consultados no coinciden sobre la lluvia. Puede haber suelo húmedo por lluvia en las horas previas.",
+            "summary": "Los modelos coinciden en una señal de lluvia. Puede haber suelo húmedo por lluvia en las horas previas.",
             "rain_probability_max": 76.0,
             "precipitation_max": 1.1,
-            "temperature_min": 16.6,
+            "temperature_min": 15.1,
             "temperature_max": 17.5,
             "wind_gusts_max": 30.2,
             "cloud_cover_avg": 100.0,
             "rain_previous_12h": 34.2,
-            "wet_model_votes": 1,
+            "wet_model_votes": 2,
             "model_count": 2,
-            "model_disagreement": true
+            "model_disagreement": false
           },
           "models": [
             {
               "available": true,
-              "temperature_min": 16.6,
-              "temperature_max": 16.6,
-              "apparent_min": 16.3,
-              "rain_probability_max": 37.0,
+              "temperature_min": 15.1,
+              "temperature_max": 15.1,
+              "apparent_min": 14.5,
+              "rain_probability_max": 56.0,
               "precipitation_sum": 0.0,
               "cloud_cover_avg": 100.0,
-              "wind_speed_max": 17.8,
+              "wind_speed_max": 15.4,
               "wind_gusts_max": 30.2,
-              "rain_previous_12h": 23.9,
+              "rain_previous_12h": 26.8,
               "id": "ecmwf",
               "name": "ECMWF IFS",
               "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
@@ -478,7 +375,7 @@
               "precipitation_sum": 1.1,
               "cloud_cover_avg": 100.0,
               "wind_speed_max": 14.3,
-              "wind_gusts_max": 14.8,
+              "wind_gusts_max": 29.9,
               "rain_previous_12h": 34.2,
               "id": "gfs",
               "name": "NOAA GFS",
@@ -501,15 +398,15 @@
           "general": {
             "available": true,
             "level": "warning",
-            "confidence": "Media",
+            "confidence": "Alta",
             "headline": "Atención",
-            "summary": "Los modelos coinciden en una señal de lluvia. Se proyectan ráfagas de hasta 41 km/h. Puede haber suelo húmedo por lluvia en las horas previas.",
+            "summary": "Los modelos coinciden en una señal de lluvia. Se proyectan ráfagas de hasta 42 km/h. Puede haber suelo húmedo por lluvia en las horas previas.",
             "rain_probability_max": 70.0,
             "precipitation_max": 1.2,
             "temperature_min": 14.2,
             "temperature_max": 18.6,
-            "wind_gusts_max": 41.0,
-            "cloud_cover_avg": 91.0,
+            "wind_gusts_max": 41.8,
+            "cloud_cover_avg": 93.0,
             "rain_previous_12h": 48.0,
             "wet_model_votes": 2,
             "model_count": 2,
@@ -519,14 +416,14 @@
             {
               "available": true,
               "temperature_min": 14.2,
-              "temperature_max": 17.5,
-              "apparent_min": 13.6,
-              "rain_probability_max": 32.0,
-              "precipitation_sum": 0.6,
-              "cloud_cover_avg": 86.0,
-              "wind_speed_max": 17.5,
+              "temperature_max": 15.8,
+              "apparent_min": 13.5,
+              "rain_probability_max": 45.0,
+              "precipitation_sum": 0.0,
+              "cloud_cover_avg": 90.0,
+              "wind_speed_max": 17.2,
               "wind_gusts_max": 41.0,
-              "rain_previous_12h": 22.5,
+              "rain_previous_12h": 30.0,
               "id": "ecmwf",
               "name": "ECMWF IFS",
               "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
@@ -540,7 +437,7 @@
               "precipitation_sum": 1.2,
               "cloud_cover_avg": 96.0,
               "wind_speed_max": 27.3,
-              "wind_gusts_max": 38.9,
+              "wind_gusts_max": 41.8,
               "rain_previous_12h": 48.0,
               "id": "gfs",
               "name": "NOAA GFS",
@@ -563,7 +460,7 @@
           "general": {
             "available": true,
             "level": "warning",
-            "confidence": "Media",
+            "confidence": "Alta",
             "headline": "Atención",
             "summary": "Por ahora los modelos no marcan lluvia significativa. Puede haber suelo húmedo por lluvia en las horas previas.",
             "rain_probability_max": 20.0,
@@ -581,14 +478,14 @@
             {
               "available": true,
               "temperature_min": 10.2,
-              "temperature_max": 13.3,
+              "temperature_max": 13.4,
               "apparent_min": 10.1,
               "rain_probability_max": 13.0,
               "precipitation_sum": 0.0,
               "cloud_cover_avg": 37.0,
-              "wind_speed_max": 5.4,
+              "wind_speed_max": 5.6,
               "wind_gusts_max": 34.6,
-              "rain_previous_12h": 0.6,
+              "rain_previous_12h": 0.0,
               "id": "ecmwf",
               "name": "ECMWF IFS",
               "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
@@ -602,7 +499,7 @@
               "precipitation_sum": 0.0,
               "cloud_cover_avg": 74.0,
               "wind_speed_max": 16.7,
-              "wind_gusts_max": 30.6,
+              "wind_gusts_max": 33.1,
               "rain_previous_12h": 10.5,
               "id": "gfs",
               "name": "NOAA GFS",
@@ -638,18 +535,18 @@
       "label": "Domingo 2 de agosto",
       "weekend": "second",
       "locations": "Casa · Parque del Plata",
-      "lead_days": 7,
+      "lead_days": 6,
       "general": {
         "available": true,
         "level": "danger",
         "confidence": "Media",
         "headline": "Riesgo meteorológico",
-        "summary": "Los modelos coinciden en una señal de lluvia. Se proyectan ráfagas de hasta 51 km/h.",
+        "summary": "Los modelos coinciden en una señal de lluvia. Se proyectan ráfagas de hasta 41 km/h.",
         "rain_probability_max": 48.0,
         "precipitation_max": 6.6,
         "temperature_min": 8.6,
         "temperature_max": 15.0,
-        "wind_gusts_max": 51.1,
+        "wind_gusts_max": 41.4,
         "cloud_cover_avg": 96.0,
         "rain_previous_12h": 0.6,
         "wet_model_votes": 2,
@@ -669,7 +566,7 @@
           "temperature_max": 12.1,
           "wind_gusts_max": 41.4,
           "cloud_cover_avg": 94.0,
-          "rain_previous_12h": 0.4,
+          "rain_previous_12h": 0.0,
           "wet_model_votes": 1,
           "model_count": 1,
           "model_disagreement": false,
@@ -682,12 +579,12 @@
           "level": "danger",
           "confidence": "Baja",
           "headline": "Riesgo meteorológico",
-          "summary": "Los modelos coinciden en una señal de lluvia. Se proyectan ráfagas de hasta 51 km/h.",
+          "summary": "Los modelos coinciden en una señal de lluvia.",
           "rain_probability_max": 23.0,
           "precipitation_max": 6.6,
           "temperature_min": 10.7,
           "temperature_max": 15.0,
-          "wind_gusts_max": 51.1,
+          "wind_gusts_max": 36.0,
           "cloud_cover_avg": 98.0,
           "rain_previous_12h": 0.6,
           "wet_model_votes": 1,
@@ -752,7 +649,7 @@
               "precipitation_sum": 0.0,
               "cloud_cover_avg": 100.0,
               "wind_speed_max": 20.1,
-              "wind_gusts_max": 22.0,
+              "wind_gusts_max": 31.0,
               "rain_previous_12h": 0.0,
               "id": "gfs",
               "name": "NOAA GFS",
@@ -813,7 +710,7 @@
               "precipitation_sum": 1.6,
               "cloud_cover_avg": 100.0,
               "wind_speed_max": 19.8,
-              "wind_gusts_max": 34.2,
+              "wind_gusts_max": 32.4,
               "rain_previous_12h": 0.0,
               "id": "gfs",
               "name": "NOAA GFS",
@@ -830,7 +727,7 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-07-26T21:12:31-03:00",
+      "fetched_at": "2026-07-27T01:02:35-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
@@ -1008,28 +905,10 @@
     "inumet": {
       "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-07-26T21:12:31-03:00",
-      "updated_at": "2026-07-26T00:00:00-03:00",
+      "fetched_at": "2026-07-27T01:02:35-03:00",
+      "updated_at": "2026-07-27T00:00:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
-        {
-          "date": "2026-07-26",
-          "label": "Domingo 26",
-          "temperature_min": 8,
-          "temperature_max": 15,
-          "periods": [
-            {
-              "period": "Mañana",
-              "description": "Nuboso, períodos de cubierto. Baja probabilidad de precipitaciones escasas. Nieblas y neblinas.",
-              "wind": "NW al sector S 05-30 km/h."
-            },
-            {
-              "period": "Tarde/Noche",
-              "description": "Nuboso, períodos de algo nuboso. Nieblas y neblinas.",
-              "wind": "SE al E y NE 10-30 km/h."
-            }
-          ]
-        },
         {
           "date": "2026-07-27",
           "label": "Lunes 27",
@@ -1044,7 +923,7 @@
             {
               "period": "Tarde/Noche",
               "description": "Nuboso, períodos de cubierto. Precipitaciones y probables tormentas. Nieblas y neblinas.",
-              "wind": "Sector N 10-30 km/h a variables 0-10 km/h."
+              "wind": "NE al NW y W 10-30 km/h, rachas de hasta 40 km/h."
             }
           ]
         },
@@ -1056,13 +935,31 @@
           "periods": [
             {
               "period": "Mañana",
-              "description": "Nuboso y cubierto. Probables precipitaciones aisladas. Neblinas y bancos de niebla.",
-              "wind": "Variables 0-10 km/h afirmándose del sector E 15 – 30 km/h."
+              "description": "Nuboso y cubierto. Probables precipitaciones aisladas. Nieblas y neblinas.",
+              "wind": "W al sector S 10-30 km/h."
             },
             {
               "period": "Tarde/Noche",
               "description": "Nuboso y cubierto.",
-              "wind": "Sector E 20 – 40 km/h."
+              "wind": "SE y E 20-40 km/h."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-29",
+          "label": "Miércoles 29",
+          "temperature_min": 8,
+          "temperature_max": 13,
+          "periods": [
+            {
+              "period": "Mañana",
+              "description": "Nuboso y cubierto. Precipitaciones aisladas.  Mejorando.",
+              "wind": "SE 20-30 km/h, rachas de hasta 40 km/h."
+            },
+            {
+              "period": "Tarde/Noche",
+              "description": "Nuboso y cubierto. Neblinas.",
+              "wind": "SE y E 10-30 km/h."
             }
           ]
         }
@@ -1076,7 +973,7 @@
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-07-26T21:12:31-03:00",
+      "fetched_at": "2026-07-27T01:02:35-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
