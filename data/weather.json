@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-27T17:42:53-03:00",
+  "generated_at": "2026-07-27T19:18:17-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -727,10 +727,26 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-07-27T17:42:53-03:00",
+      "fetched_at": "2026-07-27T19:18:17-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
+        {
+          "id": 268869,
+          "published_at": "2026-07-27T18:51:28",
+          "modified_at": "2026-07-27T19:03:43",
+          "title": "Frente caliente trae lluvia intensa, granizo destructivo y viento; riesgo continúa",
+          "excerpt": "El avance de un frente caliente sobre el Río Grande del Sur de Oeste hacia el Este provocó una secuencia de tiempo con lluvia intensa, ventania y granizo este lunes (27), causando trastornos y daños en cientos de residencias en el Noroeste del estado. Santo Antônio de las Misiones fue el municipio más alcanzado por el granizo, pero hubo [...]",
+          "url": "https://metsul.com/frente-quente-traz-chuva-intensa-granizo-destrutivo-e-vento-risco-continua/",
+          "author": 861,
+          "title_pt": "Frente quente traz chuva intensa, granizo destrutivo e vento; risco continua",
+          "excerpt_pt": "O avanço de uma frente quente sobre o Rio Grande do Sul de Oeste para Leste provocou uma sequência de temporais com chuva intensa, ventania e granizo nesta segunda-feira (27), causando transtornos e danos em centenas de residências no Noroeste do estado. Santo Antônio das Missões foi o município mais atingido pelo granizo, mas houve […]",
+          "language": "es",
+          "original_language": "pt",
+          "translation_status": "translated",
+          "translation_engine": "Argos Translate",
+          "translation_route": "direct"
+        },
         {
           "id": 268850,
           "published_at": "2026-07-26T14:19:57",
@@ -874,22 +890,6 @@
           "translation_status": "translated",
           "translation_engine": "Argos Translate",
           "translation_route": "direct"
-        },
-        {
-          "id": 267714,
-          "published_at": "2026-07-20T14:54:49",
-          "modified_at": "2026-07-20T15:10:10",
-          "title": "Riesgo alto: nueva alerta meteorológica para Porto Alegre",
-          "excerpt": "La MetSul Meteorología emite una nueva alerta para la ciudad de Porto Alegre en la que advierte para el mantenimiento de las condiciones de fuerte la intensa inestabilidad con lluvia al menos hasta el miércoles (22). La lluvia acumulada entre ayer (19) y el medio de la tarde de este lunes (21) somó en algunos barrios de Porto Alegre [...]",
-          "url": "https://metsul.com/risco-alto-novo-alerta-meteorologico-para-porto-alegre/",
-          "author": 861,
-          "title_pt": "Risco alto: novo alerta meteorológico para Porto Alegre",
-          "excerpt_pt": "A MetSul Meteorologia emite um novo alerta para a cidade de Porto Alegre em que adverte para a manutenção das condições de forte a intensa instabilidade com chuva ao menos até a quarta-feira (22). A chuva acumulada entre ontem (19) e o meio da tarde desta segunda-feira (21) somou em alguns bairros de Porto Alegre […]",
-          "language": "es",
-          "original_language": "pt",
-          "translation_status": "translated",
-          "translation_engine": "Argos Translate",
-          "translation_route": "direct"
         }
       ],
       "translation": {
@@ -898,15 +898,15 @@
         "source_language": "pt",
         "target_language": "es",
         "route": "direct",
-        "translated_now": 0,
-        "from_cache": 10
+        "translated_now": 1,
+        "from_cache": 9
       }
     },
     "inumet": {
       "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-07-27T17:42:53-03:00",
-      "updated_at": "2026-07-27T12:00:00-03:00",
+      "fetched_at": "2026-07-27T19:18:17-03:00",
+      "updated_at": "2026-07-27T18:00:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
         {
@@ -935,7 +935,7 @@
           "periods": [
             {
               "period": "Mañana",
-              "description": "Nuboso y cubierto. Probables precipitaciones aisladas. Mejoras temporarias. Nieblas y neblinas.",
+              "description": "Nuboso y cubierto. Nieblas y neblinas.",
               "wind": "W al sector S 10-30 km/h."
             },
             {
@@ -959,7 +959,7 @@
             {
               "period": "Tarde/Noche",
               "description": "Nuboso y cubierto. Neblinas.",
-              "wind": "SE y E 10-30 km/h."
+              "wind": "SE al E 10-30 km/h."
             }
           ]
         }
@@ -973,7 +973,7 @@
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-07-27T17:42:53-03:00",
+      "fetched_at": "2026-07-27T19:18:17-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
