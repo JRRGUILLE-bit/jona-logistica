@@ -98,6 +98,13 @@
       "title_es": "Frente caliente trae lluvia intensa, granizo destructivo y viento; riesgo continúa",
       "excerpt_es": "El avance de un frente caliente sobre el Río Grande del Sur de Oeste hacia el Este provocó una secuencia de tiempo con lluvia intensa, ventania y granizo este lunes (27), causando trastornos y daños en cientos de residencias en el Noroeste del estado. Santo Antônio de las Misiones fue el municipio más alcanzado por el granizo, pero hubo [...]",
       "route": "direct"
+    },
+    "ae711f87d356913f89c6e6d181daffb9292092e160336255628981687bb3131a": {
+      "title_pt": "Rio Grande do Sul teve mais de 150 mil raios na segunda-feira",
+      "excerpt_pt": "O Rio Grande do Sul registrou 152.591 raios durante a segunda-feira em um dia marcado por temporais em grande parte do estado. O levantamento é da MetSul Meteorologia, com base em dados do sensor Geostationary Lightning Mapper (GLM) do satélite GOES-19, operado pela NOAA e pela NASA. O sensor GLM é um dos mais modernos […]",
+      "title_es": "Rio Grande do Sul tuvo más de 150 mil rayos el lunes",
+      "excerpt_es": "El Río Grande del Sur registró 152.591 rayos durante el lunes en un día marcado por temporales en gran parte del estado. El levantamiento es de la MetSul Meteorología, con base en datos del sensor Geostationary Lightning Mapper (GLM) del satélite GOES-19, operado por la NOAA y la NASA. El sensor GLM es uno de los más modernos [...]",
+      "route": "direct"
     }
   }
 }
