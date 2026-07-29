@@ -105,6 +105,13 @@
       "title_es": "Rio Grande do Sul tuvo más de 150 mil rayos el lunes",
       "excerpt_es": "El Río Grande del Sur registró 152.591 rayos durante el lunes en un día marcado por temporales en gran parte del estado. El levantamiento es de la MetSul Meteorología, con base en datos del sensor Geostationary Lightning Mapper (GLM) del satélite GOES-19, operado por la NOAA y la NASA. El sensor GLM es uno de los más modernos [...]",
       "route": "direct"
+    },
+    "2674617ecfc0211d0767c7268051e4263f1fa2d516709b2c9022589adb47ebf9": {
+      "title_pt": "Tornados sempre ocorreram no Rio Grande do Sul e seguirão acontecendo",
+      "excerpt_pt": "Os tornados que atingem o Rio Grande do Sul costumam despertar a impressão de que estes eventos estão se tornando mais frequentes. Sempre que uma ocorrência provoca destruição em uma cidade, surgem questionamentos sobre uma possível mudança no comportamento da atmosfera ou até mesmo a ideia de que o fenômeno seria algo novo no estado. […]",
+      "title_es": "Tornados siempre ocurrieron en Río Grande del Sur y seguirán sucediendo",
+      "excerpt_es": "Los tornados que alcanzan el Río Grande del Sur suelen despertar la impresión de que estos eventos se están volviendo más frecuentes. Siempre que una ocurrencia provoca destrucción en una ciudad, surgen cuestionamientos sobre un posible cambio en el comportamiento de la atmósfera o incluso la idea de que el fenómeno sería algo nuevo en el estado. [...]",
+      "route": "direct"
     }
   }
 }

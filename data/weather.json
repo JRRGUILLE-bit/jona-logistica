@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-29T12:19:22-03:00",
+  "generated_at": "2026-07-29T13:57:54-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -727,10 +727,26 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-07-29T12:19:22-03:00",
+      "fetched_at": "2026-07-29T13:57:54-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
+        {
+          "id": 268963,
+          "published_at": "2026-07-29T12:42:36",
+          "modified_at": "2026-07-29T12:42:36",
+          "title": "Tornados siempre ocurrieron en Río Grande del Sur y seguirán sucediendo",
+          "excerpt": "Los tornados que alcanzan el Río Grande del Sur suelen despertar la impresión de que estos eventos se están volviendo más frecuentes. Siempre que una ocurrencia provoca destrucción en una ciudad, surgen cuestionamientos sobre un posible cambio en el comportamiento de la atmósfera o incluso la idea de que el fenómeno sería algo nuevo en el estado. [...]",
+          "url": "https://metsul.com/tornados-sempre-ocorreram-no-rio-grande-do-sul-e-seguirao-acontecendo/",
+          "author": 861,
+          "title_pt": "Tornados sempre ocorreram no Rio Grande do Sul e seguirão acontecendo",
+          "excerpt_pt": "Os tornados que atingem o Rio Grande do Sul costumam despertar a impressão de que estes eventos estão se tornando mais frequentes. Sempre que uma ocorrência provoca destruição em uma cidade, surgem questionamentos sobre uma possível mudança no comportamento da atmosfera ou até mesmo a ideia de que o fenômeno seria algo novo no estado. […]",
+          "language": "es",
+          "original_language": "pt",
+          "translation_status": "translated",
+          "translation_engine": "Argos Translate",
+          "translation_route": "direct"
+        },
         {
           "id": 268900,
           "published_at": "2026-07-28T06:30:34",
@@ -874,22 +890,6 @@
           "translation_status": "translated",
           "translation_engine": "Argos Translate",
           "translation_route": "direct"
-        },
-        {
-          "id": 267743,
-          "published_at": "2026-07-21T12:07:20",
-          "modified_at": "2026-07-21T12:07:20",
-          "title": "Chuva volumosa en Río Grande del Sur: vea las últimas proyecciones",
-          "excerpt": "Se espera mucha lluvia en Río Grande del Sur hasta mañana con la transformación del frente semi-estacionaria en un frente frío y la actuación de un centro de baja presión atmosférica en la costa gaúcha. De acuerdo con el análisis de la MetSul Meteorología, los mayores volúmenes de lluvia se concentrarán en la tarde y noche [...]",
-          "url": "https://metsul.com/chuva-volumosa-no-rio-grande-do-sul-veja-as-ultimas-projecoes/",
-          "author": 861,
-          "title_pt": "Chuva volumosa no Rio Grande do Sul: veja as últimas projeções",
-          "excerpt_pt": "Muita chuva é esperada ainda no Rio Grande do Sul até amanhã com a transformação da frente semi-estacionária em uma frente fria e a atuação de um centro de baixa pressão atmosférica na costa gaúcha. De acordo com a análise da MetSul Meteorologia, os maiores volumes de chuva vão se concentrar na tarde e noite […]",
-          "language": "es",
-          "original_language": "pt",
-          "translation_status": "translated",
-          "translation_engine": "Argos Translate",
-          "translation_route": "direct"
         }
       ],
       "translation": {
@@ -898,14 +898,14 @@
         "source_language": "pt",
         "target_language": "es",
         "route": "direct",
-        "translated_now": 0,
-        "from_cache": 10
+        "translated_now": 1,
+        "from_cache": 9
       }
     },
     "inumet": {
       "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-07-29T12:19:22-03:00",
+      "fetched_at": "2026-07-29T13:57:54-03:00",
       "updated_at": "2026-07-29T12:00:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
@@ -973,7 +973,7 @@
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-07-29T12:19:22-03:00",
+      "fetched_at": "2026-07-29T13:57:54-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
