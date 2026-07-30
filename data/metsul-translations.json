@@ -112,6 +112,13 @@
       "title_es": "Tornados siempre ocurrieron en Río Grande del Sur y seguirán sucediendo",
       "excerpt_es": "Los tornados que alcanzan el Río Grande del Sur suelen despertar la impresión de que estos eventos se están volviendo más frecuentes. Siempre que una ocurrencia provoca destrucción en una ciudad, surgen cuestionamientos sobre un posible cambio en el comportamiento de la atmósfera o incluso la idea de que el fenómeno sería algo nuevo en el estado. [...]",
       "route": "direct"
+    },
+    "3d9e3113d618a1e3ef27892c487812c960423bdf63d211d69d531d115413914a": {
+      "title_pt": "Nova onda de tempestades trará vendavais no Rio Grande do Sul",
+      "excerpt_pt": "A MetSul Meteorologia alerta para o alto risco de temporais com elevada probabilidade de vendavais no Rio Grande do Sul durante o fim de semana com a maior atividade de tempestades entre a tarde e noite de sábado (1/8). O episódio de instabilidade não vai começar no Rio Grande do Sul e terá início na […]",
+      "title_es": "Nueva ola de tormentas traerá vendavales en Rio Grande do Sul",
+      "excerpt_es": "MetSul Meteorología alerta para el alto riesgo de tiemporais con alta probabilidad de vendavales en Rio Grande do Sul durante el fin de semana con la mayor actividad de tormentas entre la tarde y la noche del sábado (1/8). El episodio de inestabilidad no comenzará en Río Grande del Sur y comenzará en [...]",
+      "route": "direct"
     }
   }
 }

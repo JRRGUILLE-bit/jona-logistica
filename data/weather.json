@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-30T11:32:26-03:00",
+  "generated_at": "2026-07-30T13:49:45-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -460,19 +460,19 @@
           "general": {
             "available": true,
             "level": "warning",
-            "confidence": "Alta",
+            "confidence": "Baja · modelos divididos",
             "headline": "Atención",
-            "summary": "Por ahora los modelos no marcan lluvia significativa. Puede haber suelo húmedo por lluvia en las horas previas.",
-            "rain_probability_max": 35.0,
+            "summary": "Los modelos consultados no coinciden sobre la lluvia. Puede haber suelo húmedo por lluvia en las horas previas.",
+            "rain_probability_max": 46.0,
             "precipitation_max": 0.0,
             "temperature_min": 9.5,
             "temperature_max": 12.6,
             "wind_gusts_max": 31.0,
             "cloud_cover_avg": 40.0,
             "rain_previous_12h": 17.1,
-            "wet_model_votes": 0,
+            "wet_model_votes": 1,
             "model_count": 2,
-            "model_disagreement": false
+            "model_disagreement": true
           },
           "models": [
             {
@@ -480,7 +480,7 @@
               "temperature_min": 11.0,
               "temperature_max": 12.6,
               "apparent_min": 10.3,
-              "rain_probability_max": 35.0,
+              "rain_probability_max": 46.0,
               "precipitation_sum": 0.0,
               "cloud_cover_avg": 80.0,
               "wind_speed_max": 14.9,
@@ -511,7 +511,7 @@
       "inumet": {
         "date": "2026-08-01",
         "label": "Sábado 01",
-        "temperature_min": 12,
+        "temperature_min": 11,
         "temperature_max": 19,
         "periods": [
           {
@@ -577,7 +577,7 @@
           "confidence": "Baja",
           "headline": "Atención",
           "summary": "Por ahora los modelos no marcan lluvia significativa. Puede haber suelo húmedo por lluvia en las horas previas.",
-          "rain_probability_max": 5.0,
+          "rain_probability_max": 1.0,
           "precipitation_max": 0.0,
           "temperature_min": 9.0,
           "temperature_max": 14.4,
@@ -744,14 +744,30 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-07-30T11:32:26-03:00",
+      "fetched_at": "2026-07-30T13:49:45-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
         {
+          "id": 269020,
+          "published_at": "2026-07-30T11:35:42",
+          "modified_at": "2026-07-30T11:32:42",
+          "title": "Nueva ola de tormentas traerá vendavales en Rio Grande do Sul",
+          "excerpt": "MetSul Meteorología alerta para el alto riesgo de tiemporais con alta probabilidad de vendavales en Rio Grande do Sul durante el fin de semana con la mayor actividad de tormentas entre la tarde y la noche del sábado (1/8). El episodio de inestabilidad no comenzará en Río Grande del Sur y comenzará en [...]",
+          "url": "https://metsul.com/nova-onda-de-tempestades-trara-vendavais-no-rio-grande-do-sul/",
+          "author": 861,
+          "title_pt": "Nova onda de tempestades trará vendavais no Rio Grande do Sul",
+          "excerpt_pt": "A MetSul Meteorologia alerta para o alto risco de temporais com elevada probabilidade de vendavais no Rio Grande do Sul durante o fim de semana com a maior atividade de tempestades entre a tarde e noite de sábado (1/8). O episódio de instabilidade não vai começar no Rio Grande do Sul e terá início na […]",
+          "language": "es",
+          "original_language": "pt",
+          "translation_status": "translated",
+          "translation_engine": "Argos Translate",
+          "translation_route": "direct"
+        },
+        {
           "id": 268963,
           "published_at": "2026-07-29T12:42:36",
-          "modified_at": "2026-07-29T12:42:36",
+          "modified_at": "2026-07-30T11:34:30",
           "title": "Tornados siempre ocurrieron en Río Grande del Sur y seguirán sucediendo",
           "excerpt": "Los tornados que alcanzan el Río Grande del Sur suelen despertar la impresión de que estos eventos se están volviendo más frecuentes. Siempre que una ocurrencia provoca destrucción en una ciudad, surgen cuestionamientos sobre un posible cambio en el comportamiento de la atmósfera o incluso la idea de que el fenómeno sería algo nuevo en el estado. [...]",
           "url": "https://metsul.com/tornados-sempre-ocorreram-no-rio-grande-do-sul-e-seguirao-acontecendo/",
@@ -891,22 +907,6 @@
           "translation_status": "translated",
           "translation_engine": "Argos Translate",
           "translation_route": "direct"
-        },
-        {
-          "id": 267771,
-          "published_at": "2026-07-22T07:42:30",
-          "modified_at": "2026-07-22T09:48:08",
-          "title": "Rio Grande do Sul tuvo más de 400 mil rayos en tres días",
-          "excerpt": "El Río Grande del Sur registró 436.220 rayos en apenas 72 horas entre el domingo (19) y el martes (21), según el levantamiento de la MetSul Meteorología a partir de datos del sensor Geostationary Lightning Mapper (GLM) del satélite GOES-19. La cantidad de rayos fue consecuencia de un período marcado por fuerte inestabilidad atmosférica. Durante los tres [...]",
-          "url": "https://metsul.com/rio-grande-do-sul-teve-mais-de-400-mil-raios-em-tres-dias/",
-          "author": 861,
-          "title_pt": "Rio Grande do Sul teve mais de 400 mil raios em três dias",
-          "excerpt_pt": "O Rio Grande do Sul registrou 436.220 raios em apenas 72 horas entre o domingo (19) e a terça-feira (21), conforme levantamento da MetSul Meteorologia a partir de dados do sensor Geostationary Lightning Mapper (GLM) do satélite GOES-19. A quantidade de raios foi consequência de um período marcado por forte instabilidade atmosférica. Durante os três […]",
-          "language": "es",
-          "original_language": "pt",
-          "translation_status": "translated",
-          "translation_engine": "Argos Translate",
-          "translation_route": "direct"
         }
       ],
       "translation": {
@@ -915,22 +915,22 @@
         "source_language": "pt",
         "target_language": "es",
         "route": "direct",
-        "translated_now": 0,
-        "from_cache": 10
+        "translated_now": 1,
+        "from_cache": 9
       }
     },
     "inumet": {
       "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-07-30T11:32:26-03:00",
-      "updated_at": "2026-07-30T10:20:00-03:00",
+      "fetched_at": "2026-07-30T13:49:45-03:00",
+      "updated_at": "2026-07-30T13:11:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
         {
           "date": "2026-07-30",
           "label": "Jueves 30",
           "temperature_min": 8,
-          "temperature_max": 17,
+          "temperature_max": 18,
           "periods": [
             {
               "period": "Mañana",
@@ -958,14 +958,14 @@
             {
               "period": "Tarde/Noche",
               "description": "Nuboso a cubierto. Precipitaciones y tormentas aisladas. Ventoso.",
-              "wind": "NE al NW 30-40 km/h, rachas de hasta 60 km/h."
+              "wind": "NE al NW 30-40 km/h, rachas de hasta 60 km/h. Rachas fuertes asociadas a tormentas."
             }
           ]
         },
         {
           "date": "2026-08-01",
           "label": "Sábado 01",
-          "temperature_min": 12,
+          "temperature_min": 11,
           "temperature_max": 19,
           "periods": [
             {
@@ -990,7 +990,7 @@
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-07-30T11:32:26-03:00",
+      "fetched_at": "2026-07-30T13:49:45-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
