@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-31T17:36:20-03:00",
+  "generated_at": "2026-07-31T19:15:45-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -522,7 +522,7 @@
           {
             "period": "Tarde/Noche",
             "description": "Cubierto a nuboso y algo nuboso. Precipitaciones. Mejorando.",
-            "wind": "SW al SE y E 10-30 km/h."
+            "wind": "Variables 10-20 km/h al SE 10-20 km/h"
           }
         ]
       },
@@ -744,7 +744,7 @@
         "periods": [
           {
             "period": "Mañana",
-            "description": "Nuboso, períodos de cubierto.",
+            "description": "Nuboso, períodos de cubierto. Neblinas y bancos de niebla.",
             "wind": "Sector E 10-30 km/h."
           },
           {
@@ -761,7 +761,7 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-07-31T17:36:20-03:00",
+      "fetched_at": "2026-07-31T19:15:45-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
@@ -932,22 +932,22 @@
         "source_language": "pt",
         "target_language": "es",
         "route": "direct",
-        "translated_now": 1,
-        "from_cache": 9
+        "translated_now": 0,
+        "from_cache": 10
       }
     },
     "inumet": {
       "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-07-31T17:36:20-03:00",
-      "updated_at": "2026-07-31T12:00:00-03:00",
+      "fetched_at": "2026-07-31T19:15:45-03:00",
+      "updated_at": "2026-07-31T18:00:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
         {
           "date": "2026-07-31",
           "label": "Viernes 31",
           "temperature_min": 10,
-          "temperature_max": 22,
+          "temperature_max": 21,
           "periods": [
             {
               "period": "Mañana",
@@ -956,7 +956,7 @@
             },
             {
               "period": "Tarde/Noche",
-              "description": "Nuboso a cubierto. Precipitaciones y tormentas aisladas. Ventoso.",
+              "description": "Nuboso y cubierto. Precipitaciones y tormentas aisladas. Ventoso.",
               "wind": "NE al NW 30-50 km/h, rachas de hasta 60 km/h. Rachas fuertes asociadas a tormentas."
             }
           ]
@@ -975,7 +975,7 @@
             {
               "period": "Tarde/Noche",
               "description": "Cubierto a nuboso y algo nuboso. Precipitaciones. Mejorando.",
-              "wind": "SW al SE y E 10-30 km/h."
+              "wind": "Variables 10-20 km/h al SE 10-20 km/h"
             }
           ]
         },
@@ -987,7 +987,7 @@
           "periods": [
             {
               "period": "Mañana",
-              "description": "Nuboso, períodos de cubierto.",
+              "description": "Nuboso, períodos de cubierto. Neblinas y bancos de niebla.",
               "wind": "Sector E 10-30 km/h."
             },
             {
@@ -1007,7 +1007,7 @@
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-07-31T17:36:20-03:00",
+      "fetched_at": "2026-07-31T19:15:45-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
