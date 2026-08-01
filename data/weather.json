@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-01T19:11:03-03:00",
+  "generated_at": "2026-08-01T19:38:54-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -460,9 +460,9 @@
           "general": {
             "available": true,
             "level": "warning",
-            "confidence": "Baja · modelos divididos",
+            "confidence": "Alta",
             "headline": "Atención",
-            "summary": "Los modelos consultados no coinciden sobre la lluvia. Puede haber suelo húmedo por lluvia en las horas previas.",
+            "summary": "Los modelos coinciden en una señal de lluvia. Puede haber suelo húmedo por lluvia en las horas previas.",
             "rain_probability_max": 61.0,
             "precipitation_max": 0.0,
             "temperature_min": 10.2,
@@ -470,9 +470,9 @@
             "wind_gusts_max": 23.0,
             "cloud_cover_avg": 38.0,
             "rain_previous_12h": 12.9,
-            "wet_model_votes": 1,
+            "wet_model_votes": 2,
             "model_count": 2,
-            "model_disagreement": true
+            "model_disagreement": false
           },
           "models": [
             {
@@ -480,7 +480,7 @@
               "temperature_min": 10.2,
               "temperature_max": 12.8,
               "apparent_min": 9.3,
-              "rain_probability_max": 15.0,
+              "rain_probability_max": 43.0,
               "precipitation_sum": 0.0,
               "cloud_cover_avg": 23.0,
               "wind_speed_max": 11.2,
@@ -761,7 +761,7 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-08-01T19:11:03-03:00",
+      "fetched_at": "2026-08-01T19:38:54-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
@@ -932,14 +932,14 @@
         "source_language": "pt",
         "target_language": "es",
         "route": "direct",
-        "translated_now": 1,
-        "from_cache": 9
+        "translated_now": 0,
+        "from_cache": 10
       }
     },
     "inumet": {
       "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-08-01T19:11:03-03:00",
+      "fetched_at": "2026-08-01T19:38:54-03:00",
       "updated_at": "2026-08-01T18:00:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
@@ -1007,7 +1007,7 @@
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-08-01T19:11:03-03:00",
+      "fetched_at": "2026-08-01T19:38:54-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
