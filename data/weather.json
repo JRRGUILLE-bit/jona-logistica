@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-01T18:09:14-03:00",
+  "generated_at": "2026-08-01T19:11:03-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -512,7 +512,7 @@
         "date": "2026-08-01",
         "label": "Sábado 01",
         "temperature_min": 11,
-        "temperature_max": 17,
+        "temperature_max": 23,
         "periods": [
           {
             "period": "Mañana",
@@ -521,8 +521,8 @@
           },
           {
             "period": "Tarde/Noche",
-            "description": "Cubierto a nuboso y algo nuboso. Precipitaciones. Mejorando. Neblinas.",
-            "wind": "W al Sector S 10-30 km/h"
+            "description": "Nuboso y cubierto. Precipitaciones escasas. Mejorando. Neblinas.",
+            "wind": "S al SE 10-30 km/h"
           }
         ]
       },
@@ -739,18 +739,18 @@
       "inumet": {
         "date": "2026-08-02",
         "label": "Domingo 02",
-        "temperature_min": 9,
-        "temperature_max": 15,
+        "temperature_min": 10,
+        "temperature_max": 18,
         "periods": [
           {
             "period": "Mañana",
             "description": "Nuboso, períodos de cubierto. Neblinas y bancos de niebla.",
-            "wind": "Sector E 10-30 km/h."
+            "wind": "E al NE 10-30 km/h."
           },
           {
             "period": "Tarde/Noche",
             "description": "Nuboso, períodos de cubierto.",
-            "wind": "NE 20-30 km/h, rachas de hasta 40 km/h."
+            "wind": "NE 20-30 km/h."
           }
         ]
       },
@@ -761,10 +761,26 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-08-01T18:09:14-03:00",
+      "fetched_at": "2026-08-01T19:11:03-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
+        {
+          "id": 269076,
+          "published_at": "2026-08-01T19:03:50",
+          "modified_at": "2026-08-01T19:03:50",
+          "title": "Viento de hasta 110 km/h y radical cambio de temperatura",
+          "excerpt": "El Río Grande del Sur enfrenta un sábado con rajadas de viento fuerte a intensas en varios municipios por la actuación conjunta de dos grandes sistemas atmosféricos: una corriente de Jato en bajos niveles y el avance de un frente frío. El avance del sistema frontal provoca un radical cambio de temperatura. Estaciones meteorológicas en Río [...]",
+          "url": "https://metsul.com/vento-de-ate-110-km-h-e-radical-mudanca-de-temperatura/",
+          "author": 861,
+          "title_pt": "Vento de até 110 km/h e radical mudança de temperatura",
+          "excerpt_pt": "O Rio Grande do Sul enfrenta um sábado com rajadas de vento forte a intensas em vários municípios pela atuação conjunta de dois grandes sistemas atmosféricos: uma corrente de Jato em baixos níveis e o avanço de uma frente fria. O avanço do sistema frontal provoca uma radical mudança de temperatura. Estações meteorológicas no Rio […]",
+          "language": "es",
+          "original_language": "pt",
+          "translation_status": "translated",
+          "translation_engine": "Argos Translate",
+          "translation_route": "direct"
+        },
         {
           "id": 269058,
           "published_at": "2026-07-31T17:07:55",
@@ -908,22 +924,6 @@
           "translation_status": "translated",
           "translation_engine": "Argos Translate",
           "translation_route": "direct"
-        },
-        {
-          "id": 267859,
-          "published_at": "2026-07-24T12:01:39",
-          "modified_at": "2026-07-24T15:42:18",
-          "title": "Chuva, viento, inundaciones y temporales traen daños en el 40% de las ciudades gauchas",
-          "excerpt": "El Río Grande del Sur tiene más del 40% de sus municipios con daños por lluvia, viento, temporales y inundaciones después de una semana de inestabilidad con el mal tiempo que se inició el último viernes (17), muestra levantamiento oficial de la Defensa Civil. En apenas siete días, más de 200 municipios registraron daños provocados por la combinación [...]",
-          "url": "https://metsul.com/chuva-vento-enchentes-e-temporais-trazem-danos-em-40-das-cidades-gauchas/",
-          "author": 879,
-          "title_pt": "Chuva, vento, enchentes e temporais trazem danos em 40% das cidades gaúchas",
-          "excerpt_pt": "O Rio Grande do Sul tem mais de 40% de seus municípios com danos por chuva, vento, temporais e enchentes após uma semana de instabilidade com o mau tempo que se iniciou na última sexta-feira (17), mostra levantamento oficial da Defesa Civil. Em apenas sete dias, mais de 200 municípios registraram danos provocados pela combinação […]",
-          "language": "es",
-          "original_language": "pt",
-          "translation_status": "translated",
-          "translation_engine": "Argos Translate",
-          "translation_route": "direct"
         }
       ],
       "translation": {
@@ -932,22 +932,22 @@
         "source_language": "pt",
         "target_language": "es",
         "route": "direct",
-        "translated_now": 0,
-        "from_cache": 10
+        "translated_now": 1,
+        "from_cache": 9
       }
     },
     "inumet": {
-      "status": "stale",
+      "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-08-01T16:34:55-03:00",
-      "updated_at": "2026-08-01T13:06:00-03:00",
+      "fetched_at": "2026-08-01T19:11:03-03:00",
+      "updated_at": "2026-08-01T18:00:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
         {
           "date": "2026-08-01",
           "label": "Sábado 01",
           "temperature_min": 11,
-          "temperature_max": 17,
+          "temperature_max": 23,
           "periods": [
             {
               "period": "Mañana",
@@ -956,44 +956,44 @@
             },
             {
               "period": "Tarde/Noche",
-              "description": "Cubierto a nuboso y algo nuboso. Precipitaciones. Mejorando. Neblinas.",
-              "wind": "W al Sector S 10-30 km/h"
+              "description": "Nuboso y cubierto. Precipitaciones escasas. Mejorando. Neblinas.",
+              "wind": "S al SE 10-30 km/h"
             }
           ]
         },
         {
           "date": "2026-08-02",
           "label": "Domingo 02",
-          "temperature_min": 9,
-          "temperature_max": 15,
+          "temperature_min": 10,
+          "temperature_max": 18,
           "periods": [
             {
               "period": "Mañana",
               "description": "Nuboso, períodos de cubierto. Neblinas y bancos de niebla.",
-              "wind": "Sector E 10-30 km/h."
+              "wind": "E al NE 10-30 km/h."
             },
             {
               "period": "Tarde/Noche",
               "description": "Nuboso, períodos de cubierto.",
-              "wind": "NE 20-30 km/h, rachas de hasta 40 km/h."
+              "wind": "NE 20-30 km/h."
             }
           ]
         },
         {
           "date": "2026-08-03",
           "label": "Lunes 03",
-          "temperature_min": 9,
+          "temperature_min": 11,
           "temperature_max": 16,
           "periods": [
             {
               "period": "Mañana",
               "description": "Nuboso a cubierto. Baja probabilidad de precipitaciones. Neblinas y bancos de niebla.",
-              "wind": "NE 20-30 km/h."
+              "wind": "NE y E 10-30 km/h."
             },
             {
               "period": "Tarde/Noche",
               "description": "Nuboso y cubierto. Precipitaciones y tormentas aisladas. Neblinas.",
-              "wind": "NE 20-30 km/h a variables 10-20 km/h."
+              "wind": "E al SE 20-30 km/h."
             }
           ]
         }
@@ -1002,13 +1002,12 @@
         "active": false,
         "summary": "No hay advertencia meteorológica vigente.",
         "url": "https://www.inumet.gub.uy/alerta"
-      },
-      "error": "No se encontró la fecha de actualización de INUMET"
+      }
     },
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-08-01T18:09:14-03:00",
+      "fetched_at": "2026-08-01T19:11:03-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
@@ -1028,7 +1027,5 @@
       "errors": []
     }
   },
-  "errors": [
-    "inumet: No se encontró la fecha de actualización de INUMET"
-  ]
+  "errors": []
 }
