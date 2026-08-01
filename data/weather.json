@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-01T19:38:54-03:00",
+  "generated_at": "2026-08-01T20:11:12-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -761,14 +761,14 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-08-01T19:38:54-03:00",
+      "fetched_at": "2026-08-01T20:11:12-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
         {
           "id": 269076,
           "published_at": "2026-08-01T19:03:50",
-          "modified_at": "2026-08-01T19:03:50",
+          "modified_at": "2026-08-01T19:55:52",
           "title": "Viento de hasta 110 km/h y radical cambio de temperatura",
           "excerpt": "El Río Grande del Sur enfrenta un sábado con rajadas de viento fuerte a intensas en varios municipios por la actuación conjunta de dos grandes sistemas atmosféricos: una corriente de Jato en bajos niveles y el avance de un frente frío. El avance del sistema frontal provoca un radical cambio de temperatura. Estaciones meteorológicas en Río [...]",
           "url": "https://metsul.com/vento-de-ate-110-km-h-e-radical-mudanca-de-temperatura/",
@@ -784,7 +784,7 @@
         {
           "id": 269058,
           "published_at": "2026-07-31T17:07:55",
-          "modified_at": "2026-07-31T17:08:36",
+          "modified_at": "2026-08-01T19:56:21",
           "title": "Nueva ola de tormentas comienza con tornado en Argentina",
           "excerpt": "Una tormenta supercelular provocó un tornado en la tarde de este viernes (31) en San Genaro, en Bernardo de Irigoyenno, Centro-Sul de la provincia de Santa Fe, en Argentina. Imágenes registradas por residentes mostraron un funil bien definido tocando el suelo, mientras que relatos posteriores indicaron que el vórtice aumentó de tamaño durante el desplazamiento de la tormenta. Las imágenes [...]",
           "url": "https://metsul.com/nova-onda-de-tempestades-comeca-com-tornado-na-argentina/",
@@ -939,7 +939,7 @@
     "inumet": {
       "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-08-01T19:38:54-03:00",
+      "fetched_at": "2026-08-01T20:11:12-03:00",
       "updated_at": "2026-08-01T18:00:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
@@ -1007,7 +1007,7 @@
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-08-01T19:38:54-03:00",
+      "fetched_at": "2026-08-01T20:11:12-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
