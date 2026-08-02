@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-02T16:35:56-03:00",
+  "generated_at": "2026-08-02T18:10:23-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -432,8 +432,8 @@
         "precipitation_max": 0.0,
         "temperature_min": 8.4,
         "temperature_max": 18.4,
-        "wind_gusts_max": 29.2,
-        "cloud_cover_avg": 54.0,
+        "wind_gusts_max": 30.2,
+        "cloud_cover_avg": 50.0,
         "rain_previous_12h": 0.0,
         "wet_model_votes": 0,
         "model_count": 2,
@@ -449,9 +449,9 @@
           "rain_probability_max": 0.0,
           "precipitation_max": 0.0,
           "temperature_min": 8.6,
-          "temperature_max": 16.8,
-          "wind_gusts_max": 29.2,
-          "cloud_cover_avg": 68.0,
+          "temperature_max": 17.1,
+          "wind_gusts_max": 30.2,
+          "cloud_cover_avg": 62.0,
           "rain_previous_12h": 0.0,
           "wet_model_votes": 0,
           "model_count": 1,
@@ -501,10 +501,10 @@
             "summary": "Por ahora los modelos no marcan lluvia significativa.",
             "rain_probability_max": 0.0,
             "precipitation_max": 0.0,
-            "temperature_min": 11.4,
+            "temperature_min": 11.7,
             "temperature_max": 15.5,
-            "wind_gusts_max": 29.2,
-            "cloud_cover_avg": 61.0,
+            "wind_gusts_max": 30.2,
+            "cloud_cover_avg": 50.0,
             "rain_previous_12h": 0.0,
             "wet_model_votes": 0,
             "model_count": 2,
@@ -513,14 +513,14 @@
           "models": [
             {
               "available": true,
-              "temperature_min": 11.4,
-              "temperature_max": 14.7,
-              "apparent_min": 9.3,
+              "temperature_min": 11.7,
+              "temperature_max": 15.3,
+              "apparent_min": 9.9,
               "rain_probability_max": 0.0,
               "precipitation_sum": 0.0,
-              "cloud_cover_avg": 100.0,
-              "wind_speed_max": 14.7,
-              "wind_gusts_max": 29.2,
+              "cloud_cover_avg": 78.0,
+              "wind_speed_max": 13.8,
+              "wind_gusts_max": 30.2,
               "rain_previous_12h": 0.0,
               "id": "ecmwf",
               "name": "ECMWF IFS",
@@ -562,10 +562,10 @@
             "summary": "Por ahora los modelos no marcan lluvia significativa.",
             "rain_probability_max": 0.0,
             "precipitation_max": 0.0,
-            "temperature_min": 15.4,
+            "temperature_min": 16.2,
             "temperature_max": 18.4,
-            "wind_gusts_max": 24.8,
-            "cloud_cover_avg": 61.0,
+            "wind_gusts_max": 27.7,
+            "cloud_cover_avg": 56.0,
             "rain_previous_12h": 0.0,
             "wet_model_votes": 0,
             "model_count": 2,
@@ -574,14 +574,14 @@
           "models": [
             {
               "available": true,
-              "temperature_min": 15.4,
-              "temperature_max": 16.8,
-              "apparent_min": 15.0,
+              "temperature_min": 16.2,
+              "temperature_max": 17.1,
+              "apparent_min": 15.2,
               "rain_probability_max": 0.0,
               "precipitation_sum": 0.0,
-              "cloud_cover_avg": 91.0,
-              "wind_speed_max": 9.8,
-              "wind_gusts_max": 24.8,
+              "cloud_cover_avg": 80.0,
+              "wind_speed_max": 12.4,
+              "wind_gusts_max": 27.7,
               "rain_previous_12h": 0.0,
               "id": "ecmwf",
               "name": "ECMWF IFS",
@@ -608,7 +608,7 @@
       "inumet": {
         "date": "2026-08-02",
         "label": "Domingo 02",
-        "temperature_min": 10,
+        "temperature_min": 9,
         "temperature_max": 18,
         "periods": [
           {
@@ -619,7 +619,7 @@
           {
             "period": "Tarde/Noche",
             "description": "Nuboso, períodos de cubierto.",
-            "wind": "NE 20-30 km/h."
+            "wind": "NE 10-30 km/h."
           }
         ]
       },
@@ -630,7 +630,7 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-08-02T16:35:56-03:00",
+      "fetched_at": "2026-08-02T18:10:23-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
@@ -808,14 +808,14 @@
     "inumet": {
       "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-08-02T16:35:56-03:00",
-      "updated_at": "2026-08-02T12:00:00-03:00",
+      "fetched_at": "2026-08-02T18:10:23-03:00",
+      "updated_at": "2026-08-02T18:00:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
         {
           "date": "2026-08-02",
           "label": "Domingo 02",
-          "temperature_min": 10,
+          "temperature_min": 9,
           "temperature_max": 18,
           "periods": [
             {
@@ -826,7 +826,7 @@
             {
               "period": "Tarde/Noche",
               "description": "Nuboso, períodos de cubierto.",
-              "wind": "NE 20-30 km/h."
+              "wind": "NE 10-30 km/h."
             }
           ]
         },
@@ -839,12 +839,12 @@
             {
               "period": "Mañana",
               "description": "Nuboso a cubierto. Baja probabilidad de precipitaciones. Neblinas y bancos de niebla.",
-              "wind": "NE y E 10-30 km/h."
+              "wind": "Sector E 10-30 km/h."
             },
             {
               "period": "Tarde/Noche",
               "description": "Nuboso y cubierto. Precipitaciones y tormentas aisladas. Neblinas y bancos de niebla.",
-              "wind": "E al SE y S 10-30 km/h."
+              "wind": "E y SE 10-30 km/h."
             }
           ]
         },
@@ -857,7 +857,7 @@
             {
               "period": "Mañana",
               "description": "Nuboso, períodos de cubierto.",
-              "wind": "SE y S 10-30 km/h."
+              "wind": "SE 10-30 km/h."
             },
             {
               "period": "Tarde/Noche",
@@ -876,7 +876,7 @@
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-08-02T16:35:56-03:00",
+      "fetched_at": "2026-08-02T18:10:23-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
