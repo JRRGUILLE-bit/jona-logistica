@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-03T04:47:32-03:00",
+  "generated_at": "2026-08-03T08:44:00-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -124,24 +124,7 @@
         }
       ],
       "inumet": null,
-      "metsul_articles": [
-        {
-          "id": 268812,
-          "published_at": "2026-07-25T08:15:22",
-          "modified_at": "2026-07-25T08:18:47",
-          "title": "El Niño provoca una enorme ruptura en el clima y va a empeorar",
-          "excerpt": "El fenómeno El Niño provoca una enorme ruptura en el estándar del clima en Sudamérica este mes de julio y tiende a profundizarse en los próximos meses con toda la suerte de extremos que incluyen frío excesivo, potentes ondas de calor, lluvia excesiva con inundaciones y inundaciones, y muchas tormentas. El análisis [...]",
-          "url": "https://metsul.com/el-nino-provoca-enorme-ruptura-no-clima-e-vai-piorar/",
-          "author": 853,
-          "title_pt": "El Niño provoca enorme ruptura no clima e vai piorar",
-          "excerpt_pt": "O fenômeno El Niño provoca uma enorme ruptura no padrão do clima na América do Sul neste mês de julho e que tende a se aprofundar nos próximos meses com toda a sorte de extremos que incluem frio excessivo, potentes ondas de calor, chuva excessiva com inundações e enchentes, e ainda muitas tempestades. A análise […]",
-          "language": "es",
-          "original_language": "pt",
-          "translation_status": "translated",
-          "translation_engine": "Argos Translate",
-          "translation_route": "direct"
-        }
-      ]
+      "metsul_articles": []
     },
     {
       "id": "day-2",
@@ -395,24 +378,7 @@
         }
       ],
       "inumet": null,
-      "metsul_articles": [
-        {
-          "id": 268812,
-          "published_at": "2026-07-25T08:15:22",
-          "modified_at": "2026-07-25T08:18:47",
-          "title": "El Niño provoca una enorme ruptura en el clima y va a empeorar",
-          "excerpt": "El fenómeno El Niño provoca una enorme ruptura en el estándar del clima en Sudamérica este mes de julio y tiende a profundizarse en los próximos meses con toda la suerte de extremos que incluyen frío excesivo, potentes ondas de calor, lluvia excesiva con inundaciones y inundaciones, y muchas tormentas. El análisis [...]",
-          "url": "https://metsul.com/el-nino-provoca-enorme-ruptura-no-clima-e-vai-piorar/",
-          "author": 853,
-          "title_pt": "El Niño provoca enorme ruptura no clima e vai piorar",
-          "excerpt_pt": "O fenômeno El Niño provoca uma enorme ruptura no padrão do clima na América do Sul neste mês de julho e que tende a se aprofundar nos próximos meses com toda a sorte de extremos que incluem frio excessivo, potentes ondas de calor, chuva excessiva com inundações e enchentes, e ainda muitas tempestades. A análise […]",
-          "language": "es",
-          "original_language": "pt",
-          "translation_status": "translated",
-          "translation_engine": "Argos Translate",
-          "translation_route": "direct"
-        }
-      ]
+      "metsul_articles": []
     },
     {
       "id": "day-4",
@@ -519,24 +485,7 @@
           ]
         }
       ],
-      "inumet": {
-        "date": "2026-08-02",
-        "label": "Domingo 02",
-        "temperature_min": 9,
-        "temperature_max": 18,
-        "periods": [
-          {
-            "period": "Mañana",
-            "description": "Nuboso, períodos de cubierto. Neblinas y bancos de niebla.",
-            "wind": "E al NE 10-30 km/h."
-          },
-          {
-            "period": "Tarde/Noche",
-            "description": "Nuboso, períodos de cubierto.",
-            "wind": "NE 10-30 km/h."
-          }
-        ]
-      },
+      "inumet": null,
       "metsul_articles": []
     }
   ],
@@ -544,10 +493,26 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-08-03T04:47:32-03:00",
+      "fetched_at": "2026-08-03T08:44:00-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
+        {
+          "id": 269109,
+          "published_at": "2026-08-03T07:07:52",
+          "modified_at": "2026-08-03T07:07:52",
+          "title": "Chuva está de vuelta y ya alcanza el oeste gaúcho; vea la previsión",
+          "excerpt": "La lluvia está de vuelta al Río Grande del Sur en este comienzo del lunes (3) después de una larga tregua de la inestabilidad que predominó a lo largo de la última semana y que trajo lluvia volumosa con inundaciones y tormentas severas hasta con un tornado. La imagen del radar de Corrientes del Servicio Meteorológico Nacional (SMN) [...]",
+          "url": "https://metsul.com/chuva-esta-de-volta-e-ja-atinge-o-oeste-gaucho-veja-a-previsao/",
+          "author": 861,
+          "title_pt": "Chuva está de volta e já atinge o Oeste gaúcho; veja a previsão",
+          "excerpt_pt": "A chuva está de volta ao Rio Grande do Sul neste começo de segunda-feira (3) depois de uma brevíssima trégua da instabilidade que predominou ao longo da última semana e que trouxe chuva volumosa com enchentes e ainda tempestades severas até com um tornado. A imagem do radar de Corrientes do Serviço Meteorológico Nacional (SMN) […]",
+          "language": "es",
+          "original_language": "pt",
+          "translation_status": "translated",
+          "translation_engine": "Argos Translate",
+          "translation_route": "direct"
+        },
         {
           "id": 269076,
           "published_at": "2026-08-01T19:03:50",
@@ -691,22 +656,6 @@
           "translation_status": "translated",
           "translation_engine": "Argos Translate",
           "translation_route": "direct"
-        },
-        {
-          "id": 268812,
-          "published_at": "2026-07-25T08:15:22",
-          "modified_at": "2026-07-25T08:18:47",
-          "title": "El Niño provoca una enorme ruptura en el clima y va a empeorar",
-          "excerpt": "El fenómeno El Niño provoca una enorme ruptura en el estándar del clima en Sudamérica este mes de julio y tiende a profundizarse en los próximos meses con toda la suerte de extremos que incluyen frío excesivo, potentes ondas de calor, lluvia excesiva con inundaciones y inundaciones, y muchas tormentas. El análisis [...]",
-          "url": "https://metsul.com/el-nino-provoca-enorme-ruptura-no-clima-e-vai-piorar/",
-          "author": 853,
-          "title_pt": "El Niño provoca enorme ruptura no clima e vai piorar",
-          "excerpt_pt": "O fenômeno El Niño provoca uma enorme ruptura no padrão do clima na América do Sul neste mês de julho e que tende a se aprofundar nos próximos meses com toda a sorte de extremos que incluem frio excessivo, potentes ondas de calor, chuva excessiva com inundações e enchentes, e ainda muitas tempestades. A análise […]",
-          "language": "es",
-          "original_language": "pt",
-          "translation_status": "translated",
-          "translation_engine": "Argos Translate",
-          "translation_route": "direct"
         }
       ],
       "translation": {
@@ -715,45 +664,27 @@
         "source_language": "pt",
         "target_language": "es",
         "route": "direct",
-        "translated_now": 0,
-        "from_cache": 10
+        "translated_now": 1,
+        "from_cache": 9
       }
     },
     "inumet": {
       "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-08-03T04:47:32-03:00",
-      "updated_at": "2026-08-02T18:00:00-03:00",
+      "fetched_at": "2026-08-03T08:44:00-03:00",
+      "updated_at": "2026-08-03T08:30:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
         {
-          "date": "2026-08-02",
-          "label": "Domingo 02",
-          "temperature_min": 9,
-          "temperature_max": 18,
-          "periods": [
-            {
-              "period": "Mañana",
-              "description": "Nuboso, períodos de cubierto. Neblinas y bancos de niebla.",
-              "wind": "E al NE 10-30 km/h."
-            },
-            {
-              "period": "Tarde/Noche",
-              "description": "Nuboso, períodos de cubierto.",
-              "wind": "NE 10-30 km/h."
-            }
-          ]
-        },
-        {
           "date": "2026-08-03",
           "label": "Lunes 03",
-          "temperature_min": 11,
+          "temperature_min": 13,
           "temperature_max": 16,
           "periods": [
             {
               "period": "Mañana",
-              "description": "Nuboso a cubierto. Baja probabilidad de precipitaciones. Neblinas y bancos de niebla.",
-              "wind": "Sector E 10-30 km/h."
+              "description": "Nuboso a cubierto. Neblinas y bancos de niebla.",
+              "wind": "NE al E 10-30 km/h."
             },
             {
               "period": "Tarde/Noche",
@@ -779,6 +710,24 @@
               "wind": "SE al NE 10-30 km/h."
             }
           ]
+        },
+        {
+          "date": "2026-08-05",
+          "label": "Miércoles 05",
+          "temperature_min": 11,
+          "temperature_max": 17,
+          "periods": [
+            {
+              "period": "Mañana",
+              "description": "Nuboso y cubierto. Nieblas y neblinas.",
+              "wind": "NE al SE 10-30 km/h. Periodos de variables 0-10 km/h."
+            },
+            {
+              "period": "Tarde/Noche",
+              "description": "Cubierto.",
+              "wind": "SE y E 10-30 km/h."
+            }
+          ]
         }
       ],
       "alert": {
@@ -790,7 +739,7 @@
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-08-03T04:47:32-03:00",
+      "fetched_at": "2026-08-03T08:44:00-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
