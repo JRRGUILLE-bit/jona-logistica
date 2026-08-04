@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-03T20:19:22-03:00",
+  "generated_at": "2026-08-04T00:37:11-03:00",
   "timezone": "America/Montevideo",
   "weekends": [
     {
@@ -24,7 +24,7 @@
       "label": "Sábado 25 de julio",
       "weekend": "first",
       "locations": "Taller · Ciudad de la Costa · Casa Negro · La Paz",
-      "lead_days": -9,
+      "lead_days": -10,
       "general": {
         "available": false,
         "level": "unknown",
@@ -133,7 +133,7 @@
       "label": "Domingo 26 de julio",
       "weekend": "first",
       "locations": "Plaza de la Ciudad de La Paz · Colina · Las Piedras",
-      "lead_days": -8,
+      "lead_days": -9,
       "general": {
         "available": false,
         "level": "unknown",
@@ -242,7 +242,7 @@
       "label": "Sábado 1.º de agosto",
       "weekend": "second",
       "locations": "Colina · La Paz · Casa · Parque del Plata",
-      "lead_days": -2,
+      "lead_days": -3,
       "general": {
         "available": false,
         "level": "unknown",
@@ -387,7 +387,7 @@
       "label": "Domingo 2 de agosto",
       "weekend": "second",
       "locations": "Casa · Parque del Plata",
-      "lead_days": -1,
+      "lead_days": -2,
       "general": {
         "available": false,
         "level": "unknown",
@@ -493,7 +493,7 @@
     "metsul": {
       "status": "ok",
       "kind": "Análisis humanos",
-      "fetched_at": "2026-08-03T20:19:22-03:00",
+      "fetched_at": "2026-08-04T00:37:11-03:00",
       "page_url": "https://metsul.com/categoria/uruguai/",
       "api_url": "https://metsul.com/wp-json/wp/v2/posts?categories=23&per_page=12&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Cexcerpt%2Ccontent%2Cauthor",
       "articles": [
@@ -671,28 +671,10 @@
     "inumet": {
       "status": "ok",
       "kind": "Fuente oficial",
-      "fetched_at": "2026-08-03T20:19:22-03:00",
-      "updated_at": "2026-08-03T18:00:00-03:00",
+      "fetched_at": "2026-08-04T00:37:11-03:00",
+      "updated_at": "2026-08-04T00:00:00-03:00",
       "forecast_url": "https://www.inumet.gub.uy/tiempo/pronostico",
       "forecast": [
-        {
-          "date": "2026-08-03",
-          "label": "Lunes 03",
-          "temperature_min": 10,
-          "temperature_max": 17,
-          "periods": [
-            {
-              "period": "Mañana",
-              "description": "Nuboso a cubierto. Precipitaciones y tormentas aisladas. Neblinas y bancos de niebla.",
-              "wind": "NE al E 10-30 km/h."
-            },
-            {
-              "period": "Tarde/Noche",
-              "description": "Nuboso y cubierto. Precipitaciones y probables tormentas. Neblinas y bancos de niebla.",
-              "wind": "SE 10-30 km/h."
-            }
-          ]
-        },
         {
           "date": "2026-08-04",
           "label": "Martes 04",
@@ -701,12 +683,12 @@
           "periods": [
             {
               "period": "Mañana",
-              "description": "Nuboso, períodos de cubierto.",
-              "wind": "SE 10-30 km/h, rachas de 40 km/h."
+              "description": "Nuboso, períodos de cubierto. Precipitaciones escasas. Nieblas y neblinas.",
+              "wind": "SE 10-30 km/h, rachas de hasta 40 km/h."
             },
             {
               "period": "Tarde/Noche",
-              "description": "Nuboso, períodos de cubierto.",
+              "description": "Nuboso, períodos de cubierto. Neblinas.",
               "wind": "SE al NE 10-30 km/h."
             }
           ]
@@ -719,13 +701,31 @@
           "periods": [
             {
               "period": "Mañana",
-              "description": "Nuboso y cubierto. Nieblas y neblinas.",
+              "description": "Nuboso y cubierto. Baja probabilidad de precipitaciones. Nieblas y neblinas.",
               "wind": "NE al SE 10-30 km/h. Periodos de variables 0-10 km/h."
             },
             {
               "period": "Tarde/Noche",
-              "description": "Cubierto.",
+              "description": "Cubierto. Neblinas y bancos de niebla.",
               "wind": "SE y E 10-30 km/h."
+            }
+          ]
+        },
+        {
+          "date": "2026-08-06",
+          "label": "Jueves 06",
+          "temperature_min": 9,
+          "temperature_max": 15,
+          "periods": [
+            {
+              "period": "Mañana",
+              "description": "Cubierto. Precipitaciones y tormentas. Neblinas y bancos de niebla.",
+              "wind": "E al NE 20-30 km/h."
+            },
+            {
+              "period": "Tarde/Noche",
+              "description": "Cubierto. Precipitaciones y tormentas. Ventoso.",
+              "wind": "Sector N al SW 30-50 km/h, rachas de hasta 60 km/h y ocasionalmente superiores."
             }
           ]
         }
@@ -739,7 +739,7 @@
     "models": {
       "status": "ok",
       "kind": "Modelos numéricos",
-      "fetched_at": "2026-08-03T20:19:22-03:00",
+      "fetched_at": "2026-08-04T00:37:11-03:00",
       "provider": "Open-Meteo",
       "provider_url": "https://open-meteo.com/",
       "models": [
