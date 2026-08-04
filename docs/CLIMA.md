@@ -1,19 +1,28 @@
-# Sistema de clima — Jona tenía 15 años
+# Sistema de clima — Archivo técnico
 
-Esta documentación explica de dónde sale la información meteorológica, cómo se transforma y qué significa cada estado mostrado en la base de operaciones.
+Esta documentación conserva el funcionamiento histórico del sistema meteorológico creado para la producción de **Jona tenía 15 años**.
 
-## Objetivo
+## Estado actual
 
-Dar a producción una lectura rápida por jornada y, al mismo tiempo, permitir abrir el detalle de cada bloque horario. La interfaz busca responder cuatro preguntas:
+El rodaje finalizó en agosto de 2026. El módulo meteorológico quedó archivado y ya no publica pronósticos vigentes.
 
-1. ¿Hay una señal de lluvia durante el rodaje?
-2. ¿Puede haber viento o ráfagas que compliquen exteriores?
-3. ¿Los modelos coinciden?
-4. ¿La fecha está lo bastante cerca como para confiar en el detalle?
+- La página pública de Clima funciona únicamente como explicación retrospectiva.
+- El workflow periódico `.github/workflows/update-weather.yml` fue retirado.
+- `data/weather.json` y `data/metsul-translations.json` son registros históricos y no deben interpretarse como información meteorológica actual.
+- Los scripts se conservan como documentación técnica del sistema construido para el rodaje.
 
-La hora de generación incluida en `data/weather.json` también se muestra en la portada como **Última actualización del clima**.
+## Objetivo durante la producción
 
-## Flujo de datos
+El sistema daba a producción una lectura rápida por jornada y bloque horario. Buscaba responder cuatro preguntas:
+
+1. ¿Había señal de lluvia durante el rodaje?
+2. ¿Podía haber viento o ráfagas que complicaran exteriores?
+3. ¿Los modelos coincidían?
+4. ¿La fecha estaba suficientemente cerca como para confiar en el detalle?
+
+Los resultados eran ayudas logísticas y nunca reemplazaban las advertencias ni los pronósticos oficiales.
+
+## Flujo histórico de datos
 
 ```text
 INUMET ───────────────────────┐
@@ -30,139 +39,78 @@ MetSul ───────────────────────┘ 
                                                         └─> data/metsul-translations.json
 ```
 
-`update_weather_plan.py` contiene el plan específico de Jona: fechas, bloques, locaciones aproximadas y sensibilidades de cada escena. Ese script carga el recolector genérico `update_weather.py`, reemplaza su configuración y genera el JSON operativo.
+`update_weather_plan.py` contenía el plan específico de Jona: fechas, bloques, locaciones aproximadas y sensibilidades de cada escena. Cargaba el recolector genérico `update_weather.py`, reemplazaba su configuración y generaba el JSON operativo.
 
-`translate_metsul.py` se ejecuta después del recolector. Traduce al español titulares y extractos de MetSul, conserva el portugués original como respaldo y guarda una memoria de traducción para evitar trabajo repetido.
+`translate_metsul.py` traducía al español titulares y extractos de MetSul, conservaba el portugués original y mantenía una memoria de traducción para evitar trabajo repetido.
 
-La página es estática: el navegador no consulta directamente a los proveedores, sino que lee el último `weather.json` publicado. Esto mejora la velocidad, evita múltiples consultas por visitante y permite conservar el último resultado cuando una fuente falla temporalmente.
+La página era estática: el navegador leía el último JSON publicado en lugar de consultar directamente a cada proveedor.
 
-El botón **Actualizar pronóstico** vuelve a descargar el JSON sin caché. El enlace **Forzar consulta en GitHub** abre el workflow; iniciar una nueva recolección requiere estar autenticado y tener permisos sobre la repo.
-
-## Fuentes
+## Fuentes utilizadas
 
 ### INUMET
 
-Se consulta el pronóstico oficial del Área Metropolitana y el estado de las advertencias meteorológicas. Cuando hay una advertencia activa, la página la destaca y enlaza a la fuente oficial.
-
-El alcance geográfico del pronóstico metropolitano no representa con la misma precisión todos los puntos del rodaje, especialmente Parque del Plata. Por eso se muestra como contexto oficial y se acompaña con modelos por coordenadas.
+Se consultaba el pronóstico oficial del Área Metropolitana y el estado de las advertencias meteorológicas. Para decisiones críticas, producción debía revisar siempre la fuente oficial más reciente.
 
 ### ECMWF y GFS
 
-Las series horarias de ambos modelos se obtienen mediante Open-Meteo para puntos aproximados de:
+Las series horarias de ambos modelos se obtenían mediante Open-Meteo para puntos aproximados de:
 
 - Ciudad de la Costa;
 - La Paz;
 - Las Piedras;
 - Parque del Plata.
 
-Las variables utilizadas son temperatura, sensación térmica, probabilidad y cantidad de precipitación, nubosidad, viento y ráfagas.
+Las variables utilizadas incluían temperatura, sensación térmica, probabilidad y cantidad de precipitación, nubosidad, viento y ráfagas.
 
 ### MetSul
 
-Se consultan publicaciones recientes relacionadas con Uruguay. MetSul funciona como contexto meteorológico editorial: sus artículos pueden advertir sobre sistemas regionales relevantes, pero no se convierten artificialmente en valores horarios para una localidad.
+Se consultaban publicaciones recientes relacionadas con Uruguay como contexto meteorológico editorial. Sus artículos no se convertían artificialmente en valores horarios para una localidad.
 
-La traducción automática no reemplaza el texto original. Cuando el motor de traducción no está disponible o falla, la interfaz conserva el portugués como alternativa.
+## Estados que mostraba la interfaz
 
-## Resúmenes
+- **Sin señal fuerte por ahora:** no aparecía una señal relevante de lluvia, ráfagas o suelo húmedo.
+- **Atención:** había lluvia posible, desacuerdo entre modelos, ráfagas relevantes o lluvia previa.
+- **Riesgo meteorológico:** aparecía precipitación más importante o viento fuerte en al menos un modelo.
+- **Aún fuera del alcance:** la fecha todavía no entraba en el horizonte disponible.
 
-El recolector calcula métricas para cada bloque del plan de rodaje y luego combina los bloques en un resumen diario. La interfaz conserva los resultados separados de ECMWF y GFS para que producción pueda ver desacuerdos.
+La confianza disminuía cuando faltaba un modelo, existían desacuerdos, la fecha estaba lejos o la jornada todavía no entraba en el horizonte de consulta.
 
-Los estados son:
+## Automatización utilizada
 
-- **Sin señal fuerte por ahora:** no aparece una señal relevante de lluvia, ráfagas o suelo húmedo en los modelos disponibles.
-- **Atención:** existe señal de lluvia, desacuerdo entre modelos, ráfagas relevantes o lluvia previa que podría dejar el suelo húmedo.
-- **Riesgo meteorológico:** aparece precipitación más importante o ráfagas fuertes en al menos uno de los modelos.
-- **Aún fuera del alcance:** la fecha no está dentro del horizonte disponible y no se inventa una previsión.
-
-Estos estados son ayudas logísticas, no alertas oficiales.
-
-## Confianza
-
-La confianza baja cuando:
-
-- falta uno de los modelos;
-- ECMWF y GFS discrepan sobre la lluvia;
-- la fecha está a muchos días de distancia;
-- la jornada todavía no entra en el horizonte de consulta.
-
-Aunque aparezca una confianza alta, el pronóstico puede cambiar. Para decisiones críticas deben revisarse también las actualizaciones y advertencias oficiales.
-
-## Actualización automática
-
-El workflow está definido en `.github/workflows/update-weather.yml` y ejecuta:
+Durante la producción, GitHub Actions ejecutaba:
 
 ```text
 python scripts/update_weather_plan.py
 python scripts/translate_metsul.py
 ```
 
-Está configurado para correr:
+El workflow corría aproximadamente cada hora, incluía horarios de refuerzo y generaba commits automáticos cuando cambiaban los archivos de datos.
 
-- alrededor del minuto 17 de cada hora;
-- como redundancia, alrededor de las 00:43, 06:43, 12:43 y 18:43 en `America/Montevideo`;
-- manualmente mediante `workflow_dispatch`;
-- cuando cambian el recolector, el plan meteorológico, la traducción o el propio workflow.
-
-El job utiliza Python 3.12. Argos Translate se instala con tolerancia a fallos: si el motor no puede instalarse, el sistema meteorológico sigue siendo utilizable y mantiene el texto original de MetSul.
-
-Cuando cambian `data/weather.json` o `data/metsul-translations.json`, GitHub Actions crea un commit automático y hace `push` a `main`.
-
-GitHub Actions puede demorar o descartar una ejecución programada. Los horarios de refuerzo reducen la posibilidad de pasar muchas horas sin datos nuevos, pero no constituyen una garantía absoluta.
+Ese workflow fue eliminado al cerrar la producción. Ejecutar los scripts manualmente todavía es técnicamente posible, pero ya no forma parte del funcionamiento del sitio público archivado.
 
 ## Tolerancia a fallos
 
-Si una fuente no responde:
+El recolector estaba diseñado para que una fuente caída no interrumpiera todo el proceso:
 
-- las demás fuentes continúan procesándose;
-- el error queda registrado en el JSON;
-- cuando existe información anterior reutilizable, el recolector intenta conservarla;
-- la interfaz identifica datos no disponibles en vez de rellenarlos con valores inventados;
-- el sitio conserva el último archivo publicado hasta que una nueva ejecución válida lo reemplace.
+- las demás fuentes continuaban procesándose;
+- el error quedaba registrado en el JSON;
+- cuando era posible, se conservaba información anterior;
+- la interfaz mostraba estados no disponibles en lugar de inventar valores.
 
-## Cambiar jornadas o localidades
+## Privacidad y alcance del archivo
 
-La configuración específica del rodaje está en `scripts/update_weather_plan.py`:
+Las coordenadas y localidades utilizadas eran aproximaciones asociadas a las zonas de rodaje. Las locaciones generales se mantienen deliberadamente como parte del registro histórico del cortometraje.
 
-- `collector.LOCATIONS` contiene las coordenadas aproximadas utilizadas por los modelos;
-- `collector.SHOOT_DAYS` define cada jornada y sus bloques horarios;
-- `collector.WEEKENDS` define los grupos de fechas mostrados por la interfaz.
+Este documento no contiene nombres del equipo, teléfonos, correos, citaciones, datos médicos, información de pagos ni accesos a documentos privados.
 
-El comportamiento general del recolector permanece en `scripts/update_weather.py`.
+## Uso futuro
 
-Después de modificar la configuración, ejecutar:
+El código puede servir como referencia para otra producción, pero antes de reutilizarlo habría que:
 
-```bash
-python scripts/update_weather_plan.py
-```
+1. definir nuevas fechas, bloques y locaciones;
+2. revisar las APIs y estructuras actuales de las fuentes;
+3. crear un workflow nuevo;
+4. validar permisos, cachés y dependencias;
+5. actualizar los textos que identifican el proyecto.
 
-Luego revisar `data/weather.json` antes de publicar. No deben cargarse domicilios particulares: alcanza con una coordenada representativa de la localidad o zona de trabajo.
-
-## Traducciones de MetSul
-
-La memoria de traducción se guarda en:
-
-```text
-data/metsul-translations.json
-```
-
-El script intenta usar traducción directa de portugués a español. Cuando esa combinación no está disponible, puede utilizar inglés como idioma intermedio. La caché tiene un límite para evitar crecimiento indefinido.
-
-Para ejecutarlo localmente:
-
-```bash
-python -m pip install argostranslate==1.11.0
-python scripts/translate_metsul.py
-```
-
-## Verificación operativa
-
-Antes de cada jornada conviene comprobar:
-
-1. la hora de la última actualización mostrada en la portada y en Clima;
-2. si INUMET tiene una advertencia activa;
-3. si ECMWF y GFS coinciden;
-4. el detalle del bloque exterior concreto;
-5. el radar y la observación más cercana el mismo día;
-6. que el plan de horarios y locaciones configurado siga coincidiendo con producción.
-
-La decisión final de rodaje debe basarse en el estado más reciente, no solamente en una captura o lectura realizada varios días antes.
+Los datos archivados de 2026 no deben reutilizarse como pronóstico.
