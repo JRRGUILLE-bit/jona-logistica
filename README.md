@@ -1,31 +1,59 @@
-# Jona tenía 15 años — Archivo de producción
+# Jona tenía 15 años — Archivo técnico de producción
 
-**Sitio publicado:** https://jrrguille-bit.github.io/jona-logistica/
+**Base web de operaciones creada para centralizar clima, movilidad, compras, documentos, herramientas técnicas y comunicación durante un rodaje de cuatro jornadas.**
 
-Este repositorio conserva en modo archivo la base de operaciones creada para el rodaje del cortometraje **Jona tenía 15 años**.
+[English version](README.en.md) · [Sitio archivado](https://jrrguille-bit.github.io/jona-logistica/) · [Caso de estudio técnico](https://jrrguille-bit.github.io/guillermo-barbeito-it/projects/jona-logistica/)
 
 ## Estado
 
-El rodaje finalizó en agosto de 2026. El sitio continúa online como registro del trabajo realizado, pero dejó de funcionar como herramienta operativa.
+El rodaje finalizó en agosto de 2026. El sitio permanece online como registro del sistema construido, pero ya no funciona como herramienta operativa.
 
-- se retiraron nombres, asignaciones de transporte y datos del equipo;
-- se retiraron enlaces a documentos internos, citaciones y planillas;
-- se retiraron invitaciones y accesos de comunicación;
-- se detuvo la actualización meteorológica automática;
-- se desactivó el modo offline y se configuró la eliminación de cachés anteriores;
-- se conservaron las locaciones, fechas, identidad visual y explicación de cada módulo.
+- Las automatizaciones de GitHub Actions fueron eliminadas.
+- Los datos meteorológicos conservados son históricos.
+- Se retiraron nombres, asignaciones, documentos internos, invitaciones y otros datos del equipo.
+- Se desactivó el modo offline y se configuró la eliminación de cachés anteriores.
+- No hay PRs ni issues abiertas.
 
-## Para qué servía
+## Qué demuestra técnicamente
 
-La portada centralizaba seis áreas de producción:
+- Diseño de una base operativa accesible desde celular para centralizar información dispersa.
+- Integración de múltiples fuentes meteorológicas con un pipeline en Python.
+- Generación de datos estáticos para reducir consultas desde el navegador.
+- Automatización programada mediante GitHub Actions durante la etapa operativa.
+- Manejo de fuentes incompletas y degradación controlada sin inventar información.
+- Interfaz responsive publicada con GitHub Pages.
+- Documentación del ciclo de vida: operación, cierre, retiro de automatizaciones y sanitización de datos.
+- Criterios de privacidad aplicados al convertir una herramienta interna en un archivo público.
+
+## Arquitectura meteorológica histórica
+
+Durante la producción, el sistema combinaba:
+
+- **INUMET:** pronóstico oficial y advertencias como contexto.
+- **ECMWF y GFS:** series horarias obtenidas mediante Open-Meteo para zonas aproximadas de rodaje.
+- **MetSul:** contexto editorial regional, con traducción y conservación del texto original.
+
+El flujo utilizaba:
+
+~~~text
+INUMET ──────────────────────────┐
+ECMWF / GFS vía Open-Meteo ─────┼─> Python ─> JSON estático ─> interfaz web
+MetSul + traducción ─────────────┘
+~~~
+
+Los scripts principales eran scripts/update_weather_plan.py, scripts/update_weather.py y scripts/translate_metsul.py. El sistema toleraba fallos parciales: si una fuente no respondía, registraba el error, continuaba con las demás y mostraba estados no disponibles en lugar de completar datos artificialmente.
+
+La documentación completa se conserva en [docs/CLIMA.md](docs/CLIMA.md).
+
+## Módulos de la base operativa
 
 | Módulo | Función durante el rodaje |
 |---|---|
-| Clima | Comparar pronósticos oficiales y modelos por jornada, horario y zona. |
+| Clima | Comparar pronósticos y modelos por jornada, horario y zona. |
 | Movilidad | Organizar vehículos, recorridos, puntos de encuentro y traslados. |
-| Compras | Localizar comercios, farmacias y suministros cerca de las locaciones. |
-| Documentos | Reunir guion, planes, citaciones e inventarios en un solo acceso. |
-| Apps técnicas | Concentrar aplicaciones de cámara, iluminación, sonido y respaldo. |
+| Compras | Localizar comercios, farmacias y suministros cercanos. |
+| Documentos | Reunir guion, planes, citaciones e inventarios. |
+| Apps técnicas | Concentrar herramientas de cámara, iluminación, sonido y respaldo. |
 | Comunicación | Dar acceso al canal común de coordinación del equipo. |
 
 ## Jornadas registradas
@@ -35,13 +63,25 @@ La portada centralizaba seis áreas de producción:
 - 1 de agosto de 2026: La Paz y Parque del Plata.
 - 2 de agosto de 2026: Parque del Plata.
 
-## Sistema meteorológico preservado
+## Cierre responsable
 
-Los scripts y la documentación técnica se mantienen como parte del archivo. El sistema combinaba INUMET, MetSul, ECMWF y GFS mediante un flujo en Python y GitHub Actions. El workflow periódico fue retirado al cerrar la producción, por lo que los datos meteorológicos guardados son históricos.
+Al finalizar el proyecto:
 
-## Privacidad
+1. se retiraron las automatizaciones periódicas;
+2. se eliminaron accesos operativos y datos personales;
+3. se reemplazaron los módulos activos por explicaciones históricas;
+4. se desactivó el service worker operativo y se preparó la limpieza de cachés;
+5. se mantuvieron únicamente estructura, diseño, fechas, localidades generales y documentación técnica.
 
-La versión pública actual no debe utilizarse para publicar teléfonos, correos, documentos, datos médicos, información de pagos, nombres del equipo ni cualquier otro identificador personal. Las locaciones del rodaje se conservan deliberadamente como parte del registro del cortometraje.
+La versión pública no debe utilizarse para publicar teléfonos, correos, documentos, datos médicos, información de pagos, nombres del equipo ni otros identificadores personales.
+
+## Autor técnico
+
+**Guillermo Barbeito** — Ingeniero en Informática con foco en IT Support, Product Support y Technical Operations.
+
+- GitHub: https://github.com/JRRGUILLE-bit
+- LinkedIn: https://www.linkedin.com/in/guillermo-barbeito-040632340/
+- Portfolio IT: https://jrrguille-bit.github.io/guillermo-barbeito-it/
 
 ---
 
